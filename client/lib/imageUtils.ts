@@ -17,7 +17,7 @@ const schoolImages = [
 
 // Get the base path for assets (handles both dev and production)
 function getAssetBasePath(): string {
-  return import.meta.env.PROD ? '/Sri-Madhava-Vidya-Mandira/assets' : '/assets';
+  return '/assets';
 }
 
 /**
