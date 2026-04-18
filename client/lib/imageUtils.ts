@@ -1,23 +1,26 @@
 // Utility functions for handling school images
 
 const schoolImages = [
+  'school13.jpeg',
+  // 'school15.jpeg',
   'school1.png',
-  'school2.png', 
+  'school2.png',
   'school3.png',
-  'school4.png',
+  // 'school4.png',
   'school5.png',
-  'school6.png',
-  'school7.png',
-  'school8.png',
-  'school9.png',
-  'school10.png',
-  'school11.png',
-  'school12.png'
+  // 'school6.png',
+  // 'school7.png',
+  // 'school8.png',
+  // 'school9.png',
+  // 'school10.png',
+  // 'school11.png',
+  // 'school12.png',
+  // "digial_board.jpeg"
 ];
 
 // Get the base path for assets (handles both dev and production)
 function getAssetBasePath(): string {
-  return '/assets';
+  return import.meta.env.PROD ? '/Sri-Madhava-Vidya-Mandira/assets' : '/assets';
 }
 
 /**

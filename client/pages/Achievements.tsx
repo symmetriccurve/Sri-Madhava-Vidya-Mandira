@@ -9,18 +9,18 @@ export default function Achievements() {
   const { t } = useI18n();
 
   const achievements = [
-    {
-      id: 4,
-      title: t("achievements_page_card_2_title"),
-      category: t("achievements_page_card_2_category"),
-      year: t("achievements_page_card_2_year"),
-      description: t("achievements_page_card_2_description"),
-      details: t("achievements_page_card_2_details"),
-      image: getSchoolImage(30),
-      icon: Star,
-      level: t("achievements_page_card_2_level"),
-      //participants: t("achievements_page_card_2_//participants"),
-    },
+    // {
+    //   id: 4,
+    //   title: t("achievements_page_card_2_title"),
+    //   category: t("achievements_page_card_2_category"),
+    //   year: t("achievements_page_card_2_year"),
+    //   description: t("achievements_page_card_2_description"),
+    //   details: t("achievements_page_card_2_details"),
+    //   image: getSchoolImage(30),
+    //   icon: Star,
+    //   level: t("achievements_page_card_2_level"),
+    //   //participants: t("achievements_page_card_2_//participants"),
+    // },
     {
       id: 6,
       title: t("achievements_page_card_3_title"),
@@ -28,6 +28,7 @@ export default function Achievements() {
       year: t("achievements_page_card_3_year"),
       description: t("achievements_page_card_3_description"),
       details: t("achievements_page_card_3_details"),
+      image: getAssetImage("electric_award.png"),
       icon: Trophy,
       level: t("achievements_page_card_3_level"),
       //participants: t("achievements_page_card_3_//participants"),
@@ -63,7 +64,7 @@ export default function Achievements() {
       year: t("achievements_page_card_6_year"),
       description: t("achievements_page_card_6_description"),
       details: t("achievements_page_card_6_details"),
-      image: getAssetImage("31.jpeg"),
+      // image: getAssetImage("31.jpeg"),
       icon: Star,
       level: t("achievements_page_card_6_level"),
       //participants: t("achievements_page_card_6_//participants"),
@@ -104,18 +105,18 @@ export default function Achievements() {
       level: t("achievements_page_card_9_level"),
       //participants: t("achievements_page_card_9_//participants"),
     },
-    {
-      id: 35,
-      title: t("achievements_page_card_10_title"),
-      category: t("achievements_page_card_10_category"),
-      year: t("achievements_page_card_10_year"),
-      description: t("achievements_page_card_10_description"),
-      details: t("achievements_page_card_10_details"),
-      image: getAssetImage("35(1).jpeg"), // Note: Using 35(1) as 35.jpeg is missing
-      icon: Medal,
-      level: t("achievements_page_card_10_level"),
-      //participants: t("achievements_page_card_10_//participants"),
-    },
+    // {
+    //   id: 35,
+    //   title: t("achievements_page_card_10_title"),
+    //   category: t("achievements_page_card_10_category"),
+    //   year: t("achievements_page_card_10_year"),
+    //   description: t("achievements_page_card_10_description"),
+    //   details: t("achievements_page_card_10_details"),
+    //   image: getAssetImage("35(1).jpeg"), // Note: Using 35(1) as 35.jpeg is missing
+    //   icon: Medal,
+    //   level: t("achievements_page_card_10_level"),
+    //   //participants: t("achievements_page_card_10_//participants"),
+    // },
     {
       id: 351,
       title: t("achievements_page_card_11_title"),

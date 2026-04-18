@@ -1,7 +1,7 @@
 import { useI18n } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { getSchoolImage } from "@/lib/imageUtils";
+import { getSchoolImage, getAssetImage } from "@/lib/imageUtils";
 import { FileText, Users, DollarSign, CheckCircle, MapPin, Phone } from "lucide-react";
 
 export default function Admissions() {
@@ -170,7 +170,7 @@ export default function Admissions() {
       {/* School Image */}
       <section className="mb-12">
         <div className="relative rounded-xl overflow-hidden shadow-lg">
-          <img src={getSchoolImage(4)} alt={t("admissions_page_image_alt")} className="w-full h-64 md:h-96 object-cover" />
+          <img src={getAssetImage("main_gate.jpeg")} alt={t("admissions_page_image_alt")} className="w-full h-64 md:h-96 object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <div className="absolute bottom-6 left-6 text-white">
             <h2 className="text-2xl font-bold mb-2">{t("admissions_page_image_title")}</h2>

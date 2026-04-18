@@ -11,64 +11,50 @@ export default function Footer() {
   return (
     <footer className="mt-16 border-t bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-10">
-        <div>
+        {/* School Info */}
+        <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <img src={getLogo()} alt="Logo" className="h-10 w-10 rounded" />
-            <div className="font-semibold text-brand-blue">
+            <img src={getLogo()} alt="Logo" className="h-12 w-12 rounded-full ring-2 ring-brand-orange/20" />
+            <div className="font-bold text-lg text-brand-blue tracking-tight">
               {t("school_name")}
             </div>
           </div>
-          <p className="mt-3 text-sm text-gray-600 max-w-sm">
-            {t("school_name_full")}
-          </p>
-          <p className="mt-2 text-sm text-brand-orange font-medium">
+          <p className="text-sm text-brand-orange font-semibold tracking-wide uppercase italic">
             {t("footer_motto")}
           </p>
+          <p className="text-xs text-gray-500 leading-relaxed max-w-xs">
+            © {year} {t("school_name")}. {t("copyright")}
+          </p>
         </div>
+
+        {/* Quick Links Column 1 */}
         <div>
-          <h4 className="font-semibold text-gray-900">
+          <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wider">
             {t("footer_quick_links")}
           </h4>
-          <ul className="mt-3 space-y-2 text-sm">
-            <li>
-              <Link className="hover:text-brand-orange" to="/admissions">
-                {t("admissions")}
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-brand-orange" to="/academics">
-                {t("academics")}
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-brand-orange" to="/news">
-                {t("news")}
-              </Link>
-            </li>
-            <li>
-              <Link className="hover:text-brand-orange" to="/contact">
-                {t("contact")}
-              </Link>
-            </li>
+          <ul className="space-y-2.5 text-sm">
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/about">{t("about")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/academics">{t("academics")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/admissions">{t("admissions")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/facilities">{t("facilities")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/gallery">{t("gallery")}</Link></li>
           </ul>
         </div>
+
+        {/* Quick Links Column 2 */}
         <div>
-          <h4 className="font-semibold text-gray-900">{t("footer_contact")}</h4>
-          <ul className="mt-3 space-y-2 text-sm text-gray-700">
-            <li>
-              <span className="font-medium">{t("address_label")}:</span>{" "}
-              {t("address_value")}
-            </li>
-            <li>
-              <span className="font-medium">{t("phone_label")}:</span>{" "}
-              {t("phone_value")}
-            </li>
-            <li>
-              <span className="font-medium">{t("email_label")}:</span>{" "}
-              {t("email_value")}
-            </li>
+          <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wider">
+            Resources
+          </h4>
+          <ul className="space-y-2.5 text-sm">
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/news">{t("news")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/achievements">{t("achievements")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/results">{t("results")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/alumni">{t("alumni")}</Link></li>
+            <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/faqs">{t("faqs")}</Link></li>
           </ul>
         </div>
+
       </div>
       <div className="border-t py-3 text-center text-xs text-gray-400">
         A digital initiative by{" "}

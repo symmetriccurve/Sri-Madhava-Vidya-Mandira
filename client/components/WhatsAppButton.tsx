@@ -8,9 +8,9 @@ export default function WhatsAppButton() {
   const [showPopup, setShowPopup] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
   const [customMessage, setCustomMessage] = useState("");
-  const phoneNumber = "+918019738108";
+  const phoneNumber = "+919449643684";
   const popupRef = useRef<HTMLDivElement>(null);
-  
+
   const messageOptions = [
     {
       id: "info",
@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
       label: "Donate to School"
     }
   ];
-  
+
   const handleMessageClick = (message: string) => {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}?text=${encodedMessage}`;
@@ -81,18 +81,17 @@ export default function WhatsAppButton() {
         className="h-14 w-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg hover:shadow-xl transition-all duration-300 p-0 whatsapp-float"
         aria-label="Contact us on WhatsApp"
       >
-        <img 
-          src={getWhatsAppLogo()} 
-          alt="WhatsApp" 
+        <img
+          src={getWhatsAppLogo()}
+          alt="WhatsApp"
           className="h-8 w-8 object-contain"
           style={{ backgroundColor: 'transparent' }}
         />
       </Button>
-      
+
       {/* Tooltip */}
-      <div className={`absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg transition-all duration-300 whitespace-nowrap ${
-        showTooltip && !showPopup ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
-      }`}>
+      <div className={`absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg transition-all duration-300 whitespace-nowrap ${showTooltip && !showPopup ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
+        }`}>
         Contact us on WhatsApp
         <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-900"></div>
       </div>
@@ -104,9 +103,9 @@ export default function WhatsAppButton() {
           <div className="bg-green-500 px-4 py-3 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                <img 
-                  src={getWhatsAppLogo()} 
-                  alt="WhatsApp" 
+                <img
+                  src={getWhatsAppLogo()}
+                  alt="WhatsApp"
                   className="h-5 w-5 object-contain"
                   style={{ backgroundColor: 'transparent' }}
                 />
@@ -125,7 +124,7 @@ export default function WhatsAppButton() {
               <X className="h-4 w-4" />
             </Button>
           </div>
-          
+
           {/* Chat Messages Area */}
           <div className="h-64 overflow-y-auto bg-gray-50 p-3 space-y-2 chat-scroll">
             {/* Welcome Message */}
@@ -135,7 +134,7 @@ export default function WhatsAppButton() {
                 <p className="text-xs text-gray-500 mt-1">Just now</p>
               </div>
             </div>
-            
+
             {/* Template Messages as Chat Bubbles */}
             <div className="text-xs text-gray-500 px-2 py-1 font-medium">Quick options:</div>
             {messageOptions.map((option) => (
@@ -150,7 +149,7 @@ export default function WhatsAppButton() {
               </div>
             ))}
           </div>
-          
+
           {/* Chat Input Area */}
           <div className="bg-white border-t border-gray-200 p-3">
             <div className="flex gap-2">
@@ -172,7 +171,7 @@ export default function WhatsAppButton() {
               </Button>
             </div>
           </div>
-          
+
           {/* Chat Arrow */}
           <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"></div>
         </div>

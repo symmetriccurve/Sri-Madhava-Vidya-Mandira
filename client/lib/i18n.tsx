@@ -40,11 +40,11 @@ const dictionary: Record<Lang, Record<string, string>> = {
     quick_links: "Quick Links",
     read_more: "Read more",
     more: "More",
-    principal_message: "School Headmaster's Message",
-    principal_note_subtitle: "School Headmaster's Note",
+    principal_message: "School President Message",
+    principal_note_subtitle: "School President Note",
     principal_message_body:
-      "Our school is a model institution — a sacred place of learning that imparts value-based education along with Indian culture and traditions. Here, children are taught not only academic subjects but also yoga, meditation, the Bhagavad Gita, and patriotic songs, nurturing human values within them. Our goal is to foster in students a spirit of respect for elders and love for the younger. We aspire that every child who studies here grows up to be a model student for the school, a good child for their parents, a valuable person for society, and an ideal citizen for the nation.",
-    principal_attribution: "— School Headmaster, Sri Madhava Vidya Mandira",
+      "Our school is a model institution — a sacred place of learning that imparts value-based education along with Indian culture and traditions. Here, children are taught not only academic subjects but also yoga, meditation, the Bhagavad Gita, and patriotic songs, thereby nurturing strong human values within them.\n\nOur aim is to instill in students a deep sense of respect for elders and affection for the younger. We aspire that every child who studies here grows into a model student for the school, a responsible and loving child for their parents, a valuable individual for society, and an ideal citizen for the nation.",
+    principal_attribution: "— Somashekhar, School President, Sri Madhava Vidya Mandira",
     address_label: "Address",
     address_value:
       "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
@@ -147,17 +147,15 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_contact_address:
       "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     admissions_page_phone_label: "Phone",
-    admissions_page_phone_value: "+91 94494 24530",
+    admissions_page_phone_value: " +91 9449643684, +91 9449424530",
     admissions_page_email_label: "Email ID",
-    admissions_page_email_value: "madhavavidyamandira21@gmail.com",
+    admissions_page_email_value: "smvmsira@gmail.com",
     admissions_page_download_brochure: "Download Brochure",
     facilities_page_title: "World-Class Facilities",
     facilities_page_subtitle: "Supporting excellence in education",
     facilities_page_intro:
       "Our modern infrastructure and state-of-the-art facilities provide an ideal environment for learning, creativity, and holistic development. Every facility is designed to enhance the educational experience of our students.",
     facilities_page_core_title: "Core Facilities",
-    facilities_page_core_note:
-      "Photos for all core facility headings will be uploaded soon.",
     facilities_page_additional_title: "Additional Amenities",
     facilities_page_highlights_title: "Infrastructure Highlights",
     facilities_page_core_1_title: "Library",
@@ -398,8 +396,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     copyright: "All rights reserved.",
     hero_tagline_prefix: "Rooted in",
     hero_tagline_suffix: "for every child",
+    about_page_hero_title: "Vidya Bharati – All India Education Organization",
     about_snippet:
-      "A nurturing environment providing value-based, holistic education. Equal importance is given to culture, sports, and arts alongside studies. Our beautiful institution, located in Sira town, has been shaping young minds for over four decades, nurturing them into responsible citizens and future leaders.",
+      "Vidya Bharati is a premier educational organization that has been functioning at the national level for the past 63 years. Through approximately 30,000 educational centers across the country, it provides national education and values. Our Sri Madhava Vidya Mandira in Sira is also an institution operating under the collaboration and guidance of Vidya Bharati.\n\nApart from providing Indian education to rural children through their mother tongue, Vidya Bharati's primary objective is to integrate our nation's culture, music, Sanskrit, yoga, moral education, physical education, practical education, and social service activities along with core subjects like science, mathematics, language, and social sciences.\n\nFurthermore, through national integration, service work, outreach education, Bal Sangam, teacher training camps, workshops, and sports meets, our school aspires to shape the future of schoolchildren and develop them into architects of a New India, becoming a sacred temple of knowledge and learning.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
       "Congratulations to our students for district-level sports achievements!",
@@ -563,7 +562,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "Regular yoga and mindfulness for a healthy body and mind.",
     activity_clubs: "Student Clubs",
     activity_clubs_desc:
-      "Literary, eco, and science clubs to nurture curiosity.",
+      "Literature, eco, and science clubs to nurture curiosity.",
     results: "Results",
     results_title: "Examination Results",
     results_subtitle:
@@ -941,11 +940,11 @@ const dictionary: Record<Lang, Record<string, string>> = {
     quick_links: "ತ್ವರಿತ ಕೊಂಡಿಗಳು",
     read_more: "ಇನ್ನಷ್ಟು ನೋಡಿ",
     more: "ಇನ್ನಷ್ಟು",
-    principal_message: "ಪ್ರಾಂಶುಪಾಲರ ಸಂದೇಶ",
-    principal_note_subtitle: "ಮುಖ್ಯ ಶಿಕ್ಷಕರ ನುಡಿ",
+    principal_message: "ಅಧ್ಯಕ್ಷರ ಸಂದೇಶ",
+    principal_note_subtitle: "ಅಧ್ಯಕ್ಷರ ನುಡಿ",
     principal_message_body:
-      "ನಮ್ಮ ಶಾಲೆ ಒಂದು ಮಾದರಿ ಶಾಲೆಯಾಗಿದ್ದು, ಮೌಲ್ಯಯುತ ಶಿಕ್ಷಣದ ಜೊತೆಗೆ ಭಾರತೀಯ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಸಂಸ್ಕಾರಗಳನ್ನು ನೀಡುವ ಪವಿತ್ರ ವಿದ್ಯಾಲಯವಾಗಿದೆ. ಇಲ್ಲಿ ಶಿಕ್ಷಣ ಮಾತ್ರವಲ್ಲದೆ ಯೋಗ, ಧ್ಯಾನ, ಭಗವದ್ಗೀತೆ, ದೇಶಭಕ್ತಿ ಗೀತೆಗಳು ಇತ್ಯಾದಿಗಳನ್ನು ಬೋಧಿಸುವ ಮೂಲಕ ಮಕ್ಕಳಲ್ಲಿ ಮಾನವೀಯ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸಲಾಗುತ್ತದೆ. ಗುರುಹಿರಿಯರನ್ನು ಗೌರವಿಸುವ ಮತ್ತು ಕಿರಿಯರನ್ನು ಪ್ರೀತಿಯಿಂದ ಕಾಣುವ ಮನೋಭಾವವನ್ನು ಬೆಳೆಸುವುದು ನಮ್ಮ ಧ್ಯೇಯವಾಗಿದೆ. ಇಲ್ಲಿ ವಿದ್ಯಾಭ್ಯಾಸ ಮಾಡಿದ ಮಕ್ಕಳು ಶಾಲೆಗೆ ಆದರ್ಶ ವಿದ್ಯಾರ್ಥಿಗಳಾಗಿ, ತಂದೆತಾಯಿಗಳಿಗೆ ಒಳ್ಳೆಯ ಮಕ್ಕಳಾಗಿ, ಸಮಾಜಕ್ಕೆ ಉತ್ತಮ ವ್ಯಕ್ತಿಗಳಾಗಿ ಹಾಗೂ ದೇಶಕ್ಕೆ ಆದರ್ಶ ಪ್ರಜೆಗಳಾಗಿ ಬೆಳೆಯಬೇಕು ಎಂಬುದು ನಮ್ಮ ಧ್ಯೇಯವಾಗಿದೆ.",
-    principal_attribution: "— ಮುಖ್ಯ ಶಿಕ್ಷಕರು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
+      "ನಮ್ಮ ಶಾಲೆ ಒಂದು ಮಾದರಿ ಸಂಸ್ಥೆಯಾಗಿದ್ದು, ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣದ ಜೊತೆಗೆ ಭಾರತೀಯ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಸಂಪ್ರದಾಯಗಳನ್ನು ನೀಡುವ ಪವಿತ್ರ ಕಲಿಕಾ ಕೇಂದ್ರವಾಗಿದೆ. ಇಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಕೇವಲ ಶೈಕ್ಷಣಿಕ ವಿಷಯಗಳಲ್ಲದೆ ಯೋಗ, ಧ್ಯಾನ, ಭಗವದ್ಗೀತೆ ಮತ್ತು ದೇಶಭಕ್ತಿ ಗೀತೆಗಳನ್ನು ಬೋಧಿಸಲಾಗುತ್ತದೆ, ಆ ಮೂಲಕ ಅವರಲ್ಲಿ ಬಲವಾದ ಮಾನವೀಯ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸಲಾಗುತ್ತದೆ.\n\nವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ಗುರುಹಿರಿಯರ ಬಗ್ಗೆ ಗೌರವ ಮತ್ತು ಕಿರಿಯರ ಮೇಲೆ ಪ್ರೀತಿಯ ಮನೋಭಾವವನ್ನು ಬೆಳೆಸುವುದು ನಮ್ಮ ಉದ್ದೇಶವಾಗಿದೆ. ಇಲ್ಲಿ ಕಲಿಯುವ ಪ್ರತಿಯೊಂದು ಮಗು ಶಾಲೆಯ ಮಾದರಿ ವಿದ್ಯಾರ್ಥಿಯಾಗಿ, ತಂದೆತಾಯಿಗಳಿಗೆ ಜವಾಬ್ದಾರಿಯುತ ಮತ್ತು ಪ್ರೀತಿಯ ಮಗುವಾಗಿ, ಸಮಾಜಕ್ಕೆ ಅಮೂಲ್ಯ ವ್ಯಕ್ತಿಯಾಗಿ ಮತ್ತು ದೇಶದ ಆದರ್ಶ ಪ್ರಜೆಯಾಗಿ ಬೆಳೆಯಬೇಕೆಂದು ನಾವು ಆಶಿಸುತ್ತೇವೆ.",
+    principal_attribution: "— ಸೋಮಶೇಖರ್, ಅಧ್ಯಕ್ಷರು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
     address_label: "ವಿಳಾಸ",
     address_value:
       "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
@@ -1056,8 +1055,6 @@ const dictionary: Record<Lang, Record<string, string>> = {
     facilities_page_intro:
       "ನಮ್ಮ ಆಧುನಿಕ ಮೂಲಸೌಕರ್ಯ ಮತ್ತು ಅತ್ಯಾಧುನಿಕ ಸೌಲಭ್ಯಗಳು ಕಲಿಕೆ, ಸೃಜನಶೀಲತೆ ಮತ್ತು ಸಮಗ್ರ ಬೆಳವಣಿಗೆಗೆ ಆದರ್ಶ ವಾತಾವರಣ ಒದಗಿಸುತ್ತವೆ. ಪ್ರತಿ ಸೌಲಭ್ಯವೂ ವಿದ್ಯಾರ್ಥಿಗಳ ಶೈಕ್ಷಣಿಕ ಅನುಭವವನ್ನು ಹೆಚ್ಚಿಸಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ.",
     facilities_page_core_title: "ಮುಖ್ಯ ಸೌಲಭ್ಯಗಳು",
-    facilities_page_core_note:
-      "ಮುಖ್ಯ ಸೌಲಭ್ಯಗಳ ಎಲ್ಲಾ ಶೀರ್ಷಿಕೆಗಳ ಫೋಟೋಗಳನ್ನು ಶೀಘ್ರದಲ್ಲೇ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.",
     facilities_page_additional_title: "ಹೆಚ್ಚುವರಿ ಸೌಲಭ್ಯಗಳು",
     facilities_page_highlights_title: "ಮೂಲಸೌಕರ್ಯ ಮುಖ್ಯಾಂಶಗಳು",
     facilities_page_core_1_title: "ಗ್ರಂಥಾಲಯ",
@@ -1163,7 +1160,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿನಿ Ms. MEGHA ಅವರಿಗೆ BESCOM Karnataka ಆಯೋಜಿಸಿದ್ದ ELECTRICAL SAFETY ವಿಷಯದ ಭಾಷಣಕ್ಕೆ ಪ್ರಶಸ್ತಿ ಲಭಿಸಿತು.",
     achievements_page_card_3_level: "ಜಿಲ್ಲಾ ಮಟ್ಟ",
     achievements_page_card_3_participants: "1 ವಿದ್ಯಾರ್ಥಿ",
-    achievements_page_card_4_title: "ಶಿಕ್ಷಣದ",
+    achievements_page_card_4_title: "ಹಸಿರು ಉಪಕ್ರಮ",
     achievements_page_card_4_category: "ಪರಿಸರ",
     achievements_page_card_4_year: "2025",
     achievements_page_card_4_description:
@@ -1299,8 +1296,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     copyright: "ಎಲ್ಲ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     hero_tagline_prefix: "ಮೂಲ್ಯಗಳು, ಶಿಕ್ಷಣ ಮತ್ತು ಸಂಸ್ಕೃತಿ",
     hero_tagline_suffix: "ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಗಾಗಿ",
+    about_page_hero_title: "ವಿದ್ಯಾ ಭಾರತಿ – ಅಖಿಲ ಭಾರತ ಶಿಕ್ಷಣ ಸಂಘಟನೆ.",
     about_snippet:
-      "ಮೌಲ್ಯಾಧಾರಿತ, ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಪೋಷಕ ವಾತಾವರಣ. ಅಧ್ಯಯನದ ಜೊತೆಗೆ ಸಂಸ್ಕೃತಿ, ಕ್ರೀಡೆ ಮತ್ತು ಕಲೆಗಳಿಗೆ ಸಮಾನ ಮಹತ್ವ ನೀಡಲಾಗುತ್ತದೆ. ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿ ಇರುವ ನಮ್ಮ ಸುಂದರವಾದ ಸಂಸ್ಥೆ. ಕಳೆದ ನಾಲ್ಕು ದಶಕಕ್ಕೂ ಹೆಚ್ಚು ಕಾಲದಿಂದ ಯುವ ಮನಸ್ಸುಗಳನ್ನು ರೂಪಿಸುತ್ತಿದ್ದು, ಅವರನ್ನು ಜವಾಬ್ದಾರಿಯುತ ನಾಗರಿಕರು ಮತ್ತು ಭವಿಷ್ಯದ ನಾಯಕರಾಗಿ ಬೆಳೆಸುತ್ತಿದೆ.",
+      "ವಿದ್ಯಾ ಭಾರತಿ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಕಳೆದ 63 ವರ್ಷಗಳಿಂದ ಅಖಿಲ ಭಾರತ ಮಟ್ಟದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬಹುದೊಡ್ಡ ಶಿಕ್ಷಣ ಸಂಘಟನೆಯಾಗಿದೆ. ಸುಮಾರು 30 ಸಾವಿರ ವಿದ್ಯಾ ಕೇಂದ್ರಗಳ ಮೂಲಕ ದೇಶಾದ್ಯಂತ ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಂಸ್ಕಾರವನ್ನು ನೀಡುತ್ತಿದೆ. ನಮ್ಮ ಶಿರಾ ನಗರದ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರವೂ ಸಹ ವಿದ್ಯಾ ಭಾರತಿಯ ಸಹಯೋಗ ಹಾಗೂ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಸಂಸ್ಥೆಯಾಗಿದೆ.\n\nಗ್ರಾಮಾಂತರ ಪ್ರದೇಶಗಳ ಮಕ್ಕಳಿಗೂ ಮಾತೃಭಾಷೆಯ ಮೂಲಕ ಭಾರತೀಯ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವುದರೊಂದಿಗೆ, ಶಾಲಾ ಪಠ್ಯ ವಿಷಯಗಳಾದ ವಿಜ್ಞಾನ, ಗಣಿತ, ಭಾಷಾ ಶಿಕ್ಷಣ ಮತ್ತು ಸಮಾಜ ವಿಜ್ಞಾನಗಳ ಜೊತೆಗೆ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಸಂಸ್ಕೃತಿ, ಸಂಗೀತ, ಸಂಸ್ಕೃತ, ಯೋಗ, ನೀತಿ ಶಿಕ್ಷಣ, ಶಾರೀರಿಕ ಶಿಕ್ಷಣ, ಭೌತಿಕ ಶಿಕ್ಷಣ, ವ್ಯವಹಾರಿಕ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಮಾಜ ಸೇವಾ ಕಾರ್ಯಗಳನ್ನು ಅಳವಡಿಸುವುದು ವಿದ್ಯಾ ಭಾರತಿಯ ಮೂಲ ಉದ್ದೇಶವಾಗಿದೆ.\n\nಇದಲ್ಲದೆ, ರಾಷ್ಟ್ರೀಯ ಭಾವೈಕ್ಯತೆ, ಸೇವಾ ಕಾರ್ಯ, ಪ್ರಸಾರ ಶಿಕ್ಷಣ, ಬಾಲಸಂಗಮ, ಶಿಕ್ಷಕರಿಗೆ ತರಬೇತಿ ಶಿಬಿರಗಳು, ಕಾರ್ಯಾಗಾರಗಳು ಹಾಗೂ ಕ್ರೀಡಾಕೂಟಗಳನ್ನು ನಡೆಸುವುದರ ಮೂಲಕ ಶಾಲಾ ಮಕ್ಕಳ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸಿ, ಅವರನ್ನು ನವ ಭಾರತದ ಶಿಲ್ಪಿಗಳಾಗಿ ಬೆಳೆಸುವ ಕಾರ್ಯದಲ್ಲಿ ನಮ್ಮ ಶಾಲೆಯು ಜ್ಞಾನಾರ್ಜನೆಯ ಪವಿತ್ರ ದೇಗುಲವಾಗಬೇಕೆಂಬುದು ನಮ್ಮ ಎಲ್ಲರ ಅಭಿಲಾಷೆಯಾಗಿದೆ.",
     ticker_1: "ಹೊಸ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಪ್ರವೇಶಗಳು ಪ್ರಾರಂಭ.",
     ticker_2: "ಜಿಲ್ಲಾಸ್ಥರ ಕ್ರೀಡೆಯಲ್ಲಿ ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಭಿನಂದನೆಗಳು!",
     ticker_3: "ಸೆಪ್ಟೆಂಬರ್ 12ರಂದು ವಿಜ್ಞಾನ ಮೇಳ – ಪೋಷಕರು ಸ್ವಾಗತ.",
@@ -1674,6 +1672,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     seva_bhavana: "ಸೇವಾ ಭಾವನೆ",
     seva_bhavana_desc:
       "ಸಮಾಜದ ಪ್ರತಿಯೊಬ್ಬರಲ್ಲಿಯೂ ದಯೆ ಹಾಗೂ ಸೇವಾ ಮನೋಭಾವ ಬೆಳೆಸುವುದು ಇತರರ ಒಳತಿಗಾಗಿ ತನ್ನ ಸ್ವಾರ್ಥವನ್ನು ತ್ಯಾಗ ಮಾಡುವುದು ತನ್ನ ಕರ್ತವ್ಯವನ್ನು ನಿಷ್ಠೆಯಿಂದ ಪಾಲಿಸುವುದು.",
+    shrama_swachata: "ಶ್ರಮ ಮತ್ತು ಸ್ವಚ್ಛತೆ",
+    shrama_swachata_desc:
+      "\"ಸಮವೇ ಶ್ರೇಯಸ್ಸು\" ಎಂಬ ಧ್ಯೇಯದೊಂದಿಗೆ ಶ್ರಮದ ಗೌರವ ಮತ್ತು ಕೆಲಸದ ಬಗ್ಗೆ ಸಮರ್ಪಣಾ ಭಾವವನ್ನು ಕಲಿಸುವುದು. ಸ್ವಚ್ಛತೆಯನ್ನು ಆಂತರಿಕ ಶುದ್ಧತೆಯ ಪ್ರತಿಬಿಂಬವಾಗಿ ಪ್ರೋತ್ಸಾಹಿಸುವುದು.",
     ekata_sahabhava: "ಏಕತೆ ಮತ್ತು ಸಹಭಾವ",
     ekata_sahabhava_desc: "ವಸುದೈವ ಕುಟುಂಬಕಂ ಎಂಬ ತತ್ವವನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವುದು",
     adhyatma_atmavikasa: "ಅಧ್ಯಾತ್ಮ ಹಾಗೂ ಆತ್ಮವಿಕಾಸ",
@@ -1686,7 +1687,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     our_core_values: "ನಮ್ಮ ಮೂಲಭೂತ ಮೌಲ್ಯಗಳು",
     our_mission: "ನಮ್ಮ ಧ್ಯೇಯ",
     our_mission_desc:
-      "ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಭಾರತೀಯ ಸಂಸ್ಕೃತಿಯ ಶ್ರೇಷ್ಠತೆಯನ್ನು ಕುರಿತು, ಆಧುನಿಕ ಶಿಕ್ಷಣದೊಂದಿಗೆ ಮೌಲ್ಯಧಾರಿತ ಬದುಕನ್ನು ರೂಪಿಸಲು ಸ್ಪೂರ್ತಿ ನೀಡುವುದು; ಭಾರತೀಯ ಪರಂಪರೆ, ನೈತಿಕತೆ, ಶಿಸ್ತು ಮತ್ತು ಶ್ರದ್ಧೆಗೆ ಆದ್ಯತೆ ನೀಡುತ್ತಾ, ಜ್ಞಾನ ಹಾಗೂ ಔದಾರ್ಯದೊಂದಿಗೆ ಜವಾಬ್ದಾರಿಯುತ ನಾಗರೀಕರಣವನ್ನು ರೂಪಿಸುವುದು ನಮ್ಮ ಶಾಲೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ.",
+      "ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಭಾರತೀಯ ಸಂಸ್ಕೃತಿಯ ಶ್ರೇಷ್ಠತೆಯನ್ನು ಕುರಿತು, ಆಧುನಿಕ ಶಿಕ್ಷಣದೊಂದಿಗೆ ಮೌಲ್ಯಧಾರಿತ ಬದುಕನ್ನು ರೂಪಿಸಲು ಸ್ಪೂರ್ತಿ ನೀಡುವುದು ಭಾರತೀಯ ಪರಂಪರೆ, ನೈತಿಕತೆ, ಶಿಸ್ತು ಮತ್ತು ಶ್ರದ್ಧೆಗೆ ಆದ್ಯತೆ ನೀಡುತ್ತಾ, ಜ್ಞಾನ ಹಾಗೂ ಔದಾರ್ಯದೊಂದಿಗೆ ಜವಾಬ್ದಾರಿಯುತ ನಾಗರೀಕರಣವನ್ನು ರೂಪಿಸುವುದು ನಮ್ಮ ಶಾಲೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ.",
     our_vision: "ನಮ್ಮ ದೃಷ್ಟಿ",
     our_vision_desc:
       "ಭಾರತೀಯ ಸಂಸ್ಕೃತಿ ಪರಂಪರೆ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಪ್ರತಿಬಿಂಬಿಸುವ ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ಒದಗಿಸಿ ನಾನಾ ನೈತಿಕತೆ ಶ್ರದ್ಧೆ ಮತ್ತು ಸಾಮಾಜಿಕ ಬದ್ಧತೆಯಿಂದ ಶ್ರೇಷ್ಠ ನಾಗರಿಕರನ್ನು ರೂಪಿಸುವುದು ಪೌರಾಣಿಕ ಜ್ಞಾನ ಹಾಗೂ ಆಧುನಿಕ ವಿಜ್ಞಾನವನ್ನು ಸಮನ್ವಯಗೊಳಿಸಿ ಮಾನವೀಯತೆಯೊಂದಿಗೆ ಜೀವನವನ್ನು ಹಮ್ಮಿಕೊಳ್ಳುವ ಮೌಲ್ಯ ಸಂಸ್ಕೃತ ಸಮಾಜವನ್ನು ಕಟ್ಟುವುದು ನಮ್ಮ ಶಾಲೆಯ ದೃಷ್ಟಿಕೋನ",

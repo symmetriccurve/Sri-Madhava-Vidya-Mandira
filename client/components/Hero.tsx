@@ -9,10 +9,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-blue/10 via-white to-brand-orange/10" />
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 sm:py-14">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-medium text-brand-blue ring-1 ring-brand-blue/20">
-            <span>{t("school_name_full")}</span>
-          </div>
-          <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
             <span className="block text-brand-blue">{t("school_name")}</span>
             <span className="mt-2 block text-gray-800 text-xl sm:text-2xl font-semibold">
               “{t("tagline")}”
@@ -21,11 +18,6 @@ export default function Hero() {
           <p className="mt-4 text-gray-600">
             {t("about_snippet")}
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link to="/admissions" className="btn-accent">{t("admissions_cta")}</Link>
-            <Link to="/academics" className="btn-primary">{t("academics_cta")}</Link>
-            <Link to="/contact" className="btn bg-white text-brand-blue border border-brand-blue hover:bg-blue-50">{t("contact_cta")}</Link>
-          </div>
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] w-full rounded-xl bg-gradient-to-tr from-brand-blue to-brand-orange p-1 shadow-xl">
@@ -43,6 +35,10 @@ export default function Hero() {
               <div className="font-semibold text-brand-blue">{t("school_name")}</div>
               <div className="text-gray-500">{t("tagline")}</div>
             </div>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+            <Link to="/admissions" className="btn-accent">{t("admissions_cta")}</Link>
+            <Link to="/academics" className="btn-primary">{t("academics_cta")}</Link>
           </div>
         </div>
       </div>

@@ -13,67 +13,43 @@ export default function Gallery() {
       id: "campus",
       title: t("gallery_page_category_campus_title"),
       icon: Camera,
-      images: [getSchoolImage(1), getSchoolImage(2), getSchoolImage(3), getSchoolImage(6), getSchoolImage(7), getSchoolImage(8)],
+      images: [getAssetImage('campus.png'), getSchoolImage(1), getSchoolImage(2), getAssetImage('digital_board.jpeg'), getAssetImage('sports.png'), getAssetImage('library.png')],
       description: t("gallery_page_category_campus_desc"),
     },
     {
       id: "students",
       title: t("gallery_page_category_students_title"),
       icon: Users,
-      images: [getSchoolImage(4), getSchoolImage(5), getSchoolImage(6), getAssetImage('9.png'), getAssetImage('10.png'), getAssetImage('11.png'), getAssetImage('11(1).jpeg'), getAssetImage('11(2).jpeg'), getAssetImage('11(3).jpeg'), getAssetImage('11(4).jpeg')],
+      images: [getSchoolImage(4), getAssetImage('9.png'), getAssetImage('10.png'), getAssetImage('11.png'), getAssetImage('11(1).jpeg'), getAssetImage('11(2).jpeg'), getAssetImage('11(3).jpeg'), getAssetImage('11(4).jpeg')],
       description: t("gallery_page_category_students_desc"),
     },
     {
       id: "sports",
       title: t("gallery_page_category_sports_title"),
       icon: Trophy,
-      images: [getSchoolImage(7), getSchoolImage(8), getSchoolImage(9), getAssetImage('12.jpg'), getAssetImage('13.jpg'), getAssetImage('14.png'), getAssetImage('14(1).JPG'), getAssetImage('14(2).JPG'), getAssetImage('14(3).JPG')],
+      images: [getAssetImage('13.jpg'), getAssetImage('14.png'), getAssetImage('14(1).JPG'), getAssetImage('14(2).JPG'), getAssetImage('14(3).JPG')],
       description: t("gallery_page_category_sports_desc"),
     },
     {
       id: "cultural",
       title: t("gallery_page_category_cultural_title"),
       icon: Music,
-      images: [getSchoolImage(10), getSchoolImage(11), getSchoolImage(12), getAssetImage('15.jpg'), getAssetImage('16.jpg'), getAssetImage('17.jpg')],
+      images: [getAssetImage('15.jpg'), getAssetImage('16.jpg'), getAssetImage('17.jpg')],
       description: t("gallery_page_category_cultural_desc"),
     },
     {
       id: "arts",
       title: t("gallery_page_category_arts_title"),
       icon: Palette,
-      images: [getSchoolImage(1), getSchoolImage(2), getSchoolImage(3), getAssetImage('18.jpeg'), getAssetImage('19.jpeg'), getAssetImage('20.png')],
+      images: [getAssetImage('18.jpeg'), getAssetImage('20.png')],
       description: t("gallery_page_category_arts_desc"),
     },
     {
       id: "academics",
       title: t("gallery_page_category_academics_title"),
       icon: BookOpen,
-      images: [getSchoolImage(4), getSchoolImage(5), getSchoolImage(6), getAssetImage('21.png')],
+      images: [getAssetImage('21.png')],
       description: t("gallery_page_category_academics_desc"),
-    },
-  ];
-
-  const recentEvents = [
-    {
-      title: t("gallery_page_event_1_title"),
-      date: t("gallery_page_event_1_date"),
-      description: t("gallery_page_event_1_desc"),
-      image: getSchoolImage(7),
-      category: t("gallery_page_event_1_category"),
-    },
-    {
-      title: t("gallery_page_event_2_title"),
-      date: t("gallery_page_event_2_date"),
-      description: t("gallery_page_event_2_desc"),
-      image: getSchoolImage(8),
-      category: t("gallery_page_event_2_category"),
-    },
-    {
-      title: t("gallery_page_event_3_title"),
-      date: t("gallery_page_event_3_date"),
-      description: t("gallery_page_event_3_desc"),
-      image: getSchoolImage(9),
-      category: t("gallery_page_event_3_category"),
     },
   ];
 
@@ -99,7 +75,7 @@ export default function Gallery() {
               </TabsTrigger>
             ))}
           </TabsList>
-          
+
           {galleryCategories.map((category) => (
             <TabsContent key={category.id} value={category.id}>
               <Card>
@@ -113,13 +89,20 @@ export default function Gallery() {
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {category.images.map((image, index) => (
-                      <div key={index} className="relative group cursor-pointer">
-                        <img 
-                          src={image} 
-                          alt={`${category.title} ${t("gallery_page_photo_label")} ${index + 1}`}
-                          className="w-full h-48 object-cover rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg" />
+                      <div key={index} className="flex flex-col">
+                        <div className="relative group cursor-pointer">
+                          <img
+                            src={image}
+                            alt={`${category.title} ${t("gallery_page_photo_label")} ${index + 1}`}
+                            className="w-full h-48 object-cover rounded-lg shadow-md group-hover:shadow-lg transition-shadow"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg" />
+                        </div>
+                        {import.meta.env.DEV && (
+                          <p className="mt-1 text-[10px] text-gray-400 font-mono truncate px-1" title={image}>
+                            {image.split('/').pop()}
+                          </p>
+                        )}
                       </div>
                     ))}
                   </div>
@@ -129,37 +112,6 @@ export default function Gallery() {
           ))}
         </Tabs>
       </section>
-
-      {/* Recent Events */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">{t("gallery_page_recent_events_title")}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {recentEvents.map((event, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48">
-                <img 
-                  src={event.image} 
-                  alt={event.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-white/90 text-gray-700">
-                    {event.category}
-                  </Badge>
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-lg">{event.title}</CardTitle>
-                <p className="text-sm text-gray-600">{event.date}</p>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-700">{event.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
     </main>
   );
 }

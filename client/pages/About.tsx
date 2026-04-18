@@ -1,7 +1,7 @@
 import { useI18n } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { getSchoolImage, getLogo } from "@/lib/imageUtils";
+import { getSchoolImage, getLogo, getAssetImage } from "@/lib/imageUtils";
 import { Users, Award, BookOpen, Heart, Target, Eye, Sparkles, Hand, Shield, Users2, Brain, UserCheck } from "lucide-react";
 
 export default function About() {
@@ -54,11 +54,10 @@ export default function About() {
         <div className="flex justify-center mb-6">
           <img src={getLogo()} alt="School Logo" className="h-20 w-20 rounded-full ring-4 ring-brand-orange/20" />
         </div>
-        <h1 className="text-4xl font-bold text-brand-blue mb-4">{t("school_name")}</h1>
-        <p className="text-xl text-gray-600 mb-6">"Education – Culture"</p>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        <h1 className="text-4xl font-bold text-brand-blue mb-8">{t("about_page_hero_title")}</h1>
+        <div className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed text-left whitespace-pre-line space-y-4">
           {t("about_snippet")}
-        </p>
+        </div>
       </section>
 
       {/* Stats Section */}
@@ -76,21 +75,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* School Image */}
-      <section className="mb-12">
-        <div className="relative rounded-xl overflow-hidden shadow-lg">
-          <img
-            src={getSchoolImage(1)}
-            alt="School Campus"
-            className="w-full h-64 md:h-96 object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-          <div className="absolute bottom-6 left-6 text-white">
-            <h2 className="text-2xl font-bold mb-2">Our Beautiful Campus</h2>
-            <p className="text-sm opacity-90">A peaceful environment for learning and growth</p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Our Values */}
       <section className="mb-12">
@@ -244,17 +229,17 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <img
-                  src={getSchoolImage(2)}
-                  alt="School Headmaster"
+                  src={getAssetImage("president.png")}
+                  alt="School President"
                   className="w-32 h-32 rounded-full object-cover border-4 border-brand-orange/20"
                 />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-brand-blue mb-2">{t("principal_note_subtitle")}</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                   {t("principal_message_body")}
                 </p>
-                <p className="text-sm text-gray-600 mt-4 font-medium">{t("principal_attribution")}</p>
+                <p className="text-sm text-gray-600 mt-4 font-medium whitespace-pre-line">{t("principal_attribution")}</p>
               </div>
             </div>
           </CardContent>

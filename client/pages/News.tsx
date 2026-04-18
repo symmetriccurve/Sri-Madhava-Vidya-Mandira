@@ -8,17 +8,17 @@ export default function News() {
   const { t } = useI18n();
 
   const newsArticles = [
-    {
-      id: 1,
-      title: t("news_page_article_1_title"),
-      excerpt: t("news_page_article_1_excerpt"),
-      content: t("news_page_article_1_content"),
-      date: t("news_page_article_1_date"),
-      category: t("news_page_article_1_category"),
-      image: getSchoolImage(7),
-      featured: true,
-      icon: Trophy,
-    },
+    // {
+    //   id: 1,
+    //   title: t("news_page_article_1_title"),
+    //   excerpt: t("news_page_article_1_excerpt"),
+    //   content: t("news_page_article_1_content"),
+    //   date: t("news_page_article_1_date"),
+    //   category: t("news_page_article_1_category"),
+    //   image: getSchoolImage(7),
+    //   featured: true,
+    //   icon: Trophy,
+    // },
     {
       id: 7,
       title: t("news_page_article_6_title"),
@@ -30,17 +30,17 @@ export default function News() {
       featured: true,
       icon: Users,
     },
-    {
-      id: 2,
-      title: t("news_page_article_2_title"),
-      excerpt: t("news_page_article_2_excerpt"),
-      content: t("news_page_article_2_content"),
-      date: t("news_page_article_2_date"),
-      category: t("news_page_article_2_category"),
-      image: getSchoolImage(8),
-      featured: true,
-      icon: BookOpen,
-    },
+    // {
+    //   id: 2,
+    //   title: t("news_page_article_2_title"),
+    //   excerpt: t("news_page_article_2_excerpt"),
+    //   content: t("news_page_article_2_content"),
+    //   date: t("news_page_article_2_date"),
+    //   category: t("news_page_article_2_category"),
+    //   image: getSchoolImage(8),
+    //   featured: true,
+    //   icon: BookOpen,
+    // },
     {
       id: 8,
       title: t("news_page_article_7_title"),
@@ -52,17 +52,17 @@ export default function News() {
       featured: false,
       icon: Users,
     },
-    {
-      id: 3,
-      title: t("news_page_article_3_title"),
-      excerpt: t("news_page_article_3_excerpt"),
-      content: t("news_page_article_3_content"),
-      date: t("news_page_article_3_date"),
-      category: t("news_page_article_3_category"),
-      image: getSchoolImage(9),
-      featured: false,
-      icon: Music,
-    },
+    // {
+    //   id: 3,
+    //   title: t("news_page_article_3_title"),
+    //   excerpt: t("news_page_article_3_excerpt"),
+    //   content: t("news_page_article_3_content"),
+    //   date: t("news_page_article_3_date"),
+    //   category: t("news_page_article_3_category"),
+    //   image: getSchoolImage(9),
+    //   featured: false,
+    //   icon: Music,
+    // },
     {
       id: 5,
       title: t("news_page_article_4_title"),
@@ -172,22 +172,22 @@ export default function News() {
             <Card key={article.id} className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-48 overflow-hidden">
                 {"images" in article && article.images ? (
-                  <div 
+                  <div
                     className="grid h-full gap-px bg-white/20"
                     style={{ gridTemplateColumns: `repeat(${article.images.length}, minmax(0, 1fr))` }}
                   >
                     {article.images.map((img, idx) => (
-                      <img 
-                        key={idx} 
-                        src={img} 
+                      <img
+                        key={idx}
+                        src={img}
                         alt={`${article.title} ${idx + 1}`}
-                        className="w-full h-full object-cover" 
+                        className="w-full h-full object-cover"
                       />
                     ))}
                   </div>
                 ) : (
-                  <img 
-                    src={"image" in article ? article.image : ""} 
+                  <img
+                    src={"image" in article ? article.image : ""}
                     alt={article.title}
                     className="w-full h-full object-cover"
                   />

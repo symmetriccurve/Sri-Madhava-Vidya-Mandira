@@ -6,13 +6,13 @@ import {
   DialogTrigger,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselNext, 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
   CarouselPrevious,
-  type CarouselApi 
+  type CarouselApi
 } from "@/components/ui/carousel";
 import { getAllSchoolImages } from "@/lib/imageUtils";
 
@@ -44,11 +44,11 @@ export default function GalleryPreview() {
       <div className="mb-6 flex items-center justify-between">
         <h2 className="text-2xl font-bold text-brand-blue">{t("gallery_title")}</h2>
       </div>
-      
+
       <div className="relative group">
-        <Carousel 
+        <Carousel
           setApi={setApi}
-          className="w-full" 
+          className="w-full"
           opts={{ align: "start", loop: true }}
         >
           <CarouselContent className="-ml-2 md:-ml-4">
@@ -62,17 +62,22 @@ export default function GalleryPreview() {
                   className="group/btn block w-full overflow-hidden rounded-xl border bg-white shadow-sm transition-all hover:shadow-md"
                 >
                   <div className="aspect-[4/3] w-full overflow-hidden">
-                    <img 
-                      src={img.src} 
-                      alt={img.alt} 
-                      className="h-full w-full object-cover transition duration-500 group-hover/btn:scale-110" 
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-full w-full object-cover transition duration-500 group-hover/btn:scale-110"
                     />
                   </div>
+                  {import.meta.env.DEV && (
+                    <div className="p-2 text-[10px] text-gray-400 font-mono truncate border-t bg-gray-50 text-left">
+                      {img.src.split('/').pop()}
+                    </div>
+                  )}
                 </button>
               </CarouselItem>
             ))}
           </CarouselContent>
-          
+
           {/* Overlay Navigation Arrows */}
           <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 bg-white/80 backdrop-blur-sm border-none shadow-md hover:bg-white transition-opacity md:opacity-0 md:group-hover:opacity-100" />
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 bg-white/80 backdrop-blur-sm border-none shadow-md hover:bg-white transition-opacity md:opacity-0 md:group-hover:opacity-100" />
@@ -86,11 +91,16 @@ export default function GalleryPreview() {
         <DialogContent className="max-w-4xl p-0 overflow-hidden bg-transparent border-none">
           <DialogTitle className="sr-only">{t("gallery_title")}</DialogTitle>
           <div className="relative aspect-video w-full">
-            <img 
-              src={images[active].src} 
-              alt={images[active].alt} 
-              className="h-full w-full object-contain rounded-lg shadow-2xl" 
+            <img
+              src={images[active].src}
+              alt={images[active].alt}
+              className="h-full w-full object-contain rounded-lg shadow-2xl"
             />
+            {import.meta.env.DEV && (
+              <div className="absolute top-4 left-4 bg-black/60 text-white text-xs px-2 py-1 rounded-md font-mono backdrop-blur-sm z-50">
+                {images[active].src.split('/').pop()}
+              </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>

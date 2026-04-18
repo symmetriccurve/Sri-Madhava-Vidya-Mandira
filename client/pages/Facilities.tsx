@@ -142,9 +142,6 @@ export default function Facilities() {
         <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">
           {t("facilities_page_core_title")}
         </h2>
-        <p className="text-center text-sm font-medium text-brand-orange mb-6">
-          {t("facilities_page_core_note")}
-        </p>
         <div className="grid lg:grid-cols-2 gap-8">
           {facilities.map((facility, index) => (
             <Card
