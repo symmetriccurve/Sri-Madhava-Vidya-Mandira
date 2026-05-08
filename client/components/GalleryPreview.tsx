@@ -12,14 +12,14 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { getAllSchoolImages } from "@/lib/imageUtils";
 
 const schoolImages = getAllSchoolImages();
 const images = schoolImages.map((src, index) => ({
   src,
-  alt: `School image ${index + 1}`
+  alt: `School image ${index + 1}`,
 }));
 
 export default function GalleryPreview() {
@@ -42,7 +42,9 @@ export default function GalleryPreview() {
   return (
     <section className="container mx-auto py-8 sm:py-12 px-4">
       <div className="mb-6 flex items-center justify-between">
-        <h2 className="text-2xl font-bold text-brand-blue">{t("gallery_title")}</h2>
+        <h2 className="text-2xl font-bold text-brand-blue">
+          {t("gallery_title")}
+        </h2>
       </div>
 
       <div className="relative group">
@@ -53,7 +55,10 @@ export default function GalleryPreview() {
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {images.map((img, i) => (
-              <CarouselItem key={i} className="pl-2 basis-[85%] sm:basis-1/2 lg:basis-1/3">
+              <CarouselItem
+                key={i}
+                className="pl-2 basis-[85%] sm:basis-1/2 lg:basis-1/3"
+              >
                 <button
                   onClick={() => {
                     setActive(i);
@@ -70,7 +75,7 @@ export default function GalleryPreview() {
                   </div>
                   {import.meta.env.DEV && (
                     <div className="p-2 text-[10px] text-gray-400 font-mono truncate border-t bg-gray-50 text-left">
-                      {img.src.split('/').pop()}
+                      {img.src.split("/").pop()}
                     </div>
                   )}
                 </button>
@@ -98,7 +103,7 @@ export default function GalleryPreview() {
             />
             {import.meta.env.DEV && (
               <div className="absolute top-4 left-4 bg-black/60 text-white text-xs px-2 py-1 rounded-md font-mono backdrop-blur-sm z-50">
-                {images[active].src.split('/').pop()}
+                {images[active].src.split("/").pop()}
               </div>
             )}
           </div>

@@ -779,6 +779,11 @@ const dictionary: Record<Lang, Record<string, string>> = {
     cultural_heritage: "Cultural Heritage",
     cultural_heritage_desc:
       "Preserving and promoting our rich Kannada culture and traditions through various activities.",
+    // About Stats
+    about_stat_students: "Students",
+    about_stat_teachers: "Teachers And Support Staff",
+    about_stat_academic_service: "Academic service",
+    about_stat_families: "Families Benefiting",
     // Core Values - English
     samskara: "Culture",
     samskara_desc:
@@ -1668,6 +1673,11 @@ const dictionary: Record<Lang, Record<string, string>> = {
     cultural_heritage: "ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ",
     cultural_heritage_desc:
       "ವಿವಿಧ ಚಟುವಟಿಕೆಗಳ ಮೂಲಕ ನಮ್ಮ ಸಮೃದ್ಧ ಕನ್ನಡ ಸಂಸ್ಕೃತಿ ಮತ್ತು ಸಂಪ್ರದಾಯಗಳನ್ನು ಸಂರಕ್ಷಿಸುವುದು ಮತ್ತು ಪ್ರಚಾರ ಮಾಡುವುದು.",
+    // About Stats
+    about_stat_students: "ವಿದ್ಯಾರ್ಥಿಗಳು",
+    about_stat_teachers: "ಶಿಕ್ಷಕರು ಮತ್ತು ಸಹಾಯಕ ಸಿಬ್ಬಂದಿ",
+    about_stat_academic_service: "ಶೈಕ್ಷಣಿಕ ಸೇವೆ",
+    about_stat_families: "ಫಲಾನುಭವಿ ಕುಟುಂಬಗಳು",
     // New Kannada Values
     samskara: "ಸಂಸ್ಕಾರ",
     samskara_desc:

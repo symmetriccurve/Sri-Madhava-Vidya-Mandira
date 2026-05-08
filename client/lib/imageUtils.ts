@@ -8,6 +8,7 @@ const schoolImages = [
   // 'school3.png',
   // 'school4.png',
   "school5.png",
+  "playing_area.jpeg",
   // 'school6.png',
   // 'school7.png',
   // 'school8.png',

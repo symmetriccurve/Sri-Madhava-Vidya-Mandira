@@ -8,10 +8,10 @@ export default function About() {
   const { t, lang } = useI18n();
 
   const stats = [
-    { icon: Users, label: "Students", value: "400+" },
-    { icon: BookOpen, label: "Teachers And Support Staff", value: "20+" },
-    { icon: Award, label: "Academic service", value: "40+" },
-    { icon: Heart, label: "Families Benefiting", value: "500+" },
+    { icon: Users, label: t("about_stat_students"), value: "400+" },
+    { icon: BookOpen, label: t("about_stat_teachers"), value: "20+" },
+    { icon: Award, label: t("about_stat_academic_service"), value: "40+" },
+    { icon: Heart, label: t("about_stat_families"), value: "500+" },
   ];
 
   const values = [
