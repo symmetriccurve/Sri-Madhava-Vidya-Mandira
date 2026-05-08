@@ -44,7 +44,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     principal_note_subtitle: "School President Note",
     principal_message_body:
       "Our school is a model institution — a sacred place of learning that imparts value-based education along with Indian culture and traditions. Here, children are taught not only academic subjects but also yoga, meditation, the Bhagavad Gita, and patriotic songs, thereby nurturing strong human values within them.\n\nOur aim is to instill in students a deep sense of respect for elders and affection for the younger. We aspire that every child who studies here grows into a model student for the school, a responsible and loving child for their parents, a valuable individual for society, and an ideal citizen for the nation.",
-    principal_attribution: "— Somashekhar, School President, Sri Madhava Vidya Mandira",
+    principal_attribution:
+      "— Somashekhar, School President, Sri Madhava Vidya Mandira",
     address_label: "Address",
     address_value:
       "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
@@ -392,6 +393,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     contact_cta: "Get in Touch",
     footer_motto: "Education – Culture",
     footer_quick_links: "Quick Links",
+    footer_resources: "Resources",
     footer_contact: "Contact",
     copyright: "All rights reserved.",
     hero_tagline_prefix: "Rooted in",
@@ -1290,8 +1292,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     academics_page_support_4: "ಪೋಷಕ-ಶಿಕ್ಷಕ ಸಭೆಗಳು",
     academics_page_support_5: "ವೃತ್ತಿ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಸಮಾಲೋಚನೆ",
     contact_cta: "ಸಂಪರ್ಕಿಸಿ",
-    footer_motto: "ಸಂಸ್ಕಾರ – ಶಿಕ್ಷಣ – ಸಂಸ್ಕೃತಿ",
+    footer_motto: "ಶಿಕ್ಷಣ – ಸಂಸ್ಕೃತಿ",
     footer_quick_links: "ತ್ವರಿತ ಕೊಂಡಿಗಳು",
+    footer_resources: "ಸಂಪನ್ಮೂಲಗಳು",
     footer_contact: "ಸಂಪರ್ಕ",
     copyright: "ಎಲ್ಲ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     hero_tagline_prefix: "ಮೂಲ್ಯಗಳು, ಶಿಕ್ಷಣ ಮತ್ತು ಸಂಸ್ಕೃತಿ",
@@ -1674,7 +1677,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಸಮಾಜದ ಪ್ರತಿಯೊಬ್ಬರಲ್ಲಿಯೂ ದಯೆ ಹಾಗೂ ಸೇವಾ ಮನೋಭಾವ ಬೆಳೆಸುವುದು ಇತರರ ಒಳತಿಗಾಗಿ ತನ್ನ ಸ್ವಾರ್ಥವನ್ನು ತ್ಯಾಗ ಮಾಡುವುದು ತನ್ನ ಕರ್ತವ್ಯವನ್ನು ನಿಷ್ಠೆಯಿಂದ ಪಾಲಿಸುವುದು.",
     shrama_swachata: "ಶ್ರಮ ಮತ್ತು ಸ್ವಚ್ಛತೆ",
     shrama_swachata_desc:
-      "\"ಸಮವೇ ಶ್ರೇಯಸ್ಸು\" ಎಂಬ ಧ್ಯೇಯದೊಂದಿಗೆ ಶ್ರಮದ ಗೌರವ ಮತ್ತು ಕೆಲಸದ ಬಗ್ಗೆ ಸಮರ್ಪಣಾ ಭಾವವನ್ನು ಕಲಿಸುವುದು. ಸ್ವಚ್ಛತೆಯನ್ನು ಆಂತರಿಕ ಶುದ್ಧತೆಯ ಪ್ರತಿಬಿಂಬವಾಗಿ ಪ್ರೋತ್ಸಾಹಿಸುವುದು.",
+      '"ಸಮವೇ ಶ್ರೇಯಸ್ಸು" ಎಂಬ ಧ್ಯೇಯದೊಂದಿಗೆ ಶ್ರಮದ ಗೌರವ ಮತ್ತು ಕೆಲಸದ ಬಗ್ಗೆ ಸಮರ್ಪಣಾ ಭಾವವನ್ನು ಕಲಿಸುವುದು. ಸ್ವಚ್ಛತೆಯನ್ನು ಆಂತರಿಕ ಶುದ್ಧತೆಯ ಪ್ರತಿಬಿಂಬವಾಗಿ ಪ್ರೋತ್ಸಾಹಿಸುವುದು.',
     ekata_sahabhava: "ಏಕತೆ ಮತ್ತು ಸಹಭಾವ",
     ekata_sahabhava_desc: "ವಸುದೈವ ಕುಟುಂಬಕಂ ಎಂಬ ತತ್ವವನ್ನು ಅಳವಡಿಸಿಕೊಳ್ಳುವುದು",
     adhyatma_atmavikasa: "ಅಧ್ಯಾತ್ಮ ಹಾಗೂ ಆತ್ಮವಿಕಾಸ",

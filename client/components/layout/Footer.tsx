@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Quick Links Column 2 */}
         <div>
           <h4 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wider">
-            Resources
+            {t("footer_resources")}
           </h4>
           <ul className="space-y-2.5 text-sm">
             <li><Link className="text-gray-600 hover:text-brand-orange transition-colors" to="/news">{t("news")}</Link></li>
