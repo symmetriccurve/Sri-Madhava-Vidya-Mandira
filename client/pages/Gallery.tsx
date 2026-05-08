@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAssetImage, getSchoolImage } from "@/lib/imageUtils";
 
-import { Badge } from "@/components/ui/badge";
 import { useI18n } from "@/lib/i18n";
 
 export default function Gallery() {
