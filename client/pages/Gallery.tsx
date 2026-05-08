@@ -15,8 +15,8 @@ export default function Gallery() {
       icon: Camera,
       images: [
         getAssetImage("campus.png"),
-        getSchoolImage(1),
-        getSchoolImage(2),
+        // getSchoolImage(1),
+        // getSchoolImage(2),
         getAssetImage("digital_board.jpeg"),
         getAssetImage("sports.png"),
         getAssetImage("library.png"),
@@ -75,7 +75,10 @@ export default function Gallery() {
       id: "academics",
       title: t("gallery_page_category_academics_title"),
       icon: BookOpen,
-      images: [getAssetImage("21.png")],
+      images: [
+        getAssetImage("21.png"),
+        getAssetImage("2025_results_banner.png"),
+      ],
       description: t("gallery_page_category_academics_desc"),
     },
   ];

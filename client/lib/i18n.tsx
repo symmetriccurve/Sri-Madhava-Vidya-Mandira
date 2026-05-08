@@ -50,9 +50,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     address_value:
       "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
     phone_label: "Phone",
-    phone_value: "+91 94494 24530",
+    phone_value: "+91 9449643684, +91 9449424530",
     email_label: "Email",
-    email_value: "madhavavidyamandira21@gmail.com",
+    email_value: "smvmsira@gmail.com",
     contact_us: "Contact Us",
     contact_page_hero_subtitle: "We'd love to hear from you",
     contact_page_hero_desc:
@@ -63,11 +63,11 @@ const dictionary: Record<Lang, Record<string, string>> = {
     contact_page_info_address_desc:
       "Visit our beautiful campus in the serene town of Sira",
     contact_page_info_phone_title: "Phone",
-    contact_page_info_phone_detail: "+91 94494 24530",
+    contact_page_info_phone_detail: "+91 9449643684, +91 9449424530",
     contact_page_info_phone_desc:
       "Call us during school hours for immediate assistance",
     contact_page_info_email_title: "Email",
-    contact_page_info_email_detail: "madhavavidyamandira21@gmail.com",
+    contact_page_info_email_detail: "smvmsira@gmail.com",
     contact_page_info_email_desc:
       "Send us an email and we'll respond within 24 hours",
     contact_page_info_hours_title: "School Hours",
@@ -400,7 +400,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     hero_tagline_suffix: "for every child",
     about_page_hero_title: "Vidya Bharati – All India Education Organization",
     about_snippet:
-      "Vidya Bharati is a premier educational organization that has been functioning at the national level for the past 63 years. Through approximately 30,000 educational centers across the country, it provides national education and values. Our Sri Madhava Vidya Mandira in Sira is also an institution operating under the collaboration and guidance of Vidya Bharati.\n\nApart from providing Indian education to rural children through their mother tongue, Vidya Bharati's primary objective is to integrate our nation's culture, music, Sanskrit, yoga, moral education, physical education, practical education, and social service activities along with core subjects like science, mathematics, language, and social sciences.\n\nFurthermore, through national integration, service work, outreach education, Bal Sangam, teacher training camps, workshops, and sports meets, our school aspires to shape the future of schoolchildren and develop them into architects of a New India, becoming a sacred temple of knowledge and learning.",
+      "A value-based, holistic education is provided in a nurturing environment. Along with academics, equal importance is given to culture, sports, and arts. Our beautiful institution, located in Sira town, has been shaping young minds for more than four decades, nurturing them into responsible citizens and future leaders.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
       "Congratulations to our students for district-level sports achievements!",
@@ -671,8 +671,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     faq_visit_us: "Visit Us",
     faq_visit_address:
       "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
-    faq_phone_value: "+91 94494 24530",
-    faq_email_value: "madhavavidyamandira21@gmail.com",
+    faq_phone_value: "+91 9449643684, +91 9449424530",
+    faq_email_value: "smvmsira@gmail.com",
     faq_admissions: "Admissions",
     faq_academics: "Academics",
     faq_facilities: "Facilities",
@@ -724,7 +724,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "We have regular parent-teacher meetings, and parents can schedule appointments with teachers.",
     faq_contact: "How can I contact the school?",
     faq_contact_answer:
-      "You can contact us at +91 94494 24530, email us at madhavavidyamandira21@gmail.com, or visit our campus at Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "You can contact us at +91 9449643684, +91 9449424530, email us at smvmsira@gmail.com, or visit our campus at Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     parents_message: "Parents' Voice",
     parents_message_title: "Parents' Voice",
     parents_message_subtitle:
@@ -793,7 +793,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "To nurture compassion and a mindset of service towards every member of society.",
     shrama_swachata: "Hard Work and Cleanliness",
     shrama_swachata_desc:
-      'With the goal of "Sama Ve Shreyassu" (collective well-being), teaching the dignity of labor and dedication to work. Promoting cleanliness as a reflection of inner purity.',
+      "With the goal of collective well-being, teaching the dignity of labour and dedication to work. Promoting cleanliness as a reflection of inner purity.",
     ekata_sahabhava: "Unity and Harmony",
     ekata_sahabhava_desc:
       'Embracing the principle of "Vasudhaiva Kutumbakam" (the whole world is one family).',
@@ -840,11 +840,10 @@ const dictionary: Record<Lang, Record<string, string>> = {
     donor_10000: "₹10,000",
     donor_other: "Other",
     donor_note: "Note",
-    donor_note_text:
-      "Donations made to this account are eligible for tax deduction under Section 80G of the Income Tax Act.",
+    donor_note_text: "",
     donor_contact_info: "Contact Information",
-    donor_contact_phone: "Phone: +91 94494 24530",
-    donor_contact_email: "Email: madhavavidyamandira21@gmail.com",
+    donor_contact_phone: "Phone: +91 9449643684, +91 9449424530",
+    donor_contact_email: "Email: smvmsira@gmail.com",
     donor_thank_you: "Thank You",
     donor_thank_you_message:
       "Your generous contribution will help us continue providing quality education to our students.",
@@ -956,9 +955,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     address_value:
       "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
     phone_label: "ದೂರವಾಣಿ",
-    phone_value: "+91 94494 24530",
+    phone_value: "+91 9449643684, +91 9449424530",
     email_label: "ಇಮೇಲ್",
-    email_value: "madhavavidyamandira21@gmail.com",
+    email_value: "smvmsira@gmail.com",
     contact_us: "ಸಂಪರ್ಕಿಸಿ",
     contact_page_hero_subtitle: "ನಿಮ್ಮಿಂದ ಕೇಳಲು ನಮಗೆ ಸಂತೋಷ",
     contact_page_hero_desc:
@@ -969,10 +968,10 @@ const dictionary: Record<Lang, Record<string, string>> = {
     contact_page_info_address_desc:
       "ಶಾಂತ ವಾತಾವರಣದ ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿ ಇರುವ ನಮ್ಮ ಸುಂದರ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಿ",
     contact_page_info_phone_title: "ದೂರವಾಣಿ",
-    contact_page_info_phone_detail: "+91 94494 24530",
+    contact_page_info_phone_detail: "+91 9449643684, +91 9449424530",
     contact_page_info_phone_desc: "ತಕ್ಷಣದ ಸಹಾಯಕ್ಕಾಗಿ ಶಾಲಾ ಸಮಯದಲ್ಲಿ ಕರೆ ಮಾಡಿ",
     contact_page_info_email_title: "ಇಮೇಲ್",
-    contact_page_info_email_detail: "madhavavidyamandira21@gmail.com",
+    contact_page_info_email_detail: "smvmsira@gmail.com",
     contact_page_info_email_desc:
       "ನಮಗೆ ಇಮೇಲ್ ಕಳುಹಿಸಿ, 24 ಗಂಟೆಗಳೊಳಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೇವೆ",
     contact_page_info_hours_title: "ಶಾಲಾ ಸಮಯ",
@@ -1306,7 +1305,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     hero_tagline_suffix: "ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಗಾಗಿ",
     about_page_hero_title: "ವಿದ್ಯಾ ಭಾರತಿ – ಅಖಿಲ ಭಾರತ ಶಿಕ್ಷಣ ಸಂಘಟನೆ.",
     about_snippet:
-      "ವಿದ್ಯಾ ಭಾರತಿ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಕಳೆದ 63 ವರ್ಷಗಳಿಂದ ಅಖಿಲ ಭಾರತ ಮಟ್ಟದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬಹುದೊಡ್ಡ ಶಿಕ್ಷಣ ಸಂಘಟನೆಯಾಗಿದೆ. ಸುಮಾರು 30 ಸಾವಿರ ವಿದ್ಯಾ ಕೇಂದ್ರಗಳ ಮೂಲಕ ದೇಶಾದ್ಯಂತ ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಂಸ್ಕಾರವನ್ನು ನೀಡುತ್ತಿದೆ. ನಮ್ಮ ಶಿರಾ ನಗರದ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರವೂ ಸಹ ವಿದ್ಯಾ ಭಾರತಿಯ ಸಹಯೋಗ ಹಾಗೂ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಸಂಸ್ಥೆಯಾಗಿದೆ.\n\nಗ್ರಾಮಾಂತರ ಪ್ರದೇಶಗಳ ಮಕ್ಕಳಿಗೂ ಮಾತೃಭಾಷೆಯ ಮೂಲಕ ಭಾರತೀಯ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವುದರೊಂದಿಗೆ, ಶಾಲಾ ಪಠ್ಯ ವಿಷಯಗಳಾದ ವಿಜ್ಞಾನ, ಗಣಿತ, ಭಾಷಾ ಶಿಕ್ಷಣ ಮತ್ತು ಸಮಾಜ ವಿಜ್ಞಾನಗಳ ಜೊತೆಗೆ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಸಂಸ್ಕೃತಿ, ಸಂಗೀತ, ಸಂಸ್ಕೃತ, ಯೋಗ, ನೀತಿ ಶಿಕ್ಷಣ, ಶಾರೀರಿಕ ಶಿಕ್ಷಣ, ಭೌತಿಕ ಶಿಕ್ಷಣ, ವ್ಯವಹಾರಿಕ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಮಾಜ ಸೇವಾ ಕಾರ್ಯಗಳನ್ನು ಅಳವಡಿಸುವುದು ವಿದ್ಯಾ ಭಾರತಿಯ ಮೂಲ ಉದ್ದೇಶವಾಗಿದೆ.\n\nಇದಲ್ಲದೆ, ರಾಷ್ಟ್ರೀಯ ಭಾವೈಕ್ಯತೆ, ಸೇವಾ ಕಾರ್ಯ, ಪ್ರಸಾರ ಶಿಕ್ಷಣ, ಬಾಲಸಂಗಮ, ಶಿಕ್ಷಕರಿಗೆ ತರಬೇತಿ ಶಿಬಿರಗಳು, ಕಾರ್ಯಾಗಾರಗಳು ಹಾಗೂ ಕ್ರೀಡಾಕೂಟಗಳನ್ನು ನಡೆಸುವುದರ ಮೂಲಕ ಶಾಲಾ ಮಕ್ಕಳ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸಿ, ಅವರನ್ನು ನವ ಭಾರತದ ಶಿಲ್ಪಿಗಳಾಗಿ ಬೆಳೆಸುವ ಕಾರ್ಯದಲ್ಲಿ ನಮ್ಮ ಶಾಲೆಯು ಜ್ಞಾನಾರ್ಜನೆಯ ಪವಿತ್ರ ದೇಗುಲವಾಗಬೇಕೆಂಬುದು ನಮ್ಮ ಎಲ್ಲರ ಅಭಿಲಾಷೆಯಾಗಿದೆ.",
+      "ಮೌಲ್ಯಾಧಾರಿತ, ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಪೋಷಕ ವಾತಾವರಣ. ಅಧ್ಯಯನದ ಜೊತೆಗೆ ಸಂಸ್ಕೃತಿ, ಕ್ರೀಡೆ ಮತ್ತು ಕಲೆಗಳಿಗೆ ಸಮಾನ ಮಹತ್ವ ನೀಡಲಾಗುತ್ತದೆ. ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿರುವ ನಮ್ಮ ಸುಂದರವಾದ ಸಂಸ್ಥೆ. ಕಠಿಣ ನಾಲ್ಕು ದಶಕಕ್ಕೂ ಹೆಚ್ಚು ಕಾಲದಿಂದ ಯುವ ಮನಸ್ಸುಗಳನ್ನು ರೂಪಿಸುತ್ತಿದ್ದು, ಅವರನ್ನು ಜವಾಬ್ದಾರಿಯುತ ನಾಗರಿಕರು ಮತ್ತು ಭವಿಷ್ಯದ ನಾಯಕರಾಗಿ ಬೆಳೆಸುತ್ತಿದೆ.",
     ticker_1: "ಹೊಸ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಪ್ರವೇಶಗಳು ಪ್ರಾರಂಭ.",
     ticker_2: "ಜಿಲ್ಲಾಸ್ಥರ ಕ್ರೀಡೆಯಲ್ಲಿ ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಭಿನಂದನೆಗಳು!",
     ticker_3: "ಸೆಪ್ಟೆಂಬರ್ 12ರಂದು ವಿಜ್ಞಾನ ಮೇಳ – ಪೋಷಕರು ಸ್ವಾಗತ.",
@@ -1565,8 +1564,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     faq_visit_us: "ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ",
     faq_visit_address:
       "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
-    faq_phone_value: "+91 94494 24530",
-    faq_email_value: "madhavavidyamandira21@gmail.com",
+    faq_phone_value: "+91 9449643684, +91 9449424530",
+    faq_email_value: "smvmsira@gmail.com",
     faq_admissions: "ಪ್ರವೇಶ",
     faq_academics: "ವಿದ್ಯಾಭ್ಯಾಸ",
     faq_facilities: "ಸೌಲಭ್ಯಗಳು",
@@ -1618,7 +1617,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ನಾವು ನಿಯಮಿತ ಪೋಷಕ-ಶಿಕ್ಷಕ ಸಭೆಗಳನ್ನು ನಡೆಸುತ್ತೇವೆ, ಮತ್ತು ಪೋಷಕರು ಶಿಕ್ಷಕರೊಂದಿಗೆ ಸಮಯ ನಿಗದಿ ಮಾಡಿಕೊಂಡು ಭೇಟಿಯಾಗಬಹುದು.",
     faq_contact: "ನಾನು ಶಾಲೆಯನ್ನು ಹೇಗೆ ಸಂಪರ್ಕಿಸಬಹುದು?",
     faq_contact_answer:
-      "ನೀವು +91 94494 24530 ರಂದು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಬಹುದು, madhavavidyamandira21@gmail.com ಗೆ ಇಮೇಲ್ ಮಾಡಬಹುದು, ಅಥವಾ Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka ನಲ್ಲಿ ನಮ್ಮ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಬಹುದು.",
+      "ನೀವು +91 9449643684, +91 9449424530 ರಂದು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಬಹುದು, smvmsira@gmail.com ಗೆ ಇಮೇಲ್ ಮಾಡಬಹುದು, ಅಥವಾ Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka ನಲ್ಲಿ ನಮ್ಮ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಬಹುದು.",
     parents_message: "ಪೋಷಕರ ಧ್ವನಿ",
     parents_message_title: "ಪೋಷಕರ ಧ್ವನಿ",
     parents_message_subtitle: "ನಮ್ಮ ಪೋಷಕ ಸಮುದಾಯದ ಅನುಭವಗಳ ಬಗ್ಗೆ ಕೇಳಿ",
@@ -1736,8 +1735,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     donor_note_text:
       "ಈ ಖಾತೆಗೆ ನೀಡುವ ದೇಣಿಗೆಗಳು ಆದಾಯ ತೆರಿಗೆ ಕಾಯ್ದೆಯ ಕಲಂ 80G ಅಡಿಯಲ್ಲಿ ತೆರಿಗೆ ವಿನಾಯಿತಿಗೆ ಅರ್ಹವಾಗಿವೆ.",
     donor_contact_info: "ಸಂಪರ್ಕ ಮಾಹಿತಿ",
-    donor_contact_phone: "ದೂರವಾಣಿ: +91 94494 24530",
-    donor_contact_email: "ಇಮೇಲ್: madhavavidyamandira21@gmail.com",
+    donor_contact_phone: "ದೂರವಾಣಿ: +91 9449643684, +91 9449424530",
+    donor_contact_email: "ಇಮೇಲ್: smvmsira@gmail.com",
     donor_thank_you: "ಧನ್ಯವಾದಗಳು",
     donor_thank_you_message:
       "ನಿಮ್ಮ ಉದಾರ ಕೊಡುಗೆಯು ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವುದನ್ನು ಮುಂದುವರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.",

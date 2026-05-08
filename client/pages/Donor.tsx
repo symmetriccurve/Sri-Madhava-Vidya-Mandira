@@ -78,7 +78,7 @@ export default function Donor() {
                   </div>
                   {t("donor_account_details")}
                 </CardTitle>
-                <CardDescription>{t("donor_note_text")}</CardDescription>
+                <CardDescription className="font-bold text-base md:text-lg text-green-800 leading-snug mt-1">{t("donor_note_text")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-4">
@@ -180,8 +180,8 @@ export default function Donor() {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-lg bg-green-50 border border-green-200">
-                  <p className="text-sm font-medium text-green-900">{t("donor_tax_note")}</p>
+                <div className="p-4 rounded-lg bg-green-50 border-2 border-green-300">
+                  <p className="text-base md:text-lg font-bold text-green-900 leading-snug">{t("donor_tax_note")}</p>
                 </div>
               </CardContent>
             </Card>

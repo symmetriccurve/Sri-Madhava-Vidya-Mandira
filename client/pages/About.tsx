@@ -245,7 +245,7 @@ export default function About() {
                     <div className="text-sm text-gray-600">
                       {lang === "kn"
                         ? "ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ"
-                        : "Senior Primary School"}
+                        : "Higher Primary School"}
                     </div>
                   </div>
                   <div className="text-center p-4 bg-brand-orange/10 rounded-lg">

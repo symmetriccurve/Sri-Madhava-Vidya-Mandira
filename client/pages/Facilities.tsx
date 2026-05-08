@@ -11,9 +11,9 @@ import {
   Utensils,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getAssetImage } from "@/lib/imageUtils";
 
 import { Badge } from "@/components/ui/badge";
+import { getAssetImage } from "@/lib/imageUtils";
 import { useI18n } from "@/lib/i18n";
 
 export default function Facilities() {
@@ -41,7 +41,7 @@ export default function Facilities() {
         // t("facilities_page_core_2_feature_1"),
         // t("facilities_page_core_2_feature_2"),
         // t("facilities_page_core_2_feature_3"),
-        t("facilities_page_core_2_feature_4"),
+        // t("facilities_page_core_2_feature_4"),
       ],
     },
     {
@@ -84,7 +84,7 @@ export default function Facilities() {
       icon: Users,
       title: t("facilities_page_core_6_title"),
       description: t("facilities_page_core_6_desc"),
-      image: getAssetImage('5(1).jpg'),
+      image: getAssetImage("5(1).jpg"),
       features: [
         t("facilities_page_core_6_feature_1"),
         t("facilities_page_core_6_feature_2"),
