@@ -44,8 +44,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     principal_note_subtitle: "School President Note",
     principal_message_body:
       "Our school is a model institution — a sacred place of learning that imparts value-based education along with Indian culture and traditions. Here, children are taught not only academic subjects but also yoga, meditation, the Bhagavad Gita, and patriotic songs, thereby nurturing strong human values within them.\n\nOur aim is to instill in students a deep sense of respect for elders and affection for the younger. We aspire that every child who studies here grows into a model student for the school, a responsible and loving child for their parents, a valuable individual for society, and an ideal citizen for the nation.",
-    principal_attribution:
-      "— Somashekhar, School President, Sri Madhava Vidya Mandira",
+    principal_attribution: "— Somashekhar, School President.",
     address_label: "Address",
     address_value:
       "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",

@@ -13,7 +13,7 @@ import {
   Users2,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { getAssetImage, getDonorImage, getLogo } from "@/lib/imageUtils";
+import { getDonorImage, getLogo } from "@/lib/imageUtils";
 
 import { Badge } from "@/components/ui/badge";
 import { useI18n } from "@/lib/i18n";
@@ -275,49 +275,42 @@ export default function About() {
         </Card>
       </section>
 
+      {/* School President's Message */}
+      <section className="mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-brand-blue mb-6 sm:mb-8">
+          {t("principal_message")}
+        </h2>
+        <Card className="overflow-hidden border-2 border-brand-orange/20 shadow-lg">
+          <CardContent className="p-0">
+            {/* Mobile: float layout so text wraps around photo. Desktop: flex row */}
+            <div className="p-4 overflow-hidden md:p-0 md:flex md:flex-row md:items-center">
+              <div className="float-left mr-3 mb-1 w-[110px] h-[130px] overflow-hidden rounded-md md:float-none md:flex-shrink-0 md:w-48 md:h-[200px] md:m-4 md:rounded-lg">
+                <img
+                  src="/president.png"
+                  alt="School President"
+                  className="w-full h-full object-contain md:object-cover object-center"
+                />
+              </div>
+              <div className="md:flex-1 md:p-6 md:flex md:flex-col md:justify-center">
+                <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+                  {t("principal_message_body")}
+                </p>
+                <div className="mt-4 pt-3 border-t border-brand-orange/20">
+                  <p className="text-sm text-brand-blue font-semibold whitespace-pre-line">
+                    {t("principal_attribution")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
       {/* Leadership Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">
           {lang === "kn" ? "ನಮ್ಮ ನಾಯಕತ್ವ" : "Our Leadership"}
         </h2>
-      </section>
-
-      {/* Principal's Message */}
-      <section className="mb-12">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-2xl text-brand-blue">
-              {t("principal_message")}
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col md:flex-row gap-6 items-start">
-              <div className="flex-shrink-0">
-                <img
-                  src={getAssetImage("president.png")}
-                  alt="School President"
-                  className="w-32 h-32 rounded-full object-cover border-4 border-brand-orange/20"
-                />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-brand-blue mb-2">
-                  {t("principal_note_subtitle")}
-                </h3>
-                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-                  {t("principal_message_body")}
-                </p>
-                <p className="text-gray-700 leading-relaxed whitespace-pre-line mt-4">
-                  {lang === "kn"
-                    ? "ಶ್ರೀ ಸೋಮಶೇಖರ್ ಅವರು ಸಿರಾದಲ್ಲಿ ಯಶಸ್ವಿ ಉದ್ಯಮಿಯಾಗಿದ್ದು, ಅಕಸ್ಮಾತಾಗಿ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯೊಂದಿಗೆ ಸೇರಿಕೊಂಡಿದ್ದಾರೆ. ಅವರು ಭಾರತೀಯ ಸಂಸ್ಕೃತಿಯೊಂದಿಗೆ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಮಹತ್ವದ ದೃಷ್ಟಿಯನ್ನು ಹೊಂದಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಆಲೋಚನೆಗಳು ಮತ್ತು ಸಮಯವನ್ನು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನೀಡಿದ್ದಾರೆ. ಹಸಿರು ಉಪಕ್ರಮ ಎಂಬುದು ಅವರ ದೂರದೃಷ್ಟಿಯ ಒಂದು ಭಾಗವಾಗಿದ್ದು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ವಾವಲಂಬಿಯಾಗಿ ರೂಪಿಸುವ ಉದ್ದೇಶವನ್ನು ಹೊಂದಿದೆ. ಇದಲ್ಲದೆ ಅವರು ಶಾಲೆಯ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನವೀನ ಯೋಜನೆಗಳನ್ನು ರೂಪಿಸುವಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸುತ್ತಿದ್ದಾರೆ. ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ನಾಯಕತ್ವ ಗುಣಗಳು ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸಲು ಪ್ರೇರಣೆ ನೀಡುತ್ತಿದ್ದಾರೆ. ಅವರು ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದು ಶಾಲೆಯ ಬೆಳವಣಿಗೆಯಲ್ಲಿ ಸ್ಥಳೀಯರ ಸಹಕಾರ ಕೂಡ ಒಗ್ಗೂಡಿಸುತ್ತಿದ್ದಾರೆ. ಮುಂದಿನ ದಿನಗಳಲ್ಲಿ ಶಾಲೆಯನ್ನು ಒಂದು ಆದರ್ಶ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸುವ ಕನಸನ್ನು ಹೊಂದಿದ್ದಾರೆ."
-                    : "Sri Somashekhar is a successful entrepreneur in Sira who came to be associated with Sri Madhava Vidya Mandira. He holds a significant vision of providing quality education rooted in Indian culture. He has contributed his ideas and time to the school's development. The Green Initiative is a part of his vision, aimed at making Sri Madhava Vidya Mandira self-reliant. He plays a key role in shaping innovative plans for the school's all-round growth, inspiring students to develop leadership qualities and moral values. He strives to increase community participation and brings together local support for the school's progress. He dreams of transforming the school into an ideal educational institution in the years ahead."}
-                </p>
-                <p className="text-sm text-gray-600 mt-4 font-medium whitespace-pre-line">
-                  {t("principal_attribution")}
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
       </section>
 
       {/* Director - Sri S L Jayaram */}
@@ -362,8 +355,12 @@ export default function About() {
           </CardHeader>
           <CardContent>
             <div className="flex flex-col md:flex-row gap-6 items-start">
-              <div className="flex-shrink-0 w-32 h-32 rounded-full bg-brand-blue/10 flex items-center justify-center border-4 border-brand-blue/20">
-                <Users className="h-12 w-12 text-brand-blue/40" />
+              <div className="flex-shrink-0">
+                <img
+                  src="/assets/leadership/sri_raja_ashwathanarayanas_shetty.png"
+                  alt="Sri Raja Ashwathanarayana Shetty"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-brand-orange/20"
+                />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-brand-blue mb-2">
@@ -375,6 +372,72 @@ export default function About() {
                   {lang === "kn"
                     ? "ಶ್ರೀ ರಾಜ ಅಶ್ವಥನಾರಾಯಣ ಶೆಟ್ಟಿ ರವರು ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್ ಅವರೊಂದಿಗೆ ಸೇರಿ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸುವಲ್ಲಿ ಮಹತ್ವದ ಪಾತ್ರವಹಿಸಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಸಮಯ ಮತ್ತು ಆಲೋಚನೆಗಳನ್ನು ಸಂಸ್ಕಾರ, ಶಿಕ್ಷಣಕ್ಕಾಗಿ ಸಮರ್ಪಿಸಿದ್ದು ಇಂದಿನ ಪೀಳಿಗೆಗೆ ಅದು ಅತ್ಯಂತ ಅಗತ್ಯವಾದ ಅಂಶವಾಗಿದೆ. ಸರಳ ವ್ಯಕ್ತಿತ್ವ ಹೊಂದಿದ್ದರೂ ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ದೊಡ್ಡ ದೃಷ್ಟಿಕೋನ ಹೊಂದಿದ್ದಾರೆ. ಸಂಸ್ಥೆಯ ಆರಂಭಿಕ ಹಂತಗಳಲ್ಲಿ ತಮ್ಮ ಸಹೋದ್ಯೋಗಿಗಳೊಂದಿಗೆ ನೀಡಿದ ಬೆಂಬಲ ಮರೆಯಲಾಗದಂತದ್ದು. ಇದಲ್ಲದೆ ಅವರು ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ದೇಶಭಕ್ತಿ, ಶಿಸ್ತು ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸುವ ಕಡೆಗೂ ಗಮನ ಹರಿಸುತ್ತಿದ್ದಾರೆ. ಶಾಲೆಯನ್ನು ಶ್ರೇಷ್ಠ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸಲ್ಲಿ ಅವರ ಪಾತ್ರ ಅತ್ಯಂತ ಮಹತ್ವದ್ದಾಗಿದೆ."
                     : "Sri Raja Ashwathanarayana Shetty played a significant role in founding Sri Madhava Vidya Mandira along with Sri S L Jayaram. He has dedicated his time and thoughts to culture and education — an essential aspect for the current generation. Though a person of simple character, he holds a grand vision for the school's development. The support he provided alongside his colleagues in the institution's early stages is unforgettable. He also focuses on nurturing patriotism, discipline, and moral values in students. His role in shaping the school into an excellent educational institution is of great significance."}
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Honorary President - Sri Somashekharayya */}
+      <section className="mb-12">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl text-brand-blue">
+              {lang === "kn" ? "ಗೌರವ ಅಧ್ಯಕ್ಷರು" : "Honorary President"}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              <div className="flex-shrink-0">
+                <img
+                  src="/assets/leadership/soma_shakarayya.png"
+                  alt="Sri Somashekharayya"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-brand-orange/20"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-brand-blue mb-2">
+                  {lang === "kn" ? "ಶ್ರೀ ಸೋಮಶೇಖರಯ್ಯ" : "Sri Somashekharayya"}
+                </h3>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                  {lang === "kn"
+                    ? "ಶ್ರೀ ಸೋಮಶೇಖರಯ್ಯ ಅವರು ವೃತ್ತಿಯಿಂದ ಸಿವಿಲ್ ಕಾಂಟ್ರಾಕ್ಟರ್ ಆಗಿದ್ದು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯಲ್ಲಿ ಕಟ್ಟಡಗಳ ನಿರ್ಮಾಣ ಕಾರ್ಯದಲ್ಲಿ ತಮ್ಮನ್ನು ತೊಡಗಿಸಿಕೊಂಡಿದ್ದಾರೆ. ಇದರ ಜೊತೆಗೆ ಅವರು ಶಾಲೆಯ ಶೈಕ್ಷಣಿಕ ವಿಷಯಗಳ ಮೇಲು ಅತ್ಯಂತ ಗಮನ ಹರಿಸುತ್ತಿದ್ದು ಶಿಕ್ಷಕರನ್ನು ಸಮರ್ಥವಾಗಿ ಕೆಲಸ ಮಾಡಲು ಪ್ರೇರೇಪಿಸುತ್ತಿದ್ದಾರೆ. ಅವರು ಸಂಸ್ಕೃತಿಯನ್ನು ಆಧಾರವಾಗಿಟ್ಟುಕೊಂಡು ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವಂತಹ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತಾರೆ. ಅವರು ಶಾಲೆಯ ಮೂಲ ಸೌಕರ್ಯ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ಮಹತ್ವದ ಪಾತ್ರ ವಹಿಸಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಉತ್ತಮ ಕಲಿಕಾ ವಾತಾವರಣವನ್ನು ಒದಗಿಸಲು ಶ್ರಮಿಸುತ್ತಿದ್ದಾರೆ. ಶಾಲೆಯ ಒಟ್ಟಾರೆ ಬೆಳವಣಿಗೆಗಾಗಿ ತಮ್ಮ ಅನುಭವ ಮತ್ತು ಮಾರ್ಗದರ್ಶನವನ್ನು ನಿರಂತರವಾಗಿ ನೀಡುತ್ತಿದ್ದಾರೆ."
+                    : "Sri Somashekharayya is a civil contractor by profession and has been actively involved in the construction of buildings at Sri Madhava Vidya Mandira. Alongside this, he pays close attention to the school's academic affairs and motivates teachers to perform their work effectively. He provides guidance rooted in culture to ensure quality education. He has played a significant role in developing the school's infrastructure, striving to provide students with a better learning environment. He continuously offers his experience and guidance for the overall growth of the school."}
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* School President - Somashekhar */}
+      <section className="mb-12">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-2xl text-brand-blue">
+              {lang === "kn" ? "ಅಧ್ಯಕ್ಷರು" : "School President"}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+              <div className="flex-shrink-0">
+                <img
+                  src={getDonorImage("SOMASHEKHAR.png")}
+                  alt="Somashekhar"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-brand-orange/20"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-brand-blue mb-2">
+                  {lang === "kn"
+                    ? "ಶ್ರೀ ಸೋಮಶೇಖರ್ — ಅಧ್ಯಕ್ಷರು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ"
+                    : "Somashekhar — School President."}
+                </h3>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                  {lang === "kn"
+                    ? "ಶ್ರೀ ಸೋಮಶೇಖರ್ ಅವರು ಸಿರಾದಲ್ಲಿ ಯಶಸ್ವಿ ಉದ್ಯಮಿಯಾಗಿದ್ದು, ಅಕಸ್ಮಾತಾಗಿ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯೊಂದಿಗೆ ಸೇರಿಕೊಂಡಿದ್ದಾರೆ. ಅವರು ಭಾರತೀಯ ಸಂಸ್ಕೃತಿಯೊಂದಿಗೆ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಮಹತ್ವದ ದೃಷ್ಟಿಯನ್ನು ಹೊಂದಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಆಲೋಚನೆಗಳು ಮತ್ತು ಸಮಯವನ್ನು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನೀಡಿದ್ದಾರೆ. ಹಸಿರು ಉಪಕ್ರಮ ಎಂಬುದು ಅವರ ದೂರದೃಷ್ಟಿಯ ಒಂದು ಭಾಗವಾಗಿದ್ದು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ವಾವಲಂಬಿಯಾಗಿ ರೂಪಿಸುವ ಉದ್ದೇಶವನ್ನು ಹೊಂದಿದೆ. ಇದಲ್ಲದೆ ಅವರು ಶಾಲೆಯ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನವೀನ ಯೋಜನೆಗಳನ್ನು ರೂಪಿಸುವಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸುತ್ತಿದ್ದಾರೆ. ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ನಾಯಕತ್ವ ಗುಣಗಳು ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸಲು ಪ್ರೇರಣೆ ನೀಡುತ್ತಿದ್ದಾರೆ. ಅವರು ಸಮುದಾಯದ ಸಹಭಾಗಿತ್ವವನ್ನು ಹೆಚ್ಚಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದು ಶಾಲೆಯ ಬೆಳವಣಿಗೆಯಲ್ಲಿ ಸ್ಥಳೀಯರ ಸಹಕಾರ ಕೂಡ ಒಗ್ಗೂಡಿಸುತ್ತಿದ್ದಾರೆ. ಮುಂದಿನ ದಿನಗಳಲ್ಲಿ ಶಾಲೆಯನ್ನು ಒಂದು ಆದರ್ಶ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸುವ ಕನಸನ್ನು ಹೊಂದಿದ್ದಾರೆ."
+                    : "Sri Somashekhar is a successful entrepreneur from Shira who became associated with Sri Madhava Vidya Mandira. He holds a strong vision of providing quality education rooted in Indian culture. He has dedicated his thoughts and time to the development of the school. The green initiative is part of his vision, aimed at making Sri Madhava Vidya Mandira self-reliant. He plays a key role in designing innovative plans for the school's comprehensive development. He inspires the cultivation of leadership qualities and moral values among students. He strives to increase community participation and brings together local support for the school's growth. He carries the dream of shaping the school into a model educational institution in the years ahead."}
                 </p>
               </div>
             </div>
