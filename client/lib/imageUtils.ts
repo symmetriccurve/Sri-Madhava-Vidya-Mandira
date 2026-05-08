@@ -1,13 +1,13 @@
 // Utility functions for handling school images
 
 const schoolImages = [
-  'school13.jpeg',
+  "school13.jpeg",
   // 'school15.jpeg',
-  'school1.png',
-  'school2.png',
-  'school3.png',
+  "school1.png",
+  "school2.png",
+  // 'school3.png',
   // 'school4.png',
-  'school5.png',
+  "school5.png",
   // 'school6.png',
   // 'school7.png',
   // 'school8.png',
@@ -20,7 +20,7 @@ const schoolImages = [
 
 // Get the base path for assets (handles both dev and production)
 function getAssetBasePath(): string {
-  return '/assets';
+  return "/assets";
 }
 
 /**
@@ -43,7 +43,7 @@ export function getSchoolImage(index: number): string {
  * Get all school image paths
  */
 export function getAllSchoolImages(): string[] {
-  return schoolImages.map(img => `${getAssetBasePath()}/${img}`);
+  return schoolImages.map((img) => `${getAssetBasePath()}/${img}`);
 }
 
 /**
