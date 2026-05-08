@@ -1,6 +1,8 @@
 // Utility functions for handling school images
 
 const schoolImages = [
+  "2025_results_banner.png",
+  "21.png",
   "school13.jpeg",
   // 'school15.jpeg',
   "school1.png",
@@ -17,7 +19,6 @@ const schoolImages = [
   // 'school11.png',
   // 'school12.png',
   // "digial_board.jpeg"
-  "21.png",
 ];
 
 // Get the base path for assets (handles both dev and production)
