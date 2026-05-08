@@ -72,10 +72,10 @@ export default function About() {
             className="h-20 w-20 rounded-full ring-4 ring-brand-orange/20"
           />
         </div>
-        <h1 className="text-4xl font-bold text-brand-blue mb-8">
+        <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-brand-blue mb-8 whitespace-nowrap">
           {t("about_page_hero_title")}
         </h1>
-        <div className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed text-left whitespace-pre-line space-y-4">
+        <div className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed text-justify md:text-left whitespace-pre-line space-y-4">
           {t("about_snippet")}
         </div>
       </section>

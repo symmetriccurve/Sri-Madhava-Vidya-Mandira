@@ -1,6 +1,7 @@
-import { useI18n } from "@/lib/i18n";
+import { getHeroImage, getLogo } from "@/lib/imageUtils";
+
 import { Link } from "react-router-dom";
-import { getLogo, getHeroImage } from "@/lib/imageUtils";
+import { useI18n } from "@/lib/i18n";
 
 export default function Hero() {
   const { t } = useI18n();
@@ -9,15 +10,13 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-blue/10 via-white to-brand-orange/10" />
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 sm:py-14">
         <div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
-            <span className="block text-brand-blue">{t("school_name")}</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-400">
+            <span className="block text-brand-blue text-[clamp(1.25rem,6vw,3rem)] whitespace-nowrap">{t("school_name")}</span>
             <span className="mt-2 block text-gray-800 text-xl sm:text-2xl font-semibold">
               “{t("tagline")}”
             </span>
           </h1>
-          <p className="mt-4 text-gray-600">
-            {t("about_snippet")}
-          </p>
+          <p className="mt-4 text-gray-600">{t("about_snippet")}</p>
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] w-full rounded-xl bg-gradient-to-tr from-brand-blue to-brand-orange p-1 shadow-xl">
@@ -32,13 +31,19 @@ export default function Hero() {
           <div className="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-3 rounded-xl bg-white px-4 py-3 shadow-lg ring-1 ring-black/5">
             <img src={getLogo()} alt="Logo" className="h-8 w-8 rounded" />
             <div className="text-sm">
-              <div className="font-semibold text-brand-blue">{t("school_name")}</div>
+              <div className="font-semibold text-brand-blue">
+                {t("school_name")}
+              </div>
               <div className="text-gray-500">{t("tagline")}</div>
             </div>
           </div>
           <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
-            <Link to="/admissions" className="btn-accent">{t("admissions_cta")}</Link>
-            <Link to="/academics" className="btn-primary">{t("academics_cta")}</Link>
+            <Link to="/admissions" className="btn-accent">
+              {t("admissions_cta")}
+            </Link>
+            <Link to="/academics" className="btn-primary">
+              {t("academics_cta")}
+            </Link>
           </div>
         </div>
       </div>

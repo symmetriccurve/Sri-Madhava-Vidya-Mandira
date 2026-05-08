@@ -397,12 +397,12 @@ const dictionary: Record<Lang, Record<string, string>> = {
     copyright: "All rights reserved.",
     hero_tagline_prefix: "Rooted in",
     hero_tagline_suffix: "for every child",
-    about_page_hero_title: "Vidya Bharati – All India Education Organization",
+    about_page_hero_title: "Sri Madhava Vidya Mandira",
     about_snippet:
       "A value-based, holistic education is provided in a nurturing environment. Along with academics, equal importance is given to culture, sports, and arts. Our beautiful institution, located in Sira town, has been shaping young minds for more than four decades, nurturing them into responsible citizens and future leaders.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
-      "Congratulations to students for achieving good results in the recent board examinations.",
+      "Congratulations to our 10th standard students on their fantastic results!",
     activities_title: "Activities",
     gallery_title: "Gallery",
     gallery_page_title: "Photo Gallery",
@@ -1301,11 +1301,12 @@ const dictionary: Record<Lang, Record<string, string>> = {
     copyright: "ಎಲ್ಲ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.",
     hero_tagline_prefix: "ಮೂಲ್ಯಗಳು, ಶಿಕ್ಷಣ ಮತ್ತು ಸಂಸ್ಕೃತಿ",
     hero_tagline_suffix: "ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಗಾಗಿ",
-    about_page_hero_title: "ವಿದ್ಯಾ ಭಾರತಿ – ಅಖಿಲ ಭಾರತ ಶಿಕ್ಷಣ ಸಂಘಟನೆ.",
+    about_page_hero_title: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ",
     about_snippet:
       "ಮೌಲ್ಯಾಧಾರಿತ, ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಪೋಷಕ ವಾತಾವರಣ. ಅಧ್ಯಯನದ ಜೊತೆಗೆ ಸಂಸ್ಕೃತಿ, ಕ್ರೀಡೆ ಮತ್ತು ಕಲೆಗಳಿಗೆ ಸಮಾನ ಮಹತ್ವ ನೀಡಲಾಗುತ್ತದೆ. ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿರುವ ನಮ್ಮ ಸುಂದರವಾದ ಸಂಸ್ಥೆ. ಕಠಿಣ ನಾಲ್ಕು ದಶಕಕ್ಕೂ ಹೆಚ್ಚು ಕಾಲದಿಂದ ಯುವ ಮನಸ್ಸುಗಳನ್ನು ರೂಪಿಸುತ್ತಿದ್ದು, ಅವರನ್ನು ಜವಾಬ್ದಾರಿಯುತ ನಾಗರಿಕರು ಮತ್ತು ಭವಿಷ್ಯದ ನಾಯಕರಾಗಿ ಬೆಳೆಸುತ್ತಿದೆ.",
     ticker_1: "ಹೊಸ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಪ್ರವೇಶಗಳು ಪ್ರಾರಂಭ.",
-    ticker_2: "ಜಿಲ್ಲಾಸ್ಥರ ಕ್ರೀಡೆಯಲ್ಲಿ ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಭಿನಂದನೆಗಳು!",
+    ticker_2:
+      "ನಮ್ಮ 10ನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಪರೀಕ್ಷೆಯಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಸಾಧನೆ ಮಾಡಿದ್ದಾರೆ. ಈ ನಿಮ್ಮ ಸಾಧನೆಗೆ ಹಾರ್ದಿಕ ಅಭಿನಂದನೆಗಳು ಹಾಗೂ ನಿಮ್ಮ ಮುಂದಿನ ಭವಿಷ್ಯಕ್ಕೆ ಶುಭ ಹಾರೈಕೆಗಳು!",
     ticker_3: "ಸೆಪ್ಟೆಂಬರ್ 12ರಂದು ವಿಜ್ಞಾನ ಮೇಳ – ಪೋಷಕರು ಸ್ವಾಗತ.",
     activities_title: "ಚಟುವಟಿಕೆಗಳು",
     gallery_title: "ಚಿತ್ರಶಾಲೆ",
