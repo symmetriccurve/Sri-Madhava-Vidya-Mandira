@@ -402,8 +402,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "A value-based, holistic education is provided in a nurturing environment. Along with academics, equal importance is given to culture, sports, and arts. Our beautiful institution, located in Sira town, has been shaping young minds for more than four decades, nurturing them into responsible citizens and future leaders.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
-      "Congratulations to our students for district-level sports achievements!",
-    ticker_3: "Science Fair on 12th September – Parents are welcome.",
+      "Congratulations to students for achieving good results in the recent board examinations.",
     activities_title: "Activities",
     gallery_title: "Gallery",
     gallery_page_title: "Photo Gallery",

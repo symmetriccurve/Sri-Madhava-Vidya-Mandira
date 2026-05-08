@@ -2,7 +2,7 @@ import { useI18n } from "@/lib/i18n";
 
 export default function AnnouncementTicker() {
   const { t } = useI18n();
-  const items = [t("ticker_1"), t("ticker_2"), t("ticker_3")];
+  const items = [t("ticker_1"), t("ticker_2")];
   const doubled = [...items, ...items];
 
   return (
