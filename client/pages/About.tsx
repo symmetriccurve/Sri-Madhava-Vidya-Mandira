@@ -168,7 +168,7 @@ export default function About() {
             <div className="space-y-8">
               {/* Language-specific content based on global toggle */}
               {lang === "kn" ? (
-                <div className="border-l-4 border-brand-orange pl-6">
+                <div className="pl-6">
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
                       ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ, ವಿಶ್ವ
@@ -195,7 +195,7 @@ export default function About() {
                   </div>
                 </div>
               ) : (
-                <div className="border-l-4 border-brand-blue pl-6">
+                <div className="pl-6">
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
                       Sri Madhava Vidya Mandira was established with the
