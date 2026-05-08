@@ -2,12 +2,29 @@ import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 import { getLogo } from "@/lib/imageUtils";
 import { useI18n } from "@/lib/i18n";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
   const { t } = useI18n();
   const year = new Date().getFullYear();
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const script1 = document.createElement("script");
+    script1.type = "text/javascript";
+    script1.src = "https://www.freevisitorcounters.com/auth.php?id=53a6de6e47403880731f96f314469f4f2571a177";
+    document.body.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.type = "text/javascript";
+    script2.src = "https://www.freevisitorcounters.com/en/home/counter/1547757/t/6";
+    document.body.appendChild(script2);
+
+    return () => {
+      document.body.removeChild(script1);
+      document.body.removeChild(script2);
+    };
+  }, []);
   return (
     <footer className="mt-16 border-t bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-10">
@@ -123,7 +140,14 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t py-3 text-center text-xs text-gray-400">
+      <div className="border-t py-3 flex flex-col items-center gap-1.5">
+        <a
+          href="http://www.freevisitorcounters.com"
+          className="text-xs text-gray-400 hover:text-gray-500 transition-colors"
+        >
+          Visitor Counter
+        </a>
+        <div className="text-center text-xs text-gray-400">
         A digital initiative by{" "}
         <button
           onClick={() => setShowModal(true)}
@@ -131,6 +155,7 @@ export default function Footer() {
         >
           Rainbow Shiksha Foundation
         </button>
+        </div>
       </div>
 
       {showModal && (

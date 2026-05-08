@@ -90,3 +90,7 @@ export function getAlumniImage(filename: string): string {
 export function getDonorImage(filename: string): string {
   return `${getAssetBasePath()}/donors/${filename}`;
 }
+
+export function getLeadershipImage(filename: string): string {
+  return `${getAssetBasePath()}/leadership/${filename}`;
+}
