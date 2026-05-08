@@ -35,6 +35,7 @@ export default function Header() {
           <Nav to="/academics" label={t("academics")} />
           <Nav to="/admissions" label={t("admissions")} />
           <Nav to="/facilities" label={t("facilities")} />
+          <Nav to="/contact" label={t("contact")} />
 
           
           {/* More dropdown with remaining links */}
