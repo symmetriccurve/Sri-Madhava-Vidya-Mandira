@@ -322,16 +322,18 @@ export default function About() {
                 />
               </div>
               <div className="md:flex-1 md:p-6 md:flex md:flex-col md:justify-center">
-                <h3 className="text-base font-semibold text-brand-blue mb-2">
-                  {lang === "kn"
-                    ? "ಸಂಗಮ್ಮ — ಮುಖ್ಯ ಶಿಕ್ಷಕಿ, ಪ್ರಾಥಮಿಕ ವಿಭಾಗ"
-                    : "Sangamma — Head Mistress, Primary Section"}
-                </h3>
                 <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
                   {lang === "kn"
                     ? "ನಮ್ಮ ಶಾಲೆಯ ಮಕ್ಕಳು ಸಂಸ್ಕಾರ ಮತ್ತು ರಾಷ್ಟ್ರಭಕ್ತಿಯನ್ನು ಮೈಗೂಡಿಸಿಕೊಂಡು ಶಾರೀರಿಕ, ಯೋಗಿಕ, ಮಾನಸಿಕ, ಬೌದ್ಧಿಕ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕ ದೃಷ್ಟಿಯಿಂದ ಪೂರ್ಣವಾಗಿ ವಿಕಸಗೊಂಡ ಯುವ ಪೀಳಿಗೆಯ ನಿರ್ಮಾಣ ಮಾಡುವುದಾಗಿದೆ. ಹೀಗೆ ನಿರ್ಮಾಣಗೊಂಡ ಯುವ ಪೀಳಿಗೆಯು ಜೀವನದ ಪ್ರಸಕ್ತ ಸವಾಲುಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಎದುರಿಸುವಂತವರಾಗಬೇಕು. ಅವರ ಜೀವನವು ನಗರ, ಗ್ರಾಮ, ವನ ಪ್ರದೇಶ, ಗಿರಿ ಕಂದರಗಳಲ್ಲಿ ವಾಸಿಸುತ್ತಿರುವ ವಂಚಿತ ಅಭಾವ ಪಡಿತರಾದ ನಮ್ಮ ಬಂಧುಗಳನ್ನು ರಾಷ್ಟ್ರೀಯ ಜೀವನದ ಸವಾಲುಗಳಾದ ಸಾಮಾಜಿಕ ದುರಾಚಾರಗಳು ಮತ್ತು ಅನ್ಯಾಯಗಳಿಂದ ಮುಕ್ತಗೊಳಿಸುವಂತಾಗಬೇಕು. ಹಾಗೆ ನಮ್ಮ ರಾಷ್ಟ್ರ ಜೀವನವನ್ನು ಸಂಸ್ಕೃತ ಸಾಮರಸ್ಯ ಪೂರ್ಣ ಮತ್ತು ಸುಸಂಪನ್ನರಾಗಿ ಮಾಡುವ ವಸುದೈವ ಕುಟುಂಬ ಎಂಬ ಭಾವನೆಯಿಂದ ಪ್ರೇರಿತರಾಗಿ ವಿಶ್ವಕಲ್ಯಾಣ ಮಾಡುವುದಾಗಿದೆ."
                     : 'The goal of our school is to nurture children with culture and patriotism, and who develop fully in physical, yogic, mental, intellectual, and spiritual dimensions. Such a generation of youth should be capable of successfully facing the challenges of life. Their lives should contribute to uplifting our underprivileged brothers and sisters living in cities, villages, forests, and hilly regions, helping free them from social evils and injustices that challenge our national life. In this way, they should work toward making our national life culturally harmonious and prosperous, inspired by the ideal of "Vasudhaiva Kutumbakam" (the world is one family), and contribute to the welfare of the entire world.'}
                 </p>
+                <div className="mt-4 pt-3 border-t border-brand-orange/20">
+                  <p className="text-sm text-brand-blue font-semibold">
+                    {lang === "kn"
+                      ? "ಸಂಗಮ್ಮ — ಮುಖ್ಯ ಶಿಕ್ಷಕಿ, ಪ್ರಾಥಮಿಕ ವಿಭಾಗ"
+                      : "Sangamma — Head Mistress, Primary Section"}
+                  </p>
+                </div>
               </div>
             </div>
           </CardContent>
@@ -476,6 +478,7 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
+
 
     </main>
   );
