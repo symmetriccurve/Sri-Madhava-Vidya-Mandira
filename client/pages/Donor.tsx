@@ -162,9 +162,12 @@ export default function Donor() {
                 <CardDescription>{t("donor_upi_description")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="p-6 rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 text-center">
-                  <p className="text-sm text-gray-600">QR CODE</p>
-                  <p className="text-sm text-gray-500 mt-1">(To be updated)</p>
+                <div className="flex justify-center">
+                  <img
+                    src="/assets/qr_code.png"
+                    alt="UPI QR Code"
+                    className="w-48 h-48 object-contain"
+                  />
                 </div>
 
                 <div>
