@@ -76,3 +76,10 @@ export function getWhatsAppLogo(): string {
 export function getAssetImage(name: string): string {
   return `${getAssetBasePath()}/${name}`;
 }
+
+/**
+ * Get an alumni photo from the alumini folder by filename
+ */
+export function getAlumniImage(filename: string): string {
+  return `${getAssetBasePath()}/alumini/${filename}`;
+}

@@ -1,8 +1,22 @@
-import { useI18n } from "@/lib/i18n";
+import {
+  Award,
+  BookOpen,
+  Brain,
+  Eye,
+  Hand,
+  Heart,
+  Shield,
+  Sparkles,
+  Target,
+  UserCheck,
+  Users,
+  Users2,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { getAssetImage, getLogo, getSchoolImage } from "@/lib/imageUtils";
+
 import { Badge } from "@/components/ui/badge";
-import { getSchoolImage, getLogo, getAssetImage } from "@/lib/imageUtils";
-import { Users, Award, BookOpen, Heart, Target, Eye, Sparkles, Hand, Shield, Users2, Brain, UserCheck } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
 
 export default function About() {
   const { t, lang } = useI18n();
@@ -52,9 +66,15 @@ export default function About() {
       {/* Hero Section */}
       <section className="text-center mb-12">
         <div className="flex justify-center mb-6">
-          <img src={getLogo()} alt="School Logo" className="h-20 w-20 rounded-full ring-4 ring-brand-orange/20" />
+          <img
+            src={getLogo()}
+            alt="School Logo"
+            className="h-20 w-20 rounded-full ring-4 ring-brand-orange/20"
+          />
         </div>
-        <h1 className="text-4xl font-bold text-brand-blue mb-8">{t("about_page_hero_title")}</h1>
+        <h1 className="text-4xl font-bold text-brand-blue mb-8">
+          {t("about_page_hero_title")}
+        </h1>
         <div className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed text-left whitespace-pre-line space-y-4">
           {t("about_snippet")}
         </div>
@@ -67,7 +87,9 @@ export default function About() {
             <Card key={index} className="text-center">
               <CardContent className="pt-6">
                 <stat.icon className="h-8 w-8 mx-auto mb-3 text-brand-blue" />
-                <div className="text-2xl font-bold text-brand-blue">{stat.value}</div>
+                <div className="text-2xl font-bold text-brand-blue">
+                  {stat.value}
+                </div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
               </CardContent>
             </Card>
@@ -75,14 +97,17 @@ export default function About() {
         </div>
       </section>
 
-
-
       {/* Our Values */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">{t("our_core_values")}</h2>
+        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">
+          {t("our_core_values")}
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+            <Card
+              key={index}
+              className="text-center hover:shadow-lg transition-shadow"
+            >
               <CardHeader>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-full bg-brand-blue/10">
@@ -135,25 +160,37 @@ export default function About() {
       <section className="mb-12">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl text-brand-blue">{t("our_journey")}</CardTitle>
+            <CardTitle className="text-2xl text-brand-blue">
+              {t("our_journey")}
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-8">
               {/* Language-specific content based on global toggle */}
-              {lang === 'kn' ? (
+              {lang === "kn" ? (
                 <div className="border-l-4 border-brand-orange pl-6">
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                      ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ, ವಿಶ್ವ ಹಿಂದೂ ಪರಿಷತ್ನ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ವರ್ಗೀಯ ಶ್ರೀಯುತ ಅಜಿತ್ ಕುಮಾರ್ ಅವರ ಅಮೃತ ಹಸ್ತದ ಮೂಲಕ ನಗರದ ಹಿರಿಯರ ಆಶೀರ್ವಾದದಿಂದ 1983- 84ರ ಏಪ್ರಿಲ್ 11ರಂದು ಶಿಶುಮಂದಿರವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
+                      ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ, ವಿಶ್ವ
+                      ಹಿಂದೂ ಪರಿಷತ್ನ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ
+                      ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ವರ್ಗೀಯ ಶ್ರೀಯುತ ಅಜಿತ್ ಕುಮಾರ್ ಅವರ ಅಮೃತ
+                      ಹಸ್ತದ ಮೂಲಕ ನಗರದ ಹಿರಿಯರ ಆಶೀರ್ವಾದದಿಂದ 1983- 84ರ ಏಪ್ರಿಲ್
+                      11ರಂದು ಶಿಶುಮಂದಿರವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
                     </p>
                     <p>
-                      1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4 ನೇ ತರಗತಿಯವರೆಗೂ ಬೆಳೆದು ಬೆಳೆದ ಶಾಲೆಯಲ್ಲಿ 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
+                      1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4 ನೇ ತರಗತಿಯವರೆಗೂ ಬೆಳೆದು ಬೆಳೆದ
+                      ಶಾಲೆಯಲ್ಲಿ 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು
+                      ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
                     </p>
                     <p>
-                      ಇದೀಗ ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ(ಕನ್ನಡ ಮಾಧ್ಯಮ) ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ, 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ನಡೆಯುತ್ತಿದ್ದು, 2022-23ರಲ್ಲಿ ಎಲ್. ಕೆ .ಜಿ , ಯು .ಕೆ .ಜಿ. (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು
+                      ಇದೀಗ ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ(ಕನ್ನಡ ಮಾಧ್ಯಮ)
+                      ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ, 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ
+                      ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ನಡೆಯುತ್ತಿದ್ದು, 2022-23ರಲ್ಲಿ ಎಲ್. ಕೆ .ಜಿ
+                      , ಯು .ಕೆ .ಜಿ. (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು
                     </p>
                     <p>
-                      2023-24ರಲ್ಲಿ ಒಂದನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
+                      2023-24ರಲ್ಲಿ ಒಂದನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ
+                      ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
                     </p>
                   </div>
                 </div>
@@ -161,23 +198,26 @@ export default function About() {
                 <div className="border-l-4 border-brand-blue pl-6">
                   <div className="space-y-4 text-gray-700 leading-relaxed">
                     <p>
-                      Sri Madhava Vidya Mandira was established with the inspiration from Rashtriya Swayamsevak Sangh,
-                      Hindu Seva Pratishthana, and Vishwa Hindu Parishad, under the guidance of Sadhana Shikshana Samsthe.
-                      With the blessed hands of the late Sri Ajit Kumar and the blessings of the city's elders,
-                      the Shishu Mandira (Children's Temple) was inaugurated on April 11, 1983-84.
+                      Sri Madhava Vidya Mandira was established with the
+                      inspiration from Rashtriya Swayamsevak Sangh, Hindu Seva
+                      Pratishthana, and Vishwa Hindu Parishad, under the
+                      guidance of Sadhana Shikshana Samsthe. With the blessed
+                      hands of the late Sri Ajit Kumar and the blessings of the
+                      city's elders, the Shishu Mandira (Children's Play Home)
+                      was inaugurated on April 11, 1983-84.
                     </p>
                     <p>
-                      The school grew from the Shishu Mandira up to 4th grade until 1988, and in 1989,
-                      the Senior Primary School was established.
+                      The school grew from the Shishu Mandira up to 4th grade
+                      until 1988, and in 1989, the Higher Primary School was
+                      established.
                     </p>
                     <p>
-                      Currently, our school operates with an aided primary section from 1st to 7th grade (Kannada medium),
-                      and high school from 8th to 10th grade (English medium). In 2022-23, LKG and UKG (English medium)
-                      were introduced.
+                      Currently, our school operates with an aided primary
+                      section from 1st to 7th grade (Kannada medium), and high
+                      school from 8th to 10th grade (English medium). In
+                      2022-23, LKG and UKG (English medium) were introduced.
                     </p>
-                    <p>
-                      In 2023-24, 1st grade was started in English medium.
-                    </p>
+                    <p>In 2023-24, 1st grade was started in English medium.</p>
                   </div>
                 </div>
               )}
@@ -185,31 +225,47 @@ export default function About() {
               {/* Key Milestones */}
               <div className="mt-8">
                 <h4 className="text-lg font-semibold text-brand-blue mb-4">
-                  {lang === 'kn' ? 'ಮುಖ್ಯ ಮೈಲಿಗಲ್ಲುಗಳು' : 'Key Milestones'}
+                  {lang === "kn" ? "ಮುಖ್ಯ ಮೈಲಿಗಲ್ಲುಗಳು" : "Key Milestones"}
                 </h4>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="text-center p-4 bg-brand-orange/10 rounded-lg">
-                    <div className="text-2xl font-bold text-brand-orange">1983-84</div>
+                    <div className="text-2xl font-bold text-brand-orange">
+                      1983-84
+                    </div>
                     <div className="text-sm text-gray-600">
-                      {lang === 'kn' ? 'ಶಿಶುಮಂದಿರ ಪ್ರಾರಂಭ' : 'Shishu Mandira Inaugurated'}
+                      {lang === "kn"
+                        ? "ಶಿಶುಮಂದಿರ ಪ್ರಾರಂಭ"
+                        : "Shishu Mandira Inaugurated"}
                     </div>
                   </div>
                   <div className="text-center p-4 bg-brand-blue/10 rounded-lg">
-                    <div className="text-2xl font-bold text-brand-blue">1989</div>
+                    <div className="text-2xl font-bold text-brand-blue">
+                      1989
+                    </div>
                     <div className="text-sm text-gray-600">
-                      {lang === 'kn' ? 'ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ' : 'Senior Primary School'}
+                      {lang === "kn"
+                        ? "ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ"
+                        : "Senior Primary School"}
                     </div>
                   </div>
                   <div className="text-center p-4 bg-brand-orange/10 rounded-lg">
-                    <div className="text-2xl font-bold text-brand-orange">2022-23</div>
+                    <div className="text-2xl font-bold text-brand-orange">
+                      2022-23
+                    </div>
                     <div className="text-sm text-gray-600">
-                      {lang === 'kn' ? 'ಎಲ್.ಕೆ.ಜಿ & ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ)' : 'LKG & UKG (English)'}
+                      {lang === "kn"
+                        ? "ಎಲ್.ಕೆ.ಜಿ & ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ)"
+                        : "LKG & UKG (English)"}
                     </div>
                   </div>
                   <div className="text-center p-4 bg-brand-blue/10 rounded-lg">
-                    <div className="text-2xl font-bold text-brand-blue">2023-24</div>
+                    <div className="text-2xl font-bold text-brand-blue">
+                      2023-24
+                    </div>
                     <div className="text-sm text-gray-600">
-                      {lang === 'kn' ? '1ನೇ ತರಗತಿ (ಆಂಗ್ಲ)' : '1st Grade (English)'}
+                      {lang === "kn"
+                        ? "1ನೇ ತರಗತಿ (ಆಂಗ್ಲ)"
+                        : "1st Grade (English)"}
                     </div>
                   </div>
                 </div>
@@ -223,7 +279,9 @@ export default function About() {
       <section className="mb-12">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl text-brand-blue">{t("principal_message")}</CardTitle>
+            <CardTitle className="text-2xl text-brand-blue">
+              {t("principal_message")}
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-col md:flex-row gap-6 items-start">
@@ -235,11 +293,15 @@ export default function About() {
                 />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-brand-blue mb-2">{t("principal_note_subtitle")}</h3>
+                <h3 className="text-lg font-semibold text-brand-blue mb-2">
+                  {t("principal_note_subtitle")}
+                </h3>
                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                   {t("principal_message_body")}
                 </p>
-                <p className="text-sm text-gray-600 mt-4 font-medium whitespace-pre-line">{t("principal_attribution")}</p>
+                <p className="text-sm text-gray-600 mt-4 font-medium whitespace-pre-line">
+                  {t("principal_attribution")}
+                </p>
               </div>
             </div>
           </CardContent>

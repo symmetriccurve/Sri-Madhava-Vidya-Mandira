@@ -1,19 +1,23 @@
 import { useState } from "react";
 import { Award, Users, Globe, MapPin, Camera, X } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useI18n } from "@/lib/i18n";
-import { getAssetImage } from "@/lib/imageUtils";
+import { getAssetImage, getAlumniImage } from "@/lib/imageUtils";
 
 export default function Alumni() {
   const { t } = useI18n();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const alumniData = [
+    { name: "DR. VINAY SINGH", profession: "Doctor", location: "SIRA, TUMKUR DIST.", photo: "DR_VINAY_SINGH.png" },
+    { name: "RAKESH PADIKAR", profession: "SOFTWARE ENGINEER", location: "USA", photo: "RAKESH_PADIKAR.png" },
+    { name: "SHWETA G", profession: "SOFTWARE ENGINEER", location: "USA", photo: "SHWETA_GOPALRAO.png" },
+    { name: "REKHA MANJUNATH", profession: "ENGINEER", location: "GERMANY", photo: "REKHA_MANJUNATH.png" },
+    { name: "MADHUMALA", profession: "SCIENTIST", location: "USA", photo: "MADHUMALA.png" },
+    { name: "DR. ASHWINI", profession: "MBBS, MD - ASSISTANT PROFESSOR", location: "TUMKUR", photo: "DR_ASHWINI.png" },
+    { name: "RASHMI GOPALRAO", profession: "ENGINEER", location: "BANGALORE", photo: "RASHMI_GOPALRAO.png" },
+    { name: "DR. REKHA GOPALRAO", profession: "GYNECOLOGIST", location: "MYSORE", photo: "DR_REKHA_GOPALRAO.png" },
     { name: "DR. ANNAPOORNA", profession: "Doctor", location: "MANIPAL" },
-    { name: "DR. VINAY SINGH", profession: "Doctor", location: "SIRA, TUMKUR DIST." },
     { name: "DR. SUNIL N P", profession: "Doctor", location: "LUCKNOW" },
-    { name: "RAKESH PADIKAR", profession: "SOFTWARE ENGINEER", location: "USA" },
-    { name: "SHWETA G", profession: "SOFTWARE ENGINEER", location: "USA" },
     { name: "CHAYA", profession: "MSc.", location: "BANGALORE" },
     { name: "CHANDRALA", profession: "SOFTWARE ENGINEER", location: "SPAIN" },
     { name: "SRIDEVI", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
@@ -21,11 +25,14 @@ export default function Alumni() {
     { name: "ASHWINI", profession: "SOFTWARE ENGINEER", location: "USA" },
     { name: "ASHWINI S N", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
     { name: "REKHA", profession: "SOFTWARE ENGINEER", location: "USA" },
-    { name: "NAVEEN PONNAMPETE", profession: "FOREST OFFICER", location: "" },
+    { name: "NAVEEN PONNAMPETE", profession: "FOREST OFFICER", location: "PONNAMPETE" },
     { name: "SREENIDHI GOWDA", profession: "SOFTWARE ENGINEER", location: "UK" },
     { name: "SHILPASHREE", profession: "APMC SECRETARY", location: "HARIHARA" },
     { name: "DR. RAVISH", profession: "Doctor", location: "GOVERNMENT HOSPITAL, MADHUGIRI" },
   ];
+
+  const alumniWithPhoto = alumniData.filter((a) => a.photo);
+  const alumniWithoutPhoto = alumniData.filter((a) => !a.photo);
 
   const galleryImages = [
     "36.jpeg", "37.jpeg", "38.jpeg", "39.jpeg", 
@@ -58,7 +65,7 @@ export default function Alumni() {
         </div>
       </section>
 
-      {/* Alumni Spotlight */}
+      {/* Alumni with Photos */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -71,6 +78,29 @@ export default function Alumni() {
               </p>
             </div>
 
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+              {alumniWithPhoto.map((alumni, index) => (
+                <div key={index} className="flex flex-col items-center text-center group">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-blue/20 shadow-md group-hover:border-brand-blue transition-colors mb-3">
+                    <img
+                      src={getAlumniImage(alumni.photo!)}
+                      alt={alumni.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <p className="font-bold text-gray-900 text-sm leading-tight">{alumni.name}</p>
+                  <p className="text-brand-blue text-xs mt-1">{alumni.profession}</p>
+                  {alumni.location && (
+                    <p className="text-gray-500 text-xs flex items-center gap-1 mt-1">
+                      <MapPin className="h-3 w-3 shrink-0" />
+                      {alumni.location}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Alumni without photos — list */}
             <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
               <div className="grid grid-cols-1 md:grid-cols-3 bg-gray-50 border-b border-gray-200 font-bold text-brand-blue uppercase text-sm tracking-wider hidden md:grid">
                 <div className="px-6 py-4">{t("alumni_name_label") || "Name"}</div>
@@ -79,9 +109,9 @@ export default function Alumni() {
               </div>
 
               <div className="divide-y-0 md:divide-y divide-gray-200">
-                {alumniData.map((alumni, index) => (
-                  <div 
-                    key={index} 
+                {alumniWithoutPhoto.map((alumni, index) => (
+                  <div
+                    key={index}
                     className="grid grid-cols-1 md:grid-cols-3 hover:bg-brand-blue/5 transition-colors group mb-6 md:mb-0 border border-gray-100 md:border-0 rounded-lg md:rounded-none overflow-hidden"
                   >
                     <div className="px-6 py-4 flex items-center md:block bg-brand-blue/5 md:bg-transparent">
@@ -90,7 +120,7 @@ export default function Alumni() {
                         {alumni.name}
                       </span>
                     </div>
-                    
+
                     <div className="px-6 py-4 border-t md:border-t-0 md:border-l border-gray-200 flex items-center md:block">
                       <span className="text-xs font-bold uppercase text-brand-blue/60 md:hidden mr-4 w-20 shrink-0">Profession:</span>
                       <div className="flex items-center gap-2">
