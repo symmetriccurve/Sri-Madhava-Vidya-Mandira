@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { Award, Users, Globe, MapPin, Camera, X } from "lucide-react";
+import { Award, Camera, Globe, MapPin, Users, X } from "lucide-react";
+import { getAlumniImage, getAssetImage } from "@/lib/imageUtils";
+
 import { useI18n } from "@/lib/i18n";
-import { getAssetImage, getAlumniImage } from "@/lib/imageUtils";
+import { useState } from "react";
 
 export default function Alumni() {
   const { t } = useI18n();
