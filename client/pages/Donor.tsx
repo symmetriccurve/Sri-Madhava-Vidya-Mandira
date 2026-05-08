@@ -9,30 +9,30 @@ import { toast } from "@/hooks/use-toast";
 import { getDonorImage } from "@/lib/imageUtils";
 
 export default function Donor() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
   const donorsWithPhoto = [
-    { name: "S L JAYARAM", description: "SIRA", photo: "S_L_JAYARAM.png" },
-    { name: "SOMASHEKHAR", description: "NANDINI BAKERY, SIRA", photo: "SOMASHEKHAR.png" },
-    { name: "L RANGANATHAPPA", description: "RTD. ENGINEER", photo: "L_RANGANATHAPPA.png" },
-    { name: "G P RAJU", description: "RTD. PRINCIPAL", photo: "G_P_RAJU.png" },
-    { name: "JAYARAMU", description: "EX-MILITARY OFFICER", photo: "JAYARAMU.png" },
-    { name: "A HANUMANTHA ACHARYA", description: "", photo: "A_HANUMANTHA_ACHARYA.png" },
-    { name: "KUM. SANGAMMA KUBSAD", description: "", photo: "KUM._SANGAMMA_KUBSAD.png" },
-    { name: "S V SATHYANARAYANA SHETTY", description: "", photo: "S_V_SATHYANARAYANA_SHETTY.png" },
+    { name: "S L JAYARAM", nameKn: "ಎಸ್ ಎಲ್ ಜಯರಾಮ್", description: "SIRA", descriptionKn: "ಸಿರಾ", photo: "S_L_JAYARAM.png" },
+    { name: "SOMASHEKHAR", nameKn: "ಸೋಮಶೇಖರ್", description: "NANDINI BAKERY, SIRA", descriptionKn: "ನಂದಿನಿ ಬೇಕರಿ, ಸಿರಾ", photo: "SOMASHEKHAR.png" },
+    { name: "L RANGANATHAPPA", nameKn: "ಎಲ್ ರಂಗನಾಥಪ್ಪ", description: "RTD. ENGINEER", descriptionKn: "ನಿವೃತ್ತ ಎಂಜಿನಿಯರ್", photo: "L_RANGANATHAPPA.png" },
+    { name: "G P RAJU", nameKn: "ಜಿ ಪಿ ರಾಜು", description: "RTD. PRINCIPAL", descriptionKn: "ನಿವೃತ್ತ ಪ್ರಾಚಾರ್ಯರು", photo: "G_P_RAJU.png" },
+    { name: "JAYARAMU", nameKn: "ಜಯರಾಮು", description: "EX-MILITARY OFFICER", descriptionKn: "ಮಾಜಿ ಮಿಲಿಟರಿ ಅಧಿಕಾರಿ", photo: "JAYARAMU.png" },
+    { name: "A HANUMANTHA ACHARYA", nameKn: "ಎ ಹನುಮಂಥ ಆಚಾರ್ಯ", description: "", descriptionKn: "", photo: "A_HANUMANTHA_ACHARYA.png" },
+    { name: "KUM. SANGAMMA KUBSAD", nameKn: "ಕುಮ. ಸಂಗಮ್ಮ ಕುಬ್ಸಾದ್", description: "", descriptionKn: "", photo: "KUM._SANGAMMA_KUBSAD.png" },
+    { name: "S V SATHYANARAYANA SHETTY", nameKn: "ಎಸ್ ವಿ ಸತ್ಯನಾರಾಯಣ ಶೆಟ್ಟಿ", description: "", descriptionKn: "", photo: "S_V_SATHYANARAYANA_SHETTY.png" },
   ];
 
   const donorsWithoutPhoto = [
-    "YASHODA JAYARAM",
-    "P THIMMAIAH AYYAPPA SWAMY",
-    "DR. DEEPAK, SIRA",
-    "DR. KESHAVA MURTHY, SIRA",
-    "DR. RAGHU, SIRA",
-    "H N SURESH BABU, SIRA",
-    "R RAVINDRANATH AND BROS.",
-    "PARTHASARATHY AND SONS",
-    "SUDARSHAN BABU, BENGALURU",
+    { name: "YASHODA JAYARAM", nameKn: "ಯಶೋದಾ ಜಯರಾಮ್" },
+    { name: "P THIMMAIAH AYYAPPA SWAMY", nameKn: "ಪಿ ತಿಮ್ಮಯ್ಯ ಅಯ್ಯಪ್ಪ ಸ್ವಾಮಿ" },
+    { name: "DR. DEEPAK, SIRA", nameKn: "ಡಾ. ದೀಪಕ್, ಸಿರಾ" },
+    { name: "DR. KESHAVA MURTHY, SIRA", nameKn: "ಡಾ. ಕೇಶವ ಮೂರ್ತಿ, ಸಿರಾ" },
+    { name: "DR. RAGHU, SIRA", nameKn: "ಡಾ. ರಾಘು, ಸಿರಾ" },
+    { name: "H N SURESH BABU, SIRA", nameKn: "ಎಚ್ ಎನ್ ಸುರೇಶ್ ಬಾಬು, ಸಿರಾ" },
+    { name: "R RAVINDRANATH AND BROS.", nameKn: "ಆರ್ ರವೀಂದ್ರನಾಥ್ ಮತ್ತು ಸಹೋದರರು" },
+    { name: "PARTHASARATHY AND SONS", nameKn: "ಪಾರ್ಥಸಾರಥಿ ಮತ್ತು ಮಕ್ಕಳು" },
+    { name: "SUDARSHAN BABU, BENGALURU", nameKn: "ಸುದರ್ಶನ್ ಬಾಬು, ಬೆಂಗಳೂರು" },
   ];
 
   const copyToClipboard = async (text: string, field: string) => {
@@ -227,9 +227,9 @@ export default function Donor() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="font-bold text-gray-900 text-sm leading-tight">{donor.name}</p>
+                    <p className="font-bold text-gray-900 text-sm leading-tight">{lang === "kn" ? donor.nameKn : donor.name}</p>
                     {donor.description && (
-                      <p className="text-brand-blue text-xs mt-1">{donor.description}</p>
+                      <p className="text-brand-blue text-xs mt-1">{lang === "kn" ? donor.descriptionKn : donor.description}</p>
                     )}
                   </div>
                 ))}
@@ -242,7 +242,7 @@ export default function Donor() {
                   {donorsWithoutPhoto.map((donor, index) => (
                     <div key={index} className="p-3 rounded-lg bg-gray-50 text-sm text-gray-800 flex items-center gap-2">
                       <Heart className="h-3 w-3 text-brand-orange shrink-0" />
-                      {donor}
+                      {lang === "kn" ? donor.nameKn : donor.name}
                     </div>
                   ))}
                 </div>

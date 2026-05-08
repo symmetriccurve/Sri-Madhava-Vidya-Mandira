@@ -3,71 +3,62 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useI18n } from "@/lib/i18n";
 
 export default function ParentsMessage() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   const parentMessages = [
     {
-      name: "Madhumati",
+      name: "Madhumati", nameKn: "ಮಧುಮತಿ",
       child: "Parent of Vaishnavi, Class 3 & Chinmayi, Class 6",
-      message: t("parent_message_1"),
-      rating: 5,
-      photo: "/assets/parents/Madhumati.png"
+      childKn: "ವೈಷ್ಣವಿ, 3ನೇ ತರಗತಿ & ಚಿನ್ಮಯಿ, 6ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_1"), rating: 5, photo: "/assets/parents/Madhumati.png"
     },
     {
-      name: "Pavithra",
+      name: "Pavithra", nameKn: "ಪವಿತ್ರಾ",
       child: "Parent of Megha, Class 7",
-      message: t("parent_message_2"),
-      rating: 5,
-      photo: "/assets/parents/Pavithra.png"
+      childKn: "ಮೇಘಾ, 7ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_2"), rating: 5, photo: "/assets/parents/Pavithra.png"
     },
     {
-      name: "Vijayalakshmi",
+      name: "Vijayalakshmi", nameKn: "ವಿಜಯಲಕ್ಷ್ಮಿ",
       child: "Parent of Sharandeep, Class 2",
-      message: t("parent_message_3"),
-      rating: 5,
-      photo: null
+      childKn: "ಶರಣದೀಪ್, 2ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_3"), rating: 5, photo: null
     },
     {
-      name: "Nagamani",
+      name: "Nagamani", nameKn: "ನಾಗಮಣಿ",
       child: "Parent of Aishwarya, Class 10",
-      message: t("parent_message_4"),
-      rating: 5,
-      photo: "/assets/parents/Nagamani.png"
+      childKn: "ಐಶ್ವರ್ಯ, 10ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_4"), rating: 5, photo: "/assets/parents/Nagamani.png"
     },
     {
-      name: "Thimmaraju",
+      name: "Thimmaraju", nameKn: "ತಿಮ್ಮರಾಜು",
       child: "Parent of Tulasi, Class 9 & Shashank, Class 8",
-      message: t("parent_message_5"),
-      rating: 5,
-      photo: "/assets/parents/Thimmaraju.png"
+      childKn: "ತುಳಸಿ, 9ನೇ ತರಗತಿ & ಶಶಾಂಕ್, 8ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_5"), rating: 5, photo: "/assets/parents/Thimmaraju.png"
     },
     {
-      name: "Vatsala",
+      name: "Vatsala", nameKn: "ವತ್ಸಲಾ",
       child: "Parent of Padmavati, Class 5",
-      message: t("parent_message_6"),
-      rating: 5,
-      photo: "/assets/parents/Vatsala.png"
+      childKn: "ಪದ್ಮಾವತಿ, 5ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_message_6"), rating: 5, photo: "/assets/parents/Vatsala.png"
     },
     {
-      name: "Mangala",
+      name: "Mangala", nameKn: "ಮಂಗಳಾ",
       child: "Parent of Rashmi, Class 7",
-      message: t("parent_testimonial_1"),
-      rating: 5,
-      photo: "/assets/parents/Mangala.png"
+      childKn: "ರಶ್ಮಿ, 7ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_testimonial_1"), rating: 5, photo: "/assets/parents/Mangala.png"
     },
     {
-      name: "Geetha",
+      name: "Geetha", nameKn: "ಗೀತಾ",
       child: "Parent of Kumuda, Class 4 & Lathish, Class 6",
-      message: t("parent_testimonial_2"),
-      rating: 5,
-      photo: "/assets/parents/Geetha.png"
+      childKn: "ಕುಮುದ, 4ನೇ ತರಗತಿ & ಲಾತೀಶ್, 6ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_testimonial_2"), rating: 5, photo: "/assets/parents/Geetha.png"
     },
     {
-      name: "Nalina",
+      name: "Nalina", nameKn: "ನಳಿನಾ",
       child: "Parent of Harsha, Class 1 & Indrajit, Class 5",
-      message: t("parent_testimonial_3"),
-      rating: 5,
-      photo: "/assets/parents/Nalina.png"
+      childKn: "ಹರ್ಷ, 1ನೇ ತರಗತಿ & ಇಂದ್ರಜಿತ್, 5ನೇ ತರಗತಿ ಪೋಷಕರು",
+      message: t("parent_testimonial_3"), rating: 5, photo: "/assets/parents/Nalina.png"
     },
   ];
 
@@ -169,10 +160,10 @@ export default function ParentsMessage() {
                           )}
                         </div>
                         <div>
-                          <CardTitle className="text-lg font-bold text-brand-blue">{message.name}</CardTitle>
+                          <CardTitle className="text-lg font-bold text-brand-blue">{lang === "kn" ? message.nameKn : message.name}</CardTitle>
                           <CardDescription className="text-xs pt-1">
                             <span className="bg-brand-blue/5 text-brand-blue px-2 py-0.5 rounded-md inline-block font-medium">
-                              {message.child.replace(/Class\s(\d+)/g, "Class\u00A0$1")}
+                              {lang === "kn" ? message.childKn : message.child.replace(/Class\s(\d+)/g, "Class\u00A0$1")}
                             </span>
                           </CardDescription>
                         </div>
