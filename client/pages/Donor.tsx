@@ -6,27 +6,32 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Copy, Heart, Phone, Mail, CheckCircle, Users } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { getDonorImage } from "@/lib/imageUtils";
 
 export default function Donor() {
   const { t } = useI18n();
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
-  const donors = [
-    "S L JAYARAM, SIRA",
-    "SOMASHEKHAR (NANDINI BAKERY), SIRA",
-    "L RANGANATHAPPA - RTD. ENGINEER",
-    "G P RAJU - RTD. PRINCIPAL",
-    "JAYARAMU - EX-MILITARY OFFICER",
+  const donorsWithPhoto = [
+    { name: "S L JAYARAM", description: "SIRA", photo: "S_L_JAYARAM.png" },
+    { name: "SOMASHEKHAR", description: "NANDINI BAKERY, SIRA", photo: "SOMASHEKHAR.png" },
+    { name: "L RANGANATHAPPA", description: "RTD. ENGINEER", photo: "L_RANGANATHAPPA.png" },
+    { name: "G P RAJU", description: "RTD. PRINCIPAL", photo: "G_P_RAJU.png" },
+    { name: "JAYARAMU", description: "EX-MILITARY OFFICER", photo: "JAYARAMU.png" },
+    { name: "A HANUMANTHA ACHARYA", description: "", photo: "A_HANUMANTHA_ACHARYA.png" },
+    { name: "KUM. SANGAMMA KUBSAD", description: "", photo: "KUM._SANGAMMA_KUBSAD.png" },
+    { name: "S V SATHYANARAYANA SHETTY", description: "", photo: "S_V_SATHYANARAYANA_SHETTY.png" },
+  ];
+
+  const donorsWithoutPhoto = [
     "YASHODA JAYARAM",
     "P THIMMAIAH AYYAPPA SWAMY",
-    "A HANUMANTHA ACHARYA",
     "DR. DEEPAK, SIRA",
     "DR. KESHAVA MURTHY, SIRA",
     "DR. RAGHU, SIRA",
     "H N SURESH BABU, SIRA",
     "R RAVINDRANATH AND BROS.",
     "PARTHASARATHY AND SONS",
-    "KUM. SANGAMMA KUBSAD",
     "SUDARSHAN BABU, BENGALURU",
   ];
 
@@ -201,7 +206,7 @@ export default function Donor() {
           </Card>
         </div>
 
-        {/* Donor List */}
+        {/* Donors with Photos */}
         <div className="mt-8 max-w-4xl mx-auto">
           <Card>
             <CardHeader>
@@ -209,12 +214,35 @@ export default function Donor() {
               <CardDescription>{t("donor_list_desc")}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {donors.map((donor, index) => (
-                  <div key={index} className="p-3 rounded-lg bg-gray-50 text-sm text-gray-800">
-                    {donor}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mb-10">
+                {donorsWithPhoto.map((donor, index) => (
+                  <div key={index} className="flex flex-col items-center text-center group">
+                    <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-brand-blue/20 shadow-md group-hover:border-brand-blue transition-colors mb-3">
+                      <img
+                        src={getDonorImage(donor.photo)}
+                        alt={donor.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="font-bold text-gray-900 text-sm leading-tight">{donor.name}</p>
+                    {donor.description && (
+                      <p className="text-brand-blue text-xs mt-1">{donor.description}</p>
+                    )}
                   </div>
                 ))}
+              </div>
+
+              {/* Donors without Photos */}
+              <div className="border-t border-gray-200 pt-6">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Other Distinguished Donors</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {donorsWithoutPhoto.map((donor, index) => (
+                    <div key={index} className="p-3 rounded-lg bg-gray-50 text-sm text-gray-800 flex items-center gap-2">
+                      <Heart className="h-3 w-3 text-brand-orange shrink-0" />
+                      {donor}
+                    </div>
+                  ))}
+                </div>
               </div>
             </CardContent>
           </Card>

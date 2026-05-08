@@ -10,55 +10,64 @@ export default function ParentsMessage() {
       name: "Madhumati",
       child: "Parent of Vaishnavi, Class 3 & Chinmayi, Class 6",
       message: t("parent_message_1"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Madhumati.png"
     },
     {
       name: "Pavithra",
       child: "Parent of Megha, Class 7",
       message: t("parent_message_2"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Pavithra.png"
     },
     {
       name: "Vijayalakshmi",
       child: "Parent of Sharandeep, Class 2",
       message: t("parent_message_3"),
-      rating: 5
+      rating: 5,
+      photo: null
     },
     {
       name: "Nagamani",
       child: "Parent of Aishwarya, Class 10",
       message: t("parent_message_4"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Nagamani.png"
     },
     {
       name: "Thimmaraju",
       child: "Parent of Tulasi, Class 9 & Shashank, Class 8",
       message: t("parent_message_5"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Thimmaraju.png"
     },
     {
       name: "Vatsala",
       child: "Parent of Padmavati, Class 5",
       message: t("parent_message_6"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Vatsala.png"
     },
     {
       name: "Mangala",
       child: "Parent of Rashmi, Class 7",
       message: t("parent_testimonial_1"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Mangala.png"
     },
     {
       name: "Geetha",
       child: "Parent of Kumuda, Class 4 & Lathish, Class 6",
       message: t("parent_testimonial_2"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Geetha.png"
     },
     {
       name: "Nalina",
       child: "Parent of Harsha, Class 1 & Indrajit, Class 5",
       message: t("parent_testimonial_3"),
-      rating: 5
+      rating: 5,
+      photo: "/assets/parents/Nalina.png"
     },
   ];
 
@@ -152,8 +161,12 @@ export default function ParentsMessage() {
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-brand-blue/10 rounded-full flex items-center justify-center">
-                          <User className="h-6 w-6 text-brand-blue" />
+                        <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-brand-blue/10 flex items-center justify-center">
+                          {message.photo ? (
+                            <img src={message.photo} alt={message.name} className="w-12 h-12 object-cover" />
+                          ) : (
+                            <User className="h-6 w-6 text-brand-blue" />
+                          )}
                         </div>
                         <div>
                           <CardTitle className="text-lg font-bold text-brand-blue">{message.name}</CardTitle>

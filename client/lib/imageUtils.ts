@@ -83,3 +83,10 @@ export function getAssetImage(name: string): string {
 export function getAlumniImage(filename: string): string {
   return `${getAssetBasePath()}/alumini/${filename}`;
 }
+
+/**
+ * Get a donor photo from the donors folder by filename
+ */
+export function getDonorImage(filename: string): string {
+  return `${getAssetBasePath()}/donors/${filename}`;
+}
