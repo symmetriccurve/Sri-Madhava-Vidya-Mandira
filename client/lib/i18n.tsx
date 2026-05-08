@@ -127,7 +127,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_criteria_3: "Behavioral assessment during interaction",
     admissions_page_criteria_4: "Parental commitment to school values",
     admissions_page_fee_concession_banner:
-      "Free tuition for the third child is available when the first two children are studying at SMVM.",
+      "Free tuition for the third child is available when the first two children are studying at Sri Madhava Vidya Mandira.",
     admissions_page_why_choose_title: "Why Choose Sri Madhava Vidya Mandira?",
     admissions_page_why_1_title: "Values-Based Education",
     admissions_page_why_1_desc:
@@ -1031,7 +1031,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_criteria_3: "ಸಂವಾದದ ವೇಳೆ ವರ್ತನಾ ಮೌಲ್ಯಮಾಪನ",
     admissions_page_criteria_4: "ಶಾಲೆಯ ಮೌಲ್ಯಗಳಿಗೆ ಪೋಷಕರ ಬದ್ಧತೆ",
     admissions_page_fee_concession_banner:
-      "ಮೊದಲ ಇಬ್ಬರು ಮಕ್ಕಳು SMVMನಲ್ಲಿ ಓದುತ್ತಿದ್ದರೆ ಮೂರನೇ ಮಗುವಿಗೆ ಉಚಿತ ಶಿಕ್ಷಣ ಸೌಲಭ್ಯ ಲಭ್ಯ.",
+      "ಮೊದಲ ಇಬ್ಬರು ಮಕ್ಕಳು ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದಲ್ಲಿ ಓದುತ್ತಿದ್ದರೆ ಮೂರನೇ ಮಗುವಿಗೆ ಉಚಿತ ಶಿಕ್ಷಣ ಸೌಲಭ್ಯ ಲಭ್ಯ.",
     admissions_page_why_choose_title:
       "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವನ್ನು ಏಕೆ ಆಯ್ಕೆ ಮಾಡಬೇಕು?",
     admissions_page_why_1_title: "ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣ",
@@ -1053,9 +1053,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_contact_address:
       "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     admissions_page_phone_label: "ಫೋನ್",
-    admissions_page_phone_value: "+91 94494 24530",
+    admissions_page_phone_value: "+91 9449643684, +91 9449424530",
     admissions_page_email_label: "ಇಮೇಲ್ ಐಡಿ",
-    admissions_page_email_value: "madhavavidyamandira21@gmail.com",
+    admissions_page_email_value: "smvmsira@gmail.com",
     admissions_page_download_brochure: "ಬ್ರೋಷರ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
     facilities_page_title: "ವಿಶ್ವಮಟ್ಟದ ಸೌಲಭ್ಯಗಳು",
     facilities_page_subtitle: "ಶಿಕ್ಷಣದಲ್ಲಿ ಶ್ರೇಷ್ಠತೆಗೆ ಬೆಂಬಲ",

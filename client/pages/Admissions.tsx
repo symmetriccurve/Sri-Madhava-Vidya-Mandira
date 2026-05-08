@@ -132,7 +132,7 @@ export default function Admissions() {
       {/* Fee Concession Banner */}
       <section className="mb-12">
         <div className="rounded-xl border border-blue-200 bg-blue-50 px-6 py-4 text-center">
-          <p className="text-sm md:text-base font-medium text-blue-900">{t("admissions_page_fee_concession_banner")}</p>
+          <p className="text-sm md:text-base font-bold text-blue-900">{t("admissions_page_fee_concession_banner")}</p>
         </div>
       </section>
 
