@@ -203,10 +203,10 @@ export default function News() {
                   <article.icon className="h-4 w-4" />
                   <span>{article.category}</span>
                 </div>
-                <CardTitle className="text-lg line-clamp-2">{article.title}</CardTitle>
+                <CardTitle className="text-lg md:line-clamp-2">{article.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-700 mb-4 line-clamp-3">{article.excerpt}</p>
+                <p className="text-sm text-gray-700 mb-4 md:line-clamp-3">{article.excerpt}</p>
               </CardContent>
             </Card>
           ))}
