@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
 import { getLogo } from "@/lib/imageUtils";
 import { useI18n } from "@/lib/i18n";
-import { useState, useEffect } from "react";
 
 export default function Footer() {
   const { t } = useI18n();
@@ -12,12 +13,14 @@ export default function Footer() {
   useEffect(() => {
     const script1 = document.createElement("script");
     script1.type = "text/javascript";
-    script1.src = "https://www.freevisitorcounters.com/auth.php?id=53a6de6e47403880731f96f314469f4f2571a177";
+    script1.src =
+      "https://www.freevisitorcounters.com/auth.php?id=53a6de6e47403880731f96f314469f4f2571a177";
     document.body.appendChild(script1);
 
     const script2 = document.createElement("script");
     script2.type = "text/javascript";
-    script2.src = "https://www.freevisitorcounters.com/en/home/counter/1547757/t/6";
+    script2.src =
+      "https://www.freevisitorcounters.com/en/home/counter/1547757/t/6";
     document.body.appendChild(script2);
 
     return () => {
@@ -148,13 +151,13 @@ export default function Footer() {
           Visitor Counter
         </a>
         <div className="text-center text-xs text-gray-400">
-        A digital initiative by{" "}
-        <button
-          onClick={() => setShowModal(true)}
-          className="text-gray-500 font-medium hover:text-blue-600 underline underline-offset-2 transition-colors"
-        >
-          Rainbow Shiksha Foundation
-        </button>
+          A digital initiative by{" "}
+          <button
+            onClick={() => setShowModal(true)}
+            className="text-gray-500 font-medium hover:text-blue-600 underline underline-offset-2 transition-colors"
+          >
+            Rainbow Shiksha Foundation
+          </button>
         </div>
       </div>
 
@@ -188,12 +191,12 @@ export default function Footer() {
               Do you have a similar need? We'd love to help.
             </p>
             <a
-              href="https://www.rainbowshiksha.com"
+              href="https://www.rainbowshiksha.org"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-block text-xs font-medium text-blue-600 hover:text-blue-800 underline underline-offset-2 transition-colors"
             >
-              Reach out at rainbowshiksha.com →
+              Reach out at rainbowshiksha.org →
             </a>
           </div>
         </div>
