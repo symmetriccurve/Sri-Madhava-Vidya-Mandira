@@ -1272,7 +1272,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     academics_page_curriculum_overview: "ಪಠ್ಯಕ್ರಮ ಅವಲೋಕನ",
     academics_page_tab_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ",
     academics_page_tab_primary: "ಪ್ರಾಥಮಿಕ",
-    academics_page_tab_middle: "ಮಧ್ಯಮ ಶಾಲೆ",
+    academics_page_tab_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ",
     academics_page_tab_high: "ಪ್ರೌಢ ಶಾಲೆ",
     academics_page_grade_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ (ನರ್ಸರಿ - ಯುಕೆಜಿ)",
     academics_page_grade_pre_primary_desc:
@@ -1280,7 +1280,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     academics_page_grade_primary: "ಪ್ರಾಥಮಿಕ (I - V)",
     academics_page_grade_primary_desc:
       "ಓದು, ಬರವಣಿಗೆ, ಅಂಕಗಣಿತ ಮತ್ತು ವೈಜ್ಞಾನಿಕ ಚಿಂತನೆಗೆ ಒತ್ತು ನೀಡುವ ಅಡಿಪಾಯ ನಿರ್ಮಾಣ.",
-    academics_page_grade_middle: "ಮಧ್ಯಮ ಶಾಲೆ (VI - VIII)",
+    academics_page_grade_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ (VI - VIII)",
     academics_page_grade_middle_desc:
       "ಪ್ರಾಯೋಗಿಕ ಕಲಿಕೆಯ ಮೂಲಕ ಮೇಲ್ದರ್ಜೆಯ ತರಗತಿಗಳಿಗೆ ಸಿದ್ಧಗೊಳಿಸುವ ಸಮಗ್ರ ಪಠ್ಯಕ್ರಮ.",
     academics_page_grade_high: "ಪ್ರೌಢ ಶಾಲೆ (IX - X)",
@@ -1726,7 +1726,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     // New Kannada Values
     samskara: "ಸಂಸ್ಕಾರ",
     samskara_desc:
-      "ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ನೈತಿಕತೆ ಶಿಸ್ತು ಗೌರವ ಹಾಗೂ ದೈನಂದಿನ ಆಚರಣೆಯಲ್ಲಿಯೂ ಧರ್ಮ ಬೋಧನೆ ಮಾಡುವುದು",
+      "ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ನೈತಿಕತೆ, ಶಿಸ್ತು ಗೌರವ ಹಾಗೂ ದೈನಂದಿನ ಆಚರಣೆಯಲ್ಲಿಯೂ ಧರ್ಮ ಬೋಧನೆ ಮಾಡುವುದು",
     seva_bhavana: "ಸೇವಾ ಭಾವನೆ",
     seva_bhavana_desc:
       "ಸಮಾಜದ ಪ್ರತಿಯೊಬ್ಬರಲ್ಲಿಯೂ ದಯೆ ಹಾಗೂ ಸೇವಾ ಮನೋಭಾವ ಬೆಳೆಸುವುದು ಇತರರ ಒಳತಿಗಾಗಿ ತನ್ನ ಸ್ವಾರ್ಥವನ್ನು ತ್ಯಾಗ ಮಾಡುವುದು ತನ್ನ ಕರ್ತವ್ಯವನ್ನು ನಿಷ್ಠೆಯಿಂದ ಪಾಲಿಸುವುದು.",

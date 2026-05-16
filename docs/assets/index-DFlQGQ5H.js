@@ -19704,7 +19704,7 @@ Our aim is to instill in students a deep sense of respect for elders and affecti
       academics_page_curriculum_overview: "ಪಠ್ಯಕ್ರಮ ಅವಲೋಕನ",
       academics_page_tab_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ",
       academics_page_tab_primary: "ಪ್ರಾಥಮಿಕ",
-      academics_page_tab_middle: "ಮಧ್ಯಮ ಶಾಲೆ",
+      academics_page_tab_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ",
       academics_page_tab_high: "ಪ್ರೌಢ ಶಾಲೆ",
       academics_page_grade_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ (ನರ್ಸರಿ - ಯುಕೆಜಿ)",
       academics_page_grade_pre_primary_desc:
@@ -19712,7 +19712,7 @@ Our aim is to instill in students a deep sense of respect for elders and affecti
       academics_page_grade_primary: "ಪ್ರಾಥಮಿಕ (I - V)",
       academics_page_grade_primary_desc:
         "ಓದು, ಬರವಣಿಗೆ, ಅಂಕಗಣಿತ ಮತ್ತು ವೈಜ್ಞಾನಿಕ ಚಿಂತನೆಗೆ ಒತ್ತು ನೀಡುವ ಅಡಿಪಾಯ ನಿರ್ಮಾಣ.",
-      academics_page_grade_middle: "ಮಧ್ಯಮ ಶಾಲೆ (VI - VIII)",
+      academics_page_grade_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ (VI - VIII)",
       academics_page_grade_middle_desc:
         "ಪ್ರಾಯೋಗಿಕ ಕಲಿಕೆಯ ಮೂಲಕ ಮೇಲ್ದರ್ಜೆಯ ತರಗತಿಗಳಿಗೆ ಸಿದ್ಧಗೊಳಿಸುವ ಸಮಗ್ರ ಪಠ್ಯಕ್ರಮ.",
       academics_page_grade_high: "ಪ್ರೌಢ ಶಾಲೆ (IX - X)",
