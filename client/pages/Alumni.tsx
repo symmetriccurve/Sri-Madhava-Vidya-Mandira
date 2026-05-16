@@ -81,9 +81,9 @@ export default function Alumni() {
       location: "UK",
     },
     {
-      name: "SHILPASHREE",
-      profession: "APMC SECRETARY",
-      location: "HARIHARA",
+      name: "SHILPA SHREE K",
+      profession: "MARKETING OFFICER",
+      location: "APMC, HARIHARA",
       photo: "SHILPA_SRI_K.jpeg",
     },
     {
