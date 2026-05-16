@@ -923,6 +923,23 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "Our yoga team secured the top spot in a prestigious competition in Mysuru.",
     achievements_page_card_11_level: "State/Regional Level",
     achievements_page_card_11_participants: "Yoga Team",
+    about_history_title: "Our History",
+    about_history_intro:
+      "Sri Madhava Vidya Mandira was established with the inspiration from Rashtriya Swayamsevak Sangh, Hindu Seva Pratishthana, and Vishwa Hindu Parishad, under the guidance of Sadhana Shikshana Samsthe.",
+    about_history_founders_intro: "Founded by visionary leaders:",
+    about_history_founder_1: "Sri Raj Ashwatayya",
+    about_history_founder_2: "Sri S.V. Sathyanarayanshetty",
+    about_history_founder_3: "Sri V. Govind Shetty",
+    about_history_founder_4: "Sri S.G. Chinnagiriyappa",
+    about_history_founder_5: "Sri G. Suryanarayanshetty",
+    about_history_founder_6: "Sri Ajjanna",
+    about_history_founder_7: "Sri Dasarangappa",
+    about_history_inauguration:
+      "With the blessed hands of the late Sri Ajit Kumar and the blessings of the city's elders, the Shishu Mandira (Children's Play Home) was inaugurated on April 11, 1983-84.",
+    about_history_growth:
+      "The school grew from the Shishu Mandira up to 4th grade until 1988. In 1989, the Higher Primary School was established.",
+    about_history_current:
+      "Currently, our school operates with an aided primary section from 1st to 7th grade (Kannada medium), and high school from 8th to 10th grade (English medium). In 2022-23, LKG and UKG (English medium) were introduced. In 2023-24, 1st grade was started in English medium.",
   },
   kn: {
     school_name: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
@@ -1816,6 +1833,23 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ನಮ್ಮ ಯೋಗ ತಂಡವು ಮೈಸೂರಿನಲ್ಲಿ ನಡೆದ ಪ್ರತಿಷ್ಠಿತ ಸ್ಪರ್ಧೆಯಲ್ಲಿ ಅಗ್ರಸ್ಥಾನವನ್ನು ಪಡೆದುಕೊಂಡಿದೆ.",
     achievements_page_card_11_level: "ರಾಜ್ಯ/ಪ್ರಾದೇಶಿಕ ಮಟ್ಟ",
     achievements_page_card_11_participants: "ಯೋಗ ತಂಡ",
+    about_history_title: "ನಮ್ಮ ಇತಿಹಾಸ",
+    about_history_intro:
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು ರಾಷ್ಟ್ರೀಯ ಸ್ವಯಂಸೇವಕ ಸಂಘ, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ ಮತ್ತು ವಿಶ್ವ ಹಿಂದೂ ಪರಿಷತ್ನ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ಥಾಪಿಸಲಾಯಿತು.",
+    about_history_founders_intro: "ದೂರದರ್ಶೀ ನೇತೃತ್ವದಿಂದ ಸಂಸ್ಥಾಪಿತ:",
+    about_history_founder_1: "ಶ್ರೀ ರಾಜ ಅಶ್ವತಯ್ಯ",
+    about_history_founder_2: "ಶ್ರೀ ಎಸ್. ವಿ. ಸತ್ಯನಾರಾಯಣಶೆಟ್ಟಿ",
+    about_history_founder_3: "ಶ್ರೀ ವಿ. ಗೋವಿಂದ ಶೆಟ್ಟಿ",
+    about_history_founder_4: "ಶ್ರೀ ಎಸ್.ಜಿ.ಚಿನ್ನಗಿರಿಯಪ್ಪ",
+    about_history_founder_5: "ಶ್ರೀ ಜಿ. ಸೂರ್ಯನಾರಾಯಣಶೆಟ್ಟಿ",
+    about_history_founder_6: "ಶ್ರೀ ಅಜ್ಜಣ್ಣ",
+    about_history_founder_7: "ಶ್ರೀ ದಾಸರಂಗಪ್ಪ",
+    about_history_inauguration:
+      "ಈ ದೂರದರ್ಶಿ ನೇತೃತ್ವದ ಆಶೀರ್ವಾದದಿಂದ ಸ್ವರ್ಗೀಯ ಶ್ರೀಯುತ ಅಜಿತ್ ಕುಮಾರ್ ಅವರ ಅಮೃತ ಹಸ್ತದ ಮೂಲಕ ನಗರದ ಹಿರಿಯರ ಆಶೀರ್ವಾದದಿಂದ ಏಪ್ರಿಲ್ 11, 1983-84ರಂದು ಶಿಶುಮಂದಿರವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
+    about_history_growth:
+      "1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4ನೇ ತರಗತಿಯವರೆಗೂ ಪಾಠಶಾಲೆಯು ಬೆಳೆದು, 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
+    about_history_current:
+      "ಪ್ರಸ್ತುತ, ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ (ಕನ್ನಡ ಮಾಧ್ಯಮ) ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ ಮತ್ತು 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ನಡೆಯುತ್ತಿದೆ. 2022-23ರಲ್ಲಿ ಎಲ್.ಕೆ.ಜಿ ಮತ್ತು ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು. 2023-24ರಲ್ಲಿ 1ನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
   },
 };
 

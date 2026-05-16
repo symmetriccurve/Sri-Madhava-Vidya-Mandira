@@ -167,60 +167,24 @@ export default function About() {
           <CardContent>
             <div className="space-y-8">
               {/* Language-specific content based on global toggle */}
-              {lang === "kn" ? (
-                <div className="pl-6">
-                  <div className="space-y-4 text-gray-700 leading-relaxed">
-                    <p>
-                      ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ, ವಿಶ್ವ
-                      ಹಿಂದೂ ಪರಿಷತ್ನ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ
-                      ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ವರ್ಗೀಯ ಶ್ರೀಯುತ ಅಜಿತ್ ಕುಮಾರ್ ಅವರ ಅಮೃತ
-                      ಹಸ್ತದ ಮೂಲಕ ನಗರದ ಹಿರಿಯರ ಆಶೀರ್ವಾದದಿಂದ 1983- 84ರ ಏಪ್ರಿಲ್
-                      11ರಂದು ಶಿಶುಮಂದಿರವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
+              <div className="pl-6">
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>{t("about_history_intro")}</p>
+                  <div>
+                    <p className="font-semibold mb-2">
+                      {t("about_history_founders_intro")}
                     </p>
-                    <p>
-                      1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4 ನೇ ತರಗತಿಯವರೆಗೂ ಬೆಳೆದು ಬೆಳೆದ
-                      ಶಾಲೆಯಲ್ಲಿ 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು
-                      ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
-                    </p>
-                    <p>
-                      ಇದೀಗ ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ(ಕನ್ನಡ ಮಾಧ್ಯಮ)
-                      ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ, 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ
-                      ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ನಡೆಯುತ್ತಿದ್ದು, 2022-23ರಲ್ಲಿ ಎಲ್. ಕೆ .ಜಿ
-                      , ಯು .ಕೆ .ಜಿ. (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು
-                    </p>
-                    <p>
-                      2023-24ರಲ್ಲಿ ಒಂದನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ
-                      ಪ್ರಾರಂಭಿಸಲಾಯಿತು.
-                    </p>
+                    <ul className="ml-4 space-y-1">
+                      {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                        <li key={i}>• {t(`about_history_founder_${i}`)}</li>
+                      ))}
+                    </ul>
                   </div>
+                  <p>{t("about_history_inauguration")}</p>
+                  <p>{t("about_history_growth")}</p>
+                  <p>{t("about_history_current")}</p>
                 </div>
-              ) : (
-                <div className="pl-6">
-                  <div className="space-y-4 text-gray-700 leading-relaxed">
-                    <p>
-                      Sri Madhava Vidya Mandira was established with the
-                      inspiration from Rashtriya Swayamsevak Sangh, Hindu Seva
-                      Pratishthana, and Vishwa Hindu Parishad, under the
-                      guidance of Sadhana Shikshana Samsthe. With the blessed
-                      hands of the late Sri Ajit Kumar and the blessings of the
-                      city's elders, the Shishu Mandira (Children's Play Home)
-                      was inaugurated on April 11, 1983-84.
-                    </p>
-                    <p>
-                      The school grew from the Shishu Mandira up to 4th grade
-                      until 1988, and in 1989, the Higher Primary School was
-                      established.
-                    </p>
-                    <p>
-                      Currently, our school operates with an aided primary
-                      section from 1st to 7th grade (Kannada medium), and high
-                      school from 8th to 10th grade (English medium). In
-                      2022-23, LKG and UKG (English medium) were introduced.
-                    </p>
-                    <p>In 2023-24, 1st grade was started in English medium.</p>
-                  </div>
-                </div>
-              )}
+              </div>
 
               {/* Key Milestones */}
               <div className="mt-8">
@@ -404,7 +368,7 @@ export default function About() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                   {lang === "kn"
-                    ? "ಶ್ರೀ ರಾಜ ಅಶ್ವಥನಾರಾಯಣ ಶೆಟ್ಟಿ ರವರು ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್ ಅವರೊಂದಿಗೆ ಸೇರಿ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯನ್ನು ಸ್ಥಾಪಿಸುವಲ್ಲಿ ಮಹತ್ವದ ಪಾತ್ರವಹಿಸಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಸಮಯ ಮತ್ತು ಆಲೋಚನೆಗಳನ್ನು ಸಂಸ್ಕಾರ, ಶಿಕ್ಷಣಕ್ಕಾಗಿ ಸಮರ್ಪಿಸಿದ್ದು ಇಂದಿನ ಪೀಳಿಗೆಗೆ ಅದು ಅತ್ಯಂತ ಅಗತ್ಯವಾದ ಅಂಶವಾಗಿದೆ. ಸರಳ ವ್ಯಕ್ತಿತ್ವ ಹೊಂದಿದ್ದರೂ ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ದೊಡ್ಡ ದೃಷ್ಟಿಕೋನ ಹೊಂದಿದ್ದಾರೆ. ಸಂಸ್ಥೆಯ ಆರಂಭಿಕ ಹಂತಗಳಲ್ಲಿ ತಮ್ಮ ಸಹೋದ್ಯೋಗಿಗಳೊಂದಿಗೆ ನೀಡಿದ ಬೆಂಬಲ ಮರೆಯಲಾಗದಂತದ್ದು. ಇದಲ್ಲದೆ ಅವರು ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ದೇಶಭಕ್ತಿ, ಶಿಸ್ತು ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸುವ ಕಡೆಗೂ ಗಮನ ಹರಿಸುತ್ತಿದ್ದಾರೆ. ಶಾಲೆಯನ್ನು ಶ್ರೇಷ್ಠ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸಲ್ಲಿ ಅವರ ಪಾತ್ರ ಅತ್ಯಂತ ಮಹತ್ವದ್ದಾಗಿದೆ."
+                    ? "ಶ್ರೀ ರಾಜ ಅಶ್ವಥನಾರಾಯಣ ಶೆಟ್ಟಿ ರವರು ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್ ಅವರೊಂದಿಗೆ ಸೇರಿ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸಂಸ್ಥೆಯನ್ನು ಅಭಿವೃದ್ಧಿ ಪಡಿಸುವಲ್ಲಿ ಮಹತ್ವದ ಪಾತ್ರವಹಿಸಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಸಮಯ ಮತ್ತು ಆಲೋಚನೆಗಳನ್ನು ಸಂಸ್ಕಾರ, ಶಿಕ್ಷಣಕ್ಕಾಗಿ ಸಮರ್ಪಿಸಿದ್ದು ಇಂದಿನ ಪೀಳಿಗೆಗೆ ಅದು ಅತ್ಯಂತ ಅಗತ್ಯವಾದ ಅಂಶವಾಗಿದೆ. ಸರಳ ವ್ಯಕ್ತಿತ್ವ ಹೊಂದಿದ್ದರೂ ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ದೊಡ್ಡ ದೃಷ್ಟಿಕೋನ ಹೊಂದಿದ್ದಾರೆ. ಸಂಸ್ಥೆಯ ಆರಂಭಿಕ ಹಂತಗಳಲ್ಲಿ ತಮ್ಮ ಸಹೋದ್ಯೋಗಿಗಳೊಂದಿಗೆ ನೀಡಿದ ಬೆಂಬಲ ಮರೆಯಲಾಗದಂತದ್ದು. ಇದಲ್ಲದೆ ಅವರು ವಿದ್ಯಾರ್ಥಿಗಳಲ್ಲಿ ದೇಶಭಕ್ತಿ, ಶಿಸ್ತು ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಬೆಳೆಸುವ ಕಡೆಗೂ ಗಮನ ಹರಿಸುತ್ತಿದ್ದಾರೆ. ಶಾಲೆಯನ್ನು ಶ್ರೇಷ್ಠ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸಲ್ಲಿ ಅವರ ಪಾತ್ರ ಅತ್ಯಂತ ಮಹತ್ವದ್ದಾಗಿದೆ."
                     : "Sri Raja Ashwathanarayana Shetty played a significant role in founding Sri Madhava Vidya Mandira along with Sri S L Jayaram. He has dedicated his time and thoughts to culture and education — an essential aspect for the current generation. Though a person of simple character, he holds a grand vision for the school's development. The support he provided alongside his colleagues in the institution's early stages is unforgettable. He also focuses on nurturing patriotism, discipline, and moral values in students. His role in shaping the school into an excellent educational institution is of great significance."}
                 </p>
               </div>
@@ -478,8 +442,6 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
-
-
     </main>
   );
 }
