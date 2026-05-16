@@ -413,7 +413,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     gallery_page_recent_events_title: "Recent Events",
     gallery_page_category_campus_title: "Campus Life",
     gallery_page_category_campus_desc:
-      "Beautiful campus views and learning environments",
+      "Beautiful campus views and learning environment",
     gallery_page_category_students_title: "Student Activities",
     gallery_page_category_students_desc:
       "Students engaged in various learning activities",
@@ -472,7 +472,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     news_page_article_3_category: "Cultural",
     news_page_article_4_title: "Parent-Teacher Meeting - Building Partnerships",
     news_page_article_4_excerpt:
-      "Successful parent-teacher meeting held to discuss student progress and academic development.",
+      "Successful parent-teacher meeting held quarterly to discuss student progress and academic development.",
     news_page_article_4_content:
       "The quarterly parent-teacher meeting was conducted successfully with high participation from parents. Teachers discussed individual student progress, academic performance, and areas for improvement with parents.",
     news_page_article_4_date: "September 28, 2024",
@@ -953,7 +953,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     director: "Director",
     sri_sl_jayaram: "Sri S L Jayaram",
     sri_sl_jayaram_bio:
-      "Sri S L Jayaram is one of the key pillars of Sri Madhava Vidya Mandira. He has been continuously striving to provide quality education with cultural values to the children of Shira Taluk. He has dedicated his service to this school not only physically but also financially — arranging numerous donations and personally contributing significant amounts toward the school's development. He has devoted much of his time to the school's growth, serving in every way — from building construction to academic progress.",
+      "Sri S L Jayaram is one of the key pillars of Sri Madhava Vidya Mandira. He has been continuously striving to provide quality education with cultural values to the children of sira Taluk. He has dedicated his service to this school not only physically but also financially — arranging numerous donations and personally contributing significant amounts toward the school's development. He has devoted much of his time to the school's growth, serving in every way — from building construction to academic progress.",
     sri_raja_ashwathanarayana_shetty: "Sri Raja Ashwathanarayana Shetty",
     sri_raja_ashwathanarayana_shetty_bio:
       "Sri Raja Ashwathanarayana Shetty played a significant role in founding Sri Madhava Vidya Mandira along with Sri S L Jayaram. He has dedicated his time and thoughts to culture and education — an essential aspect for the current generation. Though a person of simple character, he holds a grand vision for the school's development. The support he provided alongside his colleagues in the institution's early stages is unforgettable. He also focuses on nurturing patriotism, discipline, and moral values in students. His role in shaping the school into an excellent educational institution is of great significance.",
@@ -965,7 +965,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     sri_somashekhar:
       "Sri Somashekhar — School President, Sri Madhava Vidya Mandira",
     sri_somashekhar_bio:
-      "Sri Somashekhar is a successful entrepreneur from Shira who became associated with Sri Madhava Vidya Mandira. He holds a strong vision of providing quality education rooted in Indian culture. He has dedicated his thoughts and time to the development of the school. The green initiative is part of his vision, aimed at making Sri Madhava Vidya Mandira self-reliant. He plays a key role in designing innovative plans for the school's comprehensive development. He inspires the cultivation of leadership qualities and moral values among students. He strives to increase community participation and brings together local support for the school's growth. He carries the dream of shaping the school into a model educational institution in the years ahead.",
+      "Sri Somashekhar is a successful entrepreneur from sira who became associated with Sri Madhava Vidya Mandira. He holds a strong vision of providing quality education rooted in Indian culture. He has dedicated his thoughts and time to the development of the school. The green initiative is part of his vision, aimed at making Sri Madhava Vidya Mandira self-reliant. He plays a key role in designing innovative plans for the school's comprehensive development. He inspires the cultivation of leadership qualities and moral values among students. He strives to increase community participation and brings together local support for the school's growth. He carries the dream of shaping the school into a model educational institution in the years ahead.",
     secretary: "Secretary",
     sri_hemanth_kumar: "Sri Hemanth Kumar",
     sri_hemanth_kumar_bio:
@@ -1272,7 +1272,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     academics_page_curriculum_overview: "ಪಠ್ಯಕ್ರಮ ಅವಲೋಕನ",
     academics_page_tab_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ",
     academics_page_tab_primary: "ಪ್ರಾಥಮಿಕ",
-    academics_page_tab_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ",
+    academics_page_tab_middle: "ಹೈಯರ್ ಪ್ರೈಮರಿ(VI-VII)",
     academics_page_tab_high: "ಪ್ರೌಢ ಶಾಲೆ",
     academics_page_grade_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ (ನರ್ಸರಿ - ಯುಕೆಜಿ)",
     academics_page_grade_pre_primary_desc:
