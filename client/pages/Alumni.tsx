@@ -5,91 +5,186 @@ import { useI18n } from "@/lib/i18n";
 import { useState } from "react";
 
 export default function Alumni() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const alumniData = [
     {
       name: "DR. VINAY SINGH",
+      nameKn: "ಡಾ. ವಿನಯ ಸಿಂಗ್",
       profession: "Doctor",
+      professionKn: "ವೈದ್ಯ",
       location: "SIRA, TUMKUR DIST.",
+      locationKn: "ಸೀರಾ, ತುಮ್ಕೂರ್ ಜಿಲ್ಲೆ",
       photo: "DR_VINAY_SINGH.png",
     },
     {
       name: "RAKESH PADIKAR",
+      nameKn: "ರಾಕೇಶ ಪಾದಿಕರ",
       profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
       location: "BANGALORE",
+      locationKn: "ಬೆಂಗಳೂರು",
       photo: "RAKESH_PADIKAR.png",
     },
     {
       name: "SHWETA G",
+      nameKn: "ಶ್ವೇತಾ ಜಿ",
       profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
       location: "USA",
+      locationKn: "ಯುಎಸ್‌ಎ",
       photo: "SHWETA_GOPALRAO.png",
     },
     {
       name: "REKHA MANJUNATH",
+      nameKn: "ರೇಖಾ ಮಂಜುನಾಥ",
       profession: "ENGINEER",
+      professionKn: "ಇಂಜಿನಿಯರ್",
       location: "GERMANY",
+      locationKn: "ಜರ್ಮನಿ",
       photo: "REKHA_MANJUNATH.png",
     },
     {
       name: "MADHUMALA",
+      nameKn: "ಮಧುಮಾಲಾ",
       profession: "SCIENTIST",
+      professionKn: "ವಿಜ್ಞಾನಿ",
       location: "USA",
+      locationKn: "ಯುಎಸ್‌ಎ",
       photo: "MADHUMALA.png",
     },
     {
       name: "DR. ASHWINI",
+      nameKn: "ಡಾ. ಅಶ್ವಿನಿ",
       profession: "MBBS, MD - ASSISTANT PROFESSOR",
+      professionKn: "ಎಂಬಿಬಿಎಸ್, ಎಮ್‌ಡಿ - ಸಹಾಯಕ ಪ್ರಾಧ್ಯಾಪಕ",
       location: "TUMKUR",
+      locationKn: "ತುಮ್ಕೂರ್",
       photo: "DR_ASHWINI.png",
     },
     {
       name: "RASHMI GOPALRAO",
+      nameKn: "ರಶ್ಮಿ ಗೋಪಾಲರಾವ್",
       profession: "ENGINEER",
+      professionKn: "ಇಂಜಿನಿಯರ್",
       location: "BANGALORE",
+      locationKn: "ಬೆಂಗಳೂರು",
       photo: "RASHMI_GOPALRAO.png",
     },
     {
       name: "DR. REKHA GOPALRAO",
+      nameKn: "ಡಾ. ರೇಖಾ ಗೋಪಾಲರಾವ್",
       profession: "GYNECOLOGIST",
+      professionKn: "ಸ್ತ್ರೀ ರೋಗ ವಿಶೇಷಜ್ಞ",
       location: "MYSORE",
+      locationKn: "ಮೈಸೂರು",
       photo: "DR_REKHA_GOPALRAO.png",
     },
-    { name: "DR. ANNAPOORNA", profession: "Doctor", location: "MANIPAL" },
-    { name: "DR. SUNIL N P", profession: "Doctor", location: "LUCKNOW" },
-    { name: "CHAYA", profession: "MSc.", location: "BANGALORE" },
-    { name: "CHANDRALA", profession: "SOFTWARE ENGINEER", location: "SPAIN" },
-    { name: "SRIDEVI", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
-    { name: "SAGAR", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
-    { name: "ASHWINI", profession: "SOFTWARE ENGINEER", location: "USA" },
+    {
+      name: "DR. ANNAPOORNA",
+      nameKn: "ಡಾ. ಅನ್ನಪೂರ್ಣಾ",
+      profession: "Doctor",
+      professionKn: "ವೈದ್ಯ",
+      location: "MANIPAL",
+      locationKn: "ಮಣಿಪಾಲ್",
+    },
+    {
+      name: "DR. SUNIL N P",
+      nameKn: "ಡಾ. ಸುನಿಲ್ ಎನ್ ಪಿ",
+      profession: "Doctor",
+      professionKn: "ವೈದ್ಯ",
+      location: "LUCKNOW",
+      locationKn: "ಲಕ್ನೌ",
+    },
+    {
+      name: "CHAYA",
+      nameKn: "ಚಯಾ",
+      profession: "MSc.",
+      professionKn: "ಎಂಎಸ್‌ಸಿ.",
+      location: "BANGALORE",
+      locationKn: "ಬೆಂಗಳೂರು",
+    },
+    {
+      name: "CHANDRALA",
+      nameKn: "ಚಂದ್ರಾಲಾ",
+      profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
+      location: "SPAIN",
+      locationKn: "ಸ್ಪೇನ್",
+    },
+    {
+      name: "SRIDEVI",
+      nameKn: "ಶ್ರೀದೇವಿ",
+      profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
+      location: "AUSTRALIA",
+      locationKn: "ಆಸ್ಟ್ರೇಲಿಯಾ",
+    },
+    {
+      name: "SAGAR",
+      nameKn: "ಸಾಗರ",
+      profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
+      location: "AUSTRALIA",
+      locationKn: "ಆಸ್ಟ್ರೇಲಿಯಾ",
+    },
+    {
+      name: "ASHWINI",
+      nameKn: "ಅಶ್ವಿನಿ",
+      profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
+      location: "USA",
+      locationKn: "ಯುಎಸ್‌ಎ",
+    },
     {
       name: "ASHWINI S N",
+      nameKn: "ಅಶ್ವಿನಿ ಎಸ್ ಎನ್",
       profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
       location: "AUSTRALIA",
+      locationKn: "ಆಸ್ಟ್ರೇಲಿಯಾ",
     },
-    { name: "REKHA", profession: "SOFTWARE ENGINEER", location: "USA" },
+    {
+      name: "REKHA",
+      nameKn: "ರೇಖಾ",
+      profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
+      location: "USA",
+      locationKn: "ಯುಎಸ್‌ಎ",
+    },
     {
       name: "NAVEEN PONNAMPETE",
+      nameKn: "ನವೀನ್ ಪೊನ್ನಂಪೆಟೆ",
       profession: "FOREST OFFICER",
+      professionKn: "ಅರಣ್ಯ ಅಧಿಕಾರಿ",
       location: "PONNAMPETE",
+      locationKn: "ಪೊನ್ನಂಪೆಟೆ",
     },
     {
       name: "SREENIDHI GOWDA",
+      nameKn: "ಶ್ರೀನಿಧಿ ಗೌಡ",
       profession: "SOFTWARE ENGINEER",
+      professionKn: "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್",
       location: "UK",
+      locationKn: "ಯುಕೆ",
     },
     {
       name: "SHILPA SHREE K",
+      nameKn: "ಶಿಲ್ಪಾ ಶ್ರೀ ಕೆ",
       profession: "MARKETING OFFICER",
+      professionKn: "ಮಾರ್ಕೆಟಿಂಗ್ ಅಧಿಕಾರಿ",
       location: "APMC, HARIHARA",
+      locationKn: "ಎಪಿಎಂಸಿ, ಹರಿಹರ",
       photo: "SHILPA_SRI_K.jpeg",
     },
     {
       name: "DR. RAVISH",
+      nameKn: "ಡಾ. ರವಿಶ",
       profession: "Doctor",
+      professionKn: "ವೈದ್ಯ",
       location: "GOVERNMENT HOSPITAL, MADHUGIRI",
+      locationKn: "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ, ಮಧುಗಿರಿ",
     },
   ];
 
@@ -160,15 +255,15 @@ export default function Alumni() {
                     />
                   </div>
                   <p className="font-bold text-gray-900 text-sm leading-tight">
-                    {alumni.name}
+                    {lang === "kn" ? alumni.nameKn : alumni.name}
                   </p>
                   <p className="text-brand-blue text-xs mt-1">
-                    {alumni.profession}
+                    {lang === "kn" ? alumni.professionKn : alumni.profession}
                   </p>
                   {alumni.location && (
                     <p className="text-gray-500 text-xs flex items-center gap-1 mt-1">
                       <MapPin className="h-3 w-3 shrink-0" />
-                      {alumni.location}
+                      {lang === "kn" ? alumni.locationKn : alumni.location}
                     </p>
                   )}
                 </div>
@@ -200,7 +295,7 @@ export default function Alumni() {
                         Name:
                       </span>
                       <span className="text-lg font-bold text-brand-blue md:text-gray-900 group-hover:text-brand-blue transition-colors">
-                        {alumni.name}
+                        {lang === "kn" ? alumni.nameKn : alumni.name}
                       </span>
                     </div>
 
@@ -211,7 +306,7 @@ export default function Alumni() {
                       <div className="flex items-center gap-2">
                         <Award className="h-4 w-4 text-brand-orange shrink-0 hidden lg:inline" />
                         <span className="text-gray-700 font-medium">
-                          {alumni.profession}
+                          {lang === "kn" ? alumni.professionKn : alumni.profession}
                         </span>
                       </div>
                     </div>
@@ -224,7 +319,7 @@ export default function Alumni() {
                         <div className="flex items-center gap-2">
                           <MapPin className="h-4 w-4 text-brand-blue shrink-0 hidden lg:inline" />
                           <span className="text-gray-600">
-                            {alumni.location}
+                            {lang === "kn" ? alumni.locationKn : alumni.location}
                           </span>
                         </div>
                       ) : (
