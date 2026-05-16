@@ -940,6 +940,36 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "The school grew from the Shishu Mandira up to 4th grade until 1988. In 1989, the Higher Primary School was established.",
     about_history_current:
       "Currently, our school operates with an aided primary section from 1st to 7th grade (Kannada medium), and high school from 8th to 10th grade (English medium). In 2022-23, LKG and UKG (English medium) were introduced. In 2023-24, 1st grade was started in English medium.",
+    our_leadership: "Our Leadership",
+    key_milestones: "Key Milestones",
+    milestone_shishu_mandira: "Shishu Mandira Inaugurated",
+    milestone_higher_primary: "Higher Primary School",
+    milestone_lkg_ukg: "LKG & UKG (English)",
+    milestone_first_grade: "1st Grade (English)",
+    head_mistress_message: "Head Mistress's Message",
+    head_mistress_message_body:
+      'The goal of our school is to nurture children with culture and patriotism, and who develop fully in physical, yogic, mental, intellectual, and spiritual dimensions. Such a generation of youth should be capable of successfully facing the challenges of life. Their lives should contribute to uplifting our underprivileged brothers and sisters living in cities, villages, forests, and hilly regions, helping free them from social evils and injustices that challenge our national life. In this way, they should work toward making our national life culturally harmonious and prosperous, inspired by the ideal of "Vasudhaiva Kutumbakam" (the world is one family), and contribute to the welfare of the entire world.',
+    sangamma_attribution: "Sangamma — Head Mistress, Primary Section",
+    director: "Director",
+    sri_sl_jayaram: "Sri S L Jayaram",
+    sri_sl_jayaram_bio:
+      "Sri S L Jayaram is one of the key pillars of Sri Madhava Vidya Mandira. He has been continuously striving to provide quality education with cultural values to the children of Shira Taluk. He has dedicated his service to this school not only physically but also financially — arranging numerous donations and personally contributing significant amounts toward the school's development. He has devoted much of his time to the school's growth, serving in every way — from building construction to academic progress.",
+    sri_raja_ashwathanarayana_shetty: "Sri Raja Ashwathanarayana Shetty",
+    sri_raja_ashwathanarayana_shetty_bio:
+      "Sri Raja Ashwathanarayana Shetty played a significant role in founding Sri Madhava Vidya Mandira along with Sri S L Jayaram. He has dedicated his time and thoughts to culture and education — an essential aspect for the current generation. Though a person of simple character, he holds a grand vision for the school's development. The support he provided alongside his colleagues in the institution's early stages is unforgettable. He also focuses on nurturing patriotism, discipline, and moral values in students. His role in shaping the school into an excellent educational institution is of great significance.",
+    honorary_president: "Honorary President",
+    sri_somashekharayya: "Sri Somashekharayya",
+    sri_somashekharayya_bio:
+      "Sri Somashekharayya is a civil contractor by profession and has been actively involved in the construction of buildings at Sri Madhava Vidya Mandira. Alongside this, he pays close attention to the school's academic affairs and motivates teachers to perform their work effectively. He provides guidance rooted in culture to ensure quality education. He has played a significant role in developing the school's infrastructure, striving to provide students with a better learning environment. He continuously offers his experience and guidance for the overall growth of the school.",
+    school_president: "School President",
+    sri_somashekhar:
+      "Sri Somashekhar — School President, Sri Madhava Vidya Mandira",
+    sri_somashekhar_bio:
+      "Sri Somashekhar is a successful entrepreneur from Shira who became associated with Sri Madhava Vidya Mandira. He holds a strong vision of providing quality education rooted in Indian culture. He has dedicated his thoughts and time to the development of the school. The green initiative is part of his vision, aimed at making Sri Madhava Vidya Mandira self-reliant. He plays a key role in designing innovative plans for the school's comprehensive development. He inspires the cultivation of leadership qualities and moral values among students. He strives to increase community participation and brings together local support for the school's growth. He carries the dream of shaping the school into a model educational institution in the years ahead.",
+    secretary: "Secretary",
+    sri_hemanth_kumar: "Sri Hemanth Kumar",
+    sri_hemanth_kumar_bio:
+      "Sri Hemanth Kumar plays a key role in the daily administrative operations of our school's governing board, dedicating his time to the school's development with selfless service. While managing his professional career, he continuously provides valuable educational insights and opinions to our school. As the Secretary of our school, he is committed to serving the institution with dedication and excellence.",
   },
   kn: {
     school_name: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
@@ -1050,7 +1080,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವನ್ನು ಏಕೆ ಆಯ್ಕೆ ಮಾಡಬೇಕು?",
     admissions_page_why_1_title: "ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣ",
     admissions_page_why_1_desc:
-      "ಶೈಕ್ಷಣಿಕ ಶ್ರೇಷ್ಠತೆಯ ಜೊತೆಗೆ ವ್ಯಕ್ತಿತ್ವ ವಿಕಾಸವಾಗಲು ನಮ್ಮ ಪಾಠ್ಯಕ್ರಮದಲ್ಲಿ ನೈತಿಕ ಮೌಲ್ಯಗಳು ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆಯನ್ನು ಒಗ್ಗೂಡಿಸುತ್ತೇವೆ.",
+      "ಶೈಕ್ಷಣಿಕ ಶ್ರೇಷ್ಠತೆಯ ಜೊತೆಗೆ ವ್ಯಕ್ತಿತ್ವ ವಿಕಾಸವಾಗಲು ನಮ್ಮ ಪಠ್ಯಕ್ರಮದಲ್ಲಿ ನೈತಿಕ ಮೌಲ್ಯಗಳು ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆಯನ್ನು ಒಗ್ಗೂಡಿಸುತ್ತೇವೆ.",
     admissions_page_why_2_title: "ಅನುಭವಸಂಪನ್ನ ಶಿಕ್ಷಕರು",
     admissions_page_why_2_desc:
       "ನಮ್ಮ ಶಿಕ್ಷಕರು ಅರ್ಹತೆ ಮತ್ತು ಅನುಭವ ಹೊಂದಿದ್ದು, ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ ಮತ್ತು ವೈಯಕ್ತಿಕ ಗಮನ ನೀಡಲು ಬದ್ಧರಾಗಿದ್ದಾರೆ.",
@@ -1234,12 +1264,12 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "03/08/2025 ರಂದು ಸಂಗಮ ಮಾತಾಜಿ ಅವರಿಗೆ ರಾಜ್ಯ ಮಟ್ಟದ ಆಚಾರ್ಯ ಶ್ರೀ ಪ್ರಶಸ್ತಿ ಪ್ರದಾನಿಸಲಾಯಿತು.",
     achievements_page_recognition_3:
       "05/01/2026 ರಂದು ಸಂಗಮ ಮಾತಾಜಿ ಅವರಿಗೆ ಸಾವಿತ್ರಿಬಾಯಿ ಫುಲೆ ಪ್ರಶಸ್ತಿ ಪ್ರದಾನಿಸಲಾಯಿತು.",
-    academics_cta: "ಪಾಠ್ಯಕ್ರಮ ನೋಡಿ",
+    academics_cta: "ಪಠ್ಯಕ್ರಮ ನೋಡಿ",
     academics_page_title: "ಶೈಕ್ಷಣಿಕ ಶ್ರೇಷ್ಠತೆ",
     academics_page_subtitle: "ಮನಸ್ಸುಗಳನ್ನು ಬೆಳೆಸಿ, ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸುತ್ತೇವೆ",
     academics_page_intro:
       "ನಮ್ಮ ಸಮಗ್ರ ಶೈಕ್ಷಣಿಕ ಕಾರ್ಯಕ್ರಮವು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಮೂಲ ವಿಷಯಗಳಲ್ಲಿ ಗಟ್ಟಿಯಾದ ಅಡಿಪಾಯ ಒದಗಿಸುವುದರ ಜೊತೆಗೆ ವಿಮರ್ಶಾತ್ಮಕ ಚಿಂತನೆ, ಸೃಜನಶೀಲತೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಅರಿವು ಬೆಳೆಸುವಂತೆ ರೂಪಿಸಲಾಗಿದೆ.",
-    academics_page_curriculum_overview: "ಪಾಠ್ಯಕ್ರಮ ಅವಲೋಕನ",
+    academics_page_curriculum_overview: "ಪಠ್ಯಕ್ರಮ ಅವಲೋಕನ",
     academics_page_tab_pre_primary: "ಪೂರ್ವ-ಪ್ರಾಥಮಿಕ",
     academics_page_tab_primary: "ಪ್ರಾಥಮಿಕ",
     academics_page_tab_middle: "ಮಧ್ಯಮ ಶಾಲೆ",
@@ -1252,10 +1282,10 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಓದು, ಬರವಣಿಗೆ, ಅಂಕಗಣಿತ ಮತ್ತು ವೈಜ್ಞಾನಿಕ ಚಿಂತನೆಗೆ ಒತ್ತು ನೀಡುವ ಅಡಿಪಾಯ ನಿರ್ಮಾಣ.",
     academics_page_grade_middle: "ಮಧ್ಯಮ ಶಾಲೆ (VI - VIII)",
     academics_page_grade_middle_desc:
-      "ಪ್ರಾಯೋಗಿಕ ಕಲಿಕೆಯ ಮೂಲಕ ಮೇಲ್ದರ್ಜೆಯ ತರಗತಿಗಳಿಗೆ ಸಿದ್ಧಗೊಳಿಸುವ ಸಮಗ್ರ ಪಾಠ್ಯಕ್ರಮ.",
+      "ಪ್ರಾಯೋಗಿಕ ಕಲಿಕೆಯ ಮೂಲಕ ಮೇಲ್ದರ್ಜೆಯ ತರಗತಿಗಳಿಗೆ ಸಿದ್ಧಗೊಳಿಸುವ ಸಮಗ್ರ ಪಠ್ಯಕ್ರಮ.",
     academics_page_grade_high: "ಪ್ರೌಢ ಶಾಲೆ (IX - X)",
     academics_page_grade_high_desc:
-      "ಮಂಡಳಿ ಪರೀಕ್ಷಾ ಸಿದ್ಧತೆ ಮತ್ತು ವೃತ್ತಿ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಒತ್ತು ನೀಡಿದ ಪಾಠ್ಯಕ್ರಮ.",
+      "ಮಂಡಳಿ ಪರೀಕ್ಷಾ ಸಿದ್ಧತೆ ಮತ್ತು ವೃತ್ತಿ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಒತ್ತು ನೀಡಿದ ಪಠ್ಯಕ್ರಮ.",
     academics_page_subject_english: "ಇಂಗ್ಲಿಷ್",
     academics_page_subject_kannada: "ಕನ್ನಡ",
     academics_page_subject_hindi: "ಹಿಂದಿ",
@@ -1268,12 +1298,12 @@ const dictionary: Record<Lang, Record<string, string>> = {
     academics_page_subject_science: "ವಿಜ್ಞಾನ",
     academics_page_subject_social_studies: "ಸಾಮಾಜಿಕ ವಿಜ್ಞಾನ",
     academics_page_subject_art: "ಕಲೆ",
-    academics_page_feature_curriculum_title: "ಸಮಗ್ರ ಪಾಠ್ಯಕ್ರಮ",
+    academics_page_feature_curriculum_title: "ಸಮಗ್ರ ಪಠ್ಯಕ್ರಮ",
     academics_page_feature_curriculum_desc:
-      "ಸ್ಥಳೀಯ ಸಂದರ್ಭ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಮಾನದಂಡಗಳಿಗೆ ಹೊಂದುವ ಸಮತೋಲಿತ ಪಾಠ್ಯಕ್ರಮ.",
+      "ಸ್ಥಳೀಯ ಸಂದರ್ಭ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಮಾನದಂಡಗಳಿಗೆ ಹೊಂದುವ ಸಮತೋಲಿತ ಪಠ್ಯಕ್ರಮ.",
     academics_page_feature_small_classes_title: "ಸಣ್ಣ ತರಗತಿ ಗಾತ್ರಗಳು",
     academics_page_feature_small_classes_desc:
-      "ಕಡಿಮೆ ವಿದ್ಯಾರ್ಥಿ-ಶಿಕ್ಷಕ ಅನುಪಾತದಿಂದ ವೈಯಕ್ತಿಕ ಗಮನ ಮತ್ತು ವೈಯಕ್ತಿಕೃತ ಕಲಿಕೆ ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
+      "ಕಡಿಮೆ ವಿದ್ಯಾರ್ಥಿ-ಶಿಕ್ಷಕ ಅನುಪಾತದಿಂದ ವೈಯಕ್ತಿಕ ಗಮನ ಮತ್ತು ಕಲಿಕೆ ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
     academics_page_feature_regular_assessments_title: "ನಿಯಮಿತ ಮೌಲ್ಯಮಾಪನ",
     academics_page_feature_regular_assessments_desc:
       "ಯುನಿಟ್ ಪರೀಕ್ಷೆಗಳು, ಯೋಜನೆಗಳು ಮತ್ತು ಸಮಗ್ರ ಪರೀಕ್ಷೆಗಳ ಮೂಲಕ ನಿರಂತರ ಮೌಲ್ಯಮಾಪನ.",
@@ -1598,9 +1628,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     faq_admission_fees: "ಶುಲ್ಕ ರಚನೆ ಮತ್ತು ಪಾವತಿ ಆಯ್ಕೆಗಳು ಯಾವುವು?",
     faq_admission_fees_answer:
       "ನಮ್ಮ ಶುಲ್ಕ ರಚನೆ ಸ್ಪರ್ಧಾತ್ಮಕವಾಗಿದ್ದು ಟ್ಯೂಷನ್, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಇತರ ಶುಲ್ಕಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ನಾವು ಅರ್ಧವಾರ್ಷಿಕ ಮತ್ತು ವಾರ್ಷಿಕ ಪಾವತಿ ಆಯ್ಕೆಗಳನ್ನು ನೀಡುತ್ತೇವೆ.",
-    faq_curriculum: "ನೀವು ಯಾವ ಪಾಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
+    faq_curriculum: "ನೀವು ಯಾವ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
     faq_curriculum_answer:
-      "ನಾವು ಕರ್ನಾಟಕ ರಾಜ್ಯ ಮಂಡಳಿ ಪಾಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೇವೆ ಮತ್ತು ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕ್ರೀಡೆ, ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳ ಮೇಲೆ ಹೆಚ್ಚುವರಿ ಗಮನವನ್ನು ನೀಡುತ್ತೇವೆ.",
+      "ನಾವು ಕರ್ನಾಟಕ ರಾಜ್ಯ ಮಂಡಳಿ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೇವೆ ಮತ್ತು ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕ್ರೀಡೆ, ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳ ಮೇಲೆ ಹೆಚ್ಚುವರಿ ಗಮನವನ್ನು ನೀಡುತ್ತೇವೆ.",
     faq_exams: "ಪರೀಕ್ಷೆಗಳನ್ನು ಹೇಗೆ ನಡೆಸಲಾಗುತ್ತದೆ?",
     faq_exams_answer:
       "1 ರಿಂದ 7ನೇ ತರಗತಿಗಳ ಕನ್ನಡ ಮಾಧ್ಯಮಕ್ಕೆ ಯೂನಿಟ್ ಟೆಸ್ಟ್ ಮತ್ತು ಸೆಮಿಸ್ಟರ್ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. 8 ರಿಂದ 10ನೇ ತರಗತಿಗಳ ಇಂಗ್ಲಿಷ್ ಮಾಧ್ಯಮಕ್ಕೆ ಯೂನಿಟ್ ಟೆಸ್ಟ್, ಮಾಸಿಕ ಟೆಸ್ಟ್ ಮತ್ತು ವಾರ್ಷಿಕ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. 10ನೇ ತರಗತಿಗೆ ತಯಾರಿ (Preparatory) ಪರೀಕ್ಷೆಗಳನ್ನೂ ನಡೆಸಲಾಗುತ್ತದೆ.",
@@ -1681,7 +1711,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಶೈಕ್ಷಣಿಕ ಉತ್ಕೃಷ್ಟತೆಯೊಂದಿಗೆ ಚಾರಿತ್ರ್ಯ, ಸಮಗ್ರತೆ ಮತ್ತು ನೈತಿಕ ಮೌಲ್ಯಗಳನ್ನು ಪೋಷಿಸುವುದರಲ್ಲಿ ನಾವು ನಂಬಿಕೆ ಇಡುತ್ತೇವೆ.",
     holistic_education: "ಸಮಗ್ರ ಶಿಕ್ಷಣ",
     holistic_education_desc:
-      "ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನಮ್ಮ ಪಾಠ್ಯಕ್ರಮವು ಶೈಕ್ಷಣಿಕ, ಕ್ರೀಡೆ, ಕಲೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳನ್ನು ಸಮತೋಲನಗೊಳಿಸುತ್ತದೆ.",
+      "ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ನಮ್ಮ ಪಠ್ಯಕ್ರಮವು ಶೈಕ್ಷಣಿಕ, ಕ್ರೀಡೆ, ಕಲೆ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳನ್ನು ಸಮತೋಲನಗೊಳಿಸುತ್ತದೆ.",
     excellence_teaching: "ಬೋಧನೆಯಲ್ಲಿ ಉತ್ಕೃಷ್ಟತೆ",
     excellence_teaching_desc:
       "ಪ್ರತಿ ವಿದ್ಯಾರ್ಥಿಯನ್ನು ಪ್ರೇರೇಪಿಸಲು ಮತ್ತು ತೊಡಗಿಸಲು ನವೀನ ಬೋಧನಾ ವಿಧಾನಗಳೊಂದಿಗೆ ಅರ್ಪಿತ ಶಿಕ್ಷಕರು.",
@@ -1835,7 +1865,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     achievements_page_card_11_participants: "ಯೋಗ ತಂಡ",
     about_history_title: "ನಮ್ಮ ಇತಿಹಾಸ",
     about_history_intro:
-      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು ರಾಷ್ಟ್ರೀಯ ಸ್ವಯಂಸೇವಕ ಸಂಘ, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ ಮತ್ತು ವಿಶ್ವ ಹಿಂದೂ ಪರಿಷತ್ನ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ಥಾಪಿಸಲಾಯಿತು.",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು ರಾಷ್ಟ್ರೀಯ ಸ್ವಯಂಸೇವಕ ಸಂಘ, ಹಿಂದೂ ಸೇವಾ ಪ್ರತಿಷ್ಠಾನ ಮತ್ತು ವಿಶ್ವ ಹಿಂದೂ ಪರಿಷತ್ ಪ್ರೇರಣೆಯಿಂದ ಸಾಧನ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಯ ಮಾರ್ಗದರ್ಶನದೊಡನೆ ಸ್ಥಾಪಿಸಲಾಯಿತು.",
     about_history_founders_intro: "ದೂರದರ್ಶೀ ನೇತೃತ್ವದಿಂದ ಸಂಸ್ಥಾಪಿತ:",
     about_history_founder_1: "ಶ್ರೀ ರಾಜ ಅಶ್ವತಯ್ಯ",
     about_history_founder_2: "ಶ್ರೀ ಎಸ್. ವಿ. ಸತ್ಯನಾರಾಯಣಶೆಟ್ಟಿ",
@@ -1850,6 +1880,35 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4ನೇ ತರಗತಿಯವರೆಗೂ ಪಾಠಶಾಲೆಯು ಬೆಳೆದು, 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
     about_history_current:
       "ಪ್ರಸ್ತುತ, ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ (ಕನ್ನಡ ಮಾಧ್ಯಮ) ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ ಮತ್ತು 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ನಡೆಯುತ್ತಿದೆ. 2022-23ರಲ್ಲಿ ಎಲ್.ಕೆ.ಜಿ ಮತ್ತು ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು. 2023-24ರಲ್ಲಿ 1ನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
+    our_leadership: "ನಮ್ಮ ನೇತೃತ್ವ",
+    key_milestones: "ಮುಖ್ಯ ಮೈಲಿಗಲ್ಲುಗಳು",
+    milestone_shishu_mandira: "ಶಿಶುಮಂದಿರ ಉದ್ಘಾಟನೆ",
+    milestone_higher_primary: "ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ",
+    milestone_lkg_ukg: "ಎಲ್.ಕೆ.ಜಿ ಮತ್ತು ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ)",
+    milestone_first_grade: "1ನೇ ತರಗತಿ (ಆಂಗ್ಲ)",
+    head_mistress_message: "ಶಿಕ್ಷಕರ ಸಂದೇಶ",
+    head_mistress_message_body:
+      "ನಮ್ಮ ಶಾಲೆಯ ಗುರಿ ಸಂಸ್ಕೃತಿ ಮತ್ತು ದೇಶಪ್ರೇಮದೊಂದಿಗೆ ಮಕ್ಕಳನ್ನು ಪೋಷಿಸುವುದು ಮತ್ತು ಶಾರೀರಿಕ, ಯೋಗ, ಮಾನಸಿಕ, ಬೌದ್ಧಿಕ ಮತ್ತು ಆತ್ಮಿಕ ಆಯಾಮಗಳಲ್ಲಿ ಸಂಪೂರ್ಣವಾಗಿ ಬೆಳೆಯುವ ಮಕ್ಕಳು. ಜೀವನದ ಸವಾಲುಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಎದುರಿಸುವ ಸಾಮರ್ಥ್ಯ ಹೊಂದಿರಬೇಕಾದ ಯುವಕರ ಈ ತರಂಗವು. ಅವರ ಜೀವನವು ಪಟ್ಟಣ, ಗ್ರಾಮ, ಅರಣ್ಯ ಮತ್ತು ಬೆಟ್ಟಗಳ ಪ್ರದೇಶಗಳಲ್ಲಿ ವಾಸಿಸುವ ನಮ್ಮ ಸಹೋದರ ಮತ್ತು ಸಹೋದರಿಯರ ಮೆಚ್ಚುಗೆ ಆಚರಿಸಿ ಸಾಮಾಜಿಕ ಕೆಟ್ಟತನ ಮತ್ತು ನೀತಿಸಂಗತತೆಯಿಂದ ಅವರನ್ನು ಮುಕ್ತಪಡಿಸಿ ನಮ್ಮ ರಾಷ್ಟ್ರೀಯ ಜೀವನನ್ನು ಚ್ಯಾಲೆಂಜ್ ಮಾಡುವ ಹೋರಾಟ ಅನ್ನಿದೆ. ಈ ಪ್ರಕಾರವಾಗಿ, ಅವರು ಸಾರ್ವತ್ರಿಕ ಸುಖಸಿದ್ಧಿಯತ್ತ ಧಾವಿಸುವ ನಮ್ಮ ರಾಷ್ಟ್ರೀಯ ಜೀವನನ್ನು ಸಾಂಸ್ಕೃತಿಕವಾಗಿ ಸುಸಂಗತ ಮತ್ತು ಸಮೃದ್ಧವಾಗಿ ಮಾಡುವಾಗ ವಿಶ್ವದ ಕಲ್ಯಾಣಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಬೇಕು, ತಪರಸ್ವಃ ಸಮತ್ವ ಸಿದ್ಧಾಂತದಿಂದ ಪ್ರೇರಿತವಾಗಿ.",
+    sangamma_attribution: "ಸಂಗಮ್ಮ — ಪ್ರಧಾನೆ, ಪ್ರಾಥಮಿಕ ವಿಭಾಗ",
+    director: "ನಿರ್ದೇಶಕ",
+    sri_sl_jayaram: "ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್",
+    sri_sl_jayaram_bio:
+      "ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದ ಪ್ರಮುಖ ಸ್ತಂಭಗಳಲ್ಲಿ ಒಬ್ಬ. ಸಿರಾ ತಾಲ್ಲೂಕಿನ ಮಕ್ಕಳಿಗೆ ಸಂಸ್ಕೃತಿಯ ಮೂಲ್ಯಗಳೊಂದಿಗೆ ಗುಣಮುಖ ಶಿಕ್ಷೆ ಪ್ರದಾನ ಮಾಡುವುದಕ್ಕೆ ತೀರ ನಿರಂತರವಾಗಿ ಪ್ರಯತ್ನಿಸುತ್ತಿರುವ ನಾಪತ್ರಸ್ವಃ ಸೇವೆ ಮಾಡುವ ಇದ್ದಾರೆ. ಈ ಶಾಲೆಯ ಮೇಲ್ನೋಟಿ, ಮರುಸೂಚನೆ, ಸಮೀಪೆ, ಹಿರಿಜನರ ಗ್ರಹಣೆ ಮತ್ತು ಹೆಚ್ಚು ತೊಡಗಿಸುವಿಕೆ ಮೊದಲಾದ ವಿಷಯಗಳಲ್ಲಿ ನಾಳೆಗೆ ಮನೋನಿವೇಶ ನೀಡುತ್ತಿರುವ ಅವರ ಪುರಸ್ಕೃತಿ ಸಾದ್ಯತೆ ಶಾಲೆಯ ಪರಿವರ್ತನೆ, ಏಕ ಪಠನ ಸ್ಥಲ ಪರಿಸರ ಮತ್ತು ಸಾಮಾನ್ಯವಾಗಿ ಪರಿವರ್ತನೆಯಲ್ಲಿ ತಾತ್ಪರ್ಯವಾಗಿರುವ ಅವರು ಹಾಡಿದ ಪರಿವರ್ತನೆ ಪದ್ಧತಿಯಿಂದ ಯಥಾಸ್ಥಾನ ನಿರ್ದೇಶನೆಯ ಸಮಸ್ಯೆಕ್ಕೆ ತಮ್ಮ ಸ್ವಾಧೀನತೆ ಮತ್ತು ಆರ್ಥಿಕ ಅವದಾನ ಸರಿಸುತ್ತಿರುವ ಕಾರ್ಯ ಶೋಚನೀಯವಾಗಿರುವ ಇದೆ.",
+    sri_raja_ashwathanarayana_shetty: "ಶ್ರೀ ರಾಜ ಅಶ್ವಥ ನಾರಾಯಣ ಶೆಟ್ಟಿ",
+    sri_raja_ashwathanarayana_shetty_bio:
+      "ಶ್ರೀ ರಾಜ ಅಶ್ವಥ ನಾರಾಯಣ ಶೆಟ್ಟಿ ಅವರು ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ ಸ್ಥಾಪನೆಯಲ್ಲಿ ಶ್ರೀ ಎಸ್ ಎಲ್ ಜಯರಾಮ್ ಜೊತೆಗೆ ಪ್ರಮುಖ ಪಾತ್ರವನ್ನು ವಹಿಸಿದ್ದಾರೆ. ಅವರು ಸಂಸ್ಕೃತಿ ಮತ್ತು ಶಿಕ್ಷಣಕ್ಕೆ ತಮ್ಮ ಸಮಯ ಮತ್ತು ಆಲೋಚನೆಯನ್ನು ಅರ್ಪಿಸಿದ್ದಾರೆ — ಪ್ರಸ್ತುತ ತಲೆಮಾರಿಗೆ ಅಪರಿಹಾರ್ಯ ಅಂಗ. ಸರಳ ಸ್ವಭಾವದ ವ್ಯಕ್ತಿಯಾದರೂ, ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಅವರು ಘನ ದೃಷ್ಟಿಭಂಗಿ ಹೊಂದಿದ್ದಾರೆ. ಶಾಲೆಯ ಸೂಚನೆಗೆ ಸಹೋದರ-ಸದೃಶ ಹೋಗಿ ನೆಡಮಾಡುವ ಸಹಾಯತೆ ಮೆಗೆ ಅವರು ಮರೆತುಹೋಗುವುದಿಲ್ಲ. ಮಕ್ಕಳಲ್ಲಿ ದೇಶಪ್ರೇಮ, ಶಿಸ್ತು ಮತ್ತು ನೈತಿಕ ಮೂಲ್ಯಗಳನ್ನು ಲಾಲನೆ ಮಾಡುವುದರ ಮೇಲೆ ಆತ್ಮನಿವೇಶ ಮಾಡುತ್ತಾರೆ. ಶಾಲೆಯನ್ನು ಉತ್ತಮ ಶೈಕ್ಷಣಿಕ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸುವಲ್ಲಿ ಅವರ ಭೂಮಿಕೆ ದೊಡ್ಡ ತಾತ್ಪರ್ಯ ನುಡಿಸುತ್ತಿದೆ.",
+    honorary_president: "ಸಮ್ಮಾನಿತ ಅಧ್ಯಕ್ಷ",
+    sri_somashekharayya: "ಶ್ರೀ ಸೊಮಾಶೇಖರಾಯ್ಯ",
+    sri_somashekharayya_bio:
+      "ಶ್ರೀ ಸೊಮಾಶೇಖರಾಯ್ಯ ಅವರು ಉದ್ಯೋಗದಿಂದ ನಿರ್ಮಾಣ ಸಿವಿಲ್ ನಿರ್ಮಾತೃ ಮತ್ತು ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದಲ್ಲಿ ಕಟ್ಟಡಗಳ ನಿರ್ಮಾಣದಲ್ಲಿ ಸಕ್ರಿಯವಾಗಿ ತೊಡಗಿಸಿಕೊಂಡಿದ್ದಾರೆ. ಇದರ ಜೊತೆಗೆ, ಶಾಲೆಯ ಅಕಾಡೆಮಿಕ್ ವ್ಯವಹಾರಗಳ ಮೇಲೆ ನಿಷ್ಠೆಯಿಂದ ಗಮನಿಸಿ ಶಿಕ್ಷಕರನ್ನು ತಮ್ಮ ಕೆಲಸವನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನಿರ್ವಹಿಸಿದ್ದಾರೆ. ಅವರು ಗುಣಮುಖ ಶಿಕ್ಷೆ ಖಚಿತ ಮಾಡಲು ಸಂಸ್ಕೃತಿಮೂಲಕ ಪರಿಕಲ್ಪನೆಯನ್ನು ನೀಡುತ್ತಾರೆ. ಶಾಲೆಯ ಭೌತಸಂರಚನೆ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ಅವರು ಇತಿಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸಿ ಮಕ್ಕಳಿಗೆ ನೋಟ ಸಮಾಶ್ರಿತ ಪರಿವೇಶ ನೀಡಲು ಪ್ರಯತ್ನೀಸುತ್ತಾರೆ. ಆತ್ಮನಿವೇಶದಿಂದ ಶಾಲೆಯ ಎಲ್ಲಾ ವಿನ್ಯಾಸಕ್ಕೆ ಸುಗಮನೀಕರಣ ಮತ್ತು ನಿರ್ದೇಶನೆಯನ್ನು ನೀಡುತ್ತಾರೆ.",
+    school_president: "ಶಾಲಾ ಅಧ್ಯಕ್ಷ",
+    sri_somashekhar: "ಶ್ರೀ ಸೊಮಾಶೇಖರ — ಶಾಲಾ ಅಧ್ಯಕ್ಷ, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ",
+    sri_somashekhar_bio:
+      "ಶ್ರೀ ಸೊಮಾಶೇಖರ ಸಿರಾದಿಂದ ಒಬ್ಬ ಯಶಸ್ವಿ ಉದ್ಯಾಪಾರಿ ಮತ್ತು ಆತ್ಮನಿವೇಶದಿಂದ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದ ಸಂಯೋಜನೆಯ ಸಮಾವರ್ತನೆಗೆ ಸೆರೆಯಾಗಿದ್ದಾರೆ. ಭಾರತೀಯ ಸಂಸ್ಕೃತಿಯಲ್ಲಿ ನೆಲಬೇಟೆ ಗುಣಮುಖ ಶಿಕ್ಷೆ ಪ್ರದಾನದ ಬಗ್ಗೆ ಅವರು ಪೇಢಾಗತ ಹೃದಿಟಿ ಧರಿಸಿದ್ದಾರೆ. ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗೆ ಅವರು ತಮ್ಮ ಆಲೋಚನೆ ಮತ್ತು ಸಮಯವನ್ನು ಅರ್ಪಿಸಿದ್ದಾರೆ. ಹಸಿರು ಆಜ್ಞೆ ತನ್ನ ದೃಷ್ಟಿಭಂಗಿಯ ಬಿಂದು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವನ್ನು ಸ್ವನಿರ್ಭರವಾಗಿ ಪರಿವರ್ತಿಸುವ ಹೇತುವಾಗಿ. ಶಾಲೆಯ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಯ ನೋಚಿತ ಯೋಜನೆಗಳನ್ನು ರೂಪಿಸುವಲ್ಲಿ ಅವರು ಸಂಪ್ರತಿಪತ್ತಿದ ಪಾತ್ರ ವಹಿಸುತ್ತಿದ್ದಾರೆ. ಮಕ್ಕಳಲ್ಲಿ ನೇತೃತ್ವದ ಗುಣಗಳು ಮತ್ತು ನೈತಿಕ ಮೂಲ್ಯಗಳನ್ನು ಬೆಳೆಯುವುದಕ್ಕೆ ಪ್ರೇರಣೆ ಸರಿಸುತ್ತಿದ್ದಾರೆ. ಸಮುದಾಯದ ಭಾಗವಹಿಸುತ್ತಿಕೆಯನ್ನು ಬೆಳೆಸುವುದು ಮತ್ತು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಸ್ಥಳೀಯ ಸಹಾಯತೆಯನ್ನು ಸಂಗ್ರಹಿಸುವುದರಲ್ಲಿ ಪ್ರಯತ್ನೀಸುತ್ತಾರೆ. ಮುಂದಿನ ವರ್ಷಗಳಲ್ಲಿ ಶಾಲೆಯನ್ನು ಸರಸೆ ಶೈಕ್ಷಣಿಕ ಸಂಸ್ಥೆಯಾಗಿ ರೂಪಿಸುವ ಸ್ವಪ್ನ ಧರಿಸಿದ್ದಾರೆ.",
+    secretary: "ಕಾರ್ಯದರ್ಶಿ",
+    sri_hemanth_kumar: "ಶ್ರೀ ಹೇಮಂತ್ ಕುಮಾರ್",
+    sri_hemanth_kumar_bio:
+      "ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದ ಏಳಿಗೆಗಾಗಿ ಶ್ರಮಿಸುತ್ತಿರುವ ನಮ್ಮ ಶಾಲೆಯ ಆಡಳಿತ ಮಂಡಳಿಯ ದಿನಂಪ್ರತಿಯ ವ್ಯವಹಾರಗಳಲ್ಲಿ ಮುಖ್ಯ ಪಾತ್ರವಹಿಸಿ ಅವರ ಸಮಯವನ್ನು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ತೊಡಗಿಸಿಕೊಂಡು, ತಮ್ಮ ನಿಸ್ವಾರ್ಥ ಸೇವೆಯನ್ನು ಶ್ರೀ ಹೇಮಂತ್ ಕುಮಾರ್ ಅವರು ನಿರಂತರವಾಗಿ ಸಲ್ಲಿಸುತ್ತಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಕಾರ್ಯನಿರತ ವ್ಯವಹಾರದಲ್ಲೂ ನಮ್ಮ ಶಾಲೆಗೆ ಶೈಕ್ಷಣಿಕವಾಗಿ ತಮ್ಮ ಅಭಿಪ್ರಾಯಗಳನ್ನು ಆಲೋಚನೆಗಳನ್ನು ನೀಡುತ್ತಿದ್ದಾರೆ.",
   },
 };
 
