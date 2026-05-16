@@ -9,14 +9,54 @@ export default function Alumni() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const alumniData = [
-    { name: "DR. VINAY SINGH", profession: "Doctor", location: "SIRA, TUMKUR DIST.", photo: "DR_VINAY_SINGH.png" },
-    { name: "RAKESH PADIKAR", profession: "SOFTWARE ENGINEER", location: "USA", photo: "RAKESH_PADIKAR.png" },
-    { name: "SHWETA G", profession: "SOFTWARE ENGINEER", location: "USA", photo: "SHWETA_GOPALRAO.png" },
-    { name: "REKHA MANJUNATH", profession: "ENGINEER", location: "GERMANY", photo: "REKHA_MANJUNATH.png" },
-    { name: "MADHUMALA", profession: "SCIENTIST", location: "USA", photo: "MADHUMALA.png" },
-    { name: "DR. ASHWINI", profession: "MBBS, MD - ASSISTANT PROFESSOR", location: "TUMKUR", photo: "DR_ASHWINI.png" },
-    { name: "RASHMI GOPALRAO", profession: "ENGINEER", location: "BANGALORE", photo: "RASHMI_GOPALRAO.png" },
-    { name: "DR. REKHA GOPALRAO", profession: "GYNECOLOGIST", location: "MYSORE", photo: "DR_REKHA_GOPALRAO.png" },
+    {
+      name: "DR. VINAY SINGH",
+      profession: "Doctor",
+      location: "SIRA, TUMKUR DIST.",
+      photo: "DR_VINAY_SINGH.png",
+    },
+    {
+      name: "RAKESH PADIKAR",
+      profession: "SOFTWARE ENGINEER",
+      location: "BANGALORE",
+      photo: "RAKESH_PADIKAR.png",
+    },
+    {
+      name: "SHWETA G",
+      profession: "SOFTWARE ENGINEER",
+      location: "USA",
+      photo: "SHWETA_GOPALRAO.png",
+    },
+    {
+      name: "REKHA MANJUNATH",
+      profession: "ENGINEER",
+      location: "GERMANY",
+      photo: "REKHA_MANJUNATH.png",
+    },
+    {
+      name: "MADHUMALA",
+      profession: "SCIENTIST",
+      location: "USA",
+      photo: "MADHUMALA.png",
+    },
+    {
+      name: "DR. ASHWINI",
+      profession: "MBBS, MD - ASSISTANT PROFESSOR",
+      location: "TUMKUR",
+      photo: "DR_ASHWINI.png",
+    },
+    {
+      name: "RASHMI GOPALRAO",
+      profession: "ENGINEER",
+      location: "BANGALORE",
+      photo: "RASHMI_GOPALRAO.png",
+    },
+    {
+      name: "DR. REKHA GOPALRAO",
+      profession: "GYNECOLOGIST",
+      location: "MYSORE",
+      photo: "DR_REKHA_GOPALRAO.png",
+    },
     { name: "DR. ANNAPOORNA", profession: "Doctor", location: "MANIPAL" },
     { name: "DR. SUNIL N P", profession: "Doctor", location: "LUCKNOW" },
     { name: "CHAYA", profession: "MSc.", location: "BANGALORE" },
@@ -24,20 +64,47 @@ export default function Alumni() {
     { name: "SRIDEVI", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
     { name: "SAGAR", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
     { name: "ASHWINI", profession: "SOFTWARE ENGINEER", location: "USA" },
-    { name: "ASHWINI S N", profession: "SOFTWARE ENGINEER", location: "AUSTRALIA" },
+    {
+      name: "ASHWINI S N",
+      profession: "SOFTWARE ENGINEER",
+      location: "AUSTRALIA",
+    },
     { name: "REKHA", profession: "SOFTWARE ENGINEER", location: "USA" },
-    { name: "NAVEEN PONNAMPETE", profession: "FOREST OFFICER", location: "PONNAMPETE" },
-    { name: "SREENIDHI GOWDA", profession: "SOFTWARE ENGINEER", location: "UK" },
-    { name: "SHILPASHREE", profession: "APMC SECRETARY", location: "HARIHARA" },
-    { name: "DR. RAVISH", profession: "Doctor", location: "GOVERNMENT HOSPITAL, MADHUGIRI" },
+    {
+      name: "NAVEEN PONNAMPETE",
+      profession: "FOREST OFFICER",
+      location: "PONNAMPETE",
+    },
+    {
+      name: "SREENIDHI GOWDA",
+      profession: "SOFTWARE ENGINEER",
+      location: "UK",
+    },
+    {
+      name: "SHILPASHREE",
+      profession: "APMC SECRETARY",
+      location: "HARIHARA",
+      photo: "SHILPA_SRI_K.jpeg",
+    },
+    {
+      name: "DR. RAVISH",
+      profession: "Doctor",
+      location: "GOVERNMENT HOSPITAL, MADHUGIRI",
+    },
   ];
 
   const alumniWithPhoto = alumniData.filter((a) => a.photo);
   const alumniWithoutPhoto = alumniData.filter((a) => !a.photo);
 
   const galleryImages = [
-    "36.jpeg", "37.jpeg", "38.jpeg", "39.jpeg", 
-    "39(1).jpeg", "39(2).jpeg", "39(3).jpeg", "39(4).jpeg"
+    "36.jpeg",
+    "37.jpeg",
+    "38.jpeg",
+    "39.jpeg",
+    "39(1).jpeg",
+    "39(2).jpeg",
+    "39(3).jpeg",
+    "39(4).jpeg",
   ];
 
   return (
@@ -81,7 +148,10 @@ export default function Alumni() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
               {alumniWithPhoto.map((alumni, index) => (
-                <div key={index} className="flex flex-col items-center text-center group">
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center group"
+                >
                   <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-brand-blue/20 shadow-md group-hover:border-brand-blue transition-colors mb-3">
                     <img
                       src={getAlumniImage(alumni.photo!)}
@@ -89,8 +159,12 @@ export default function Alumni() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <p className="font-bold text-gray-900 text-sm leading-tight">{alumni.name}</p>
-                  <p className="text-brand-blue text-xs mt-1">{alumni.profession}</p>
+                  <p className="font-bold text-gray-900 text-sm leading-tight">
+                    {alumni.name}
+                  </p>
+                  <p className="text-brand-blue text-xs mt-1">
+                    {alumni.profession}
+                  </p>
                   {alumni.location && (
                     <p className="text-gray-500 text-xs flex items-center gap-1 mt-1">
                       <MapPin className="h-3 w-3 shrink-0" />
@@ -104,9 +178,15 @@ export default function Alumni() {
             {/* Alumni without photos — list */}
             <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
               <div className="grid grid-cols-1 md:grid-cols-3 bg-gray-50 border-b border-gray-200 font-bold text-brand-blue uppercase text-sm tracking-wider hidden md:grid">
-                <div className="px-6 py-4">{t("alumni_name_label") || "Name"}</div>
-                <div className="px-6 py-4 border-l border-gray-200">{t("alumni_profession_label") || "Profession"}</div>
-                <div className="px-6 py-4 border-l border-gray-200">{t("alumni_location_label") || "Location"}</div>
+                <div className="px-6 py-4">
+                  {t("alumni_name_label") || "Name"}
+                </div>
+                <div className="px-6 py-4 border-l border-gray-200">
+                  {t("alumni_profession_label") || "Profession"}
+                </div>
+                <div className="px-6 py-4 border-l border-gray-200">
+                  {t("alumni_location_label") || "Location"}
+                </div>
               </div>
 
               <div className="divide-y-0 md:divide-y divide-gray-200">
@@ -116,29 +196,41 @@ export default function Alumni() {
                     className="grid grid-cols-1 md:grid-cols-3 hover:bg-brand-blue/5 transition-colors group mb-6 md:mb-0 border border-gray-100 md:border-0 rounded-lg md:rounded-none overflow-hidden"
                   >
                     <div className="px-6 py-4 flex items-center md:block bg-brand-blue/5 md:bg-transparent">
-                      <span className="text-xs font-bold uppercase text-brand-blue md:hidden mr-4 w-20 shrink-0">Name:</span>
+                      <span className="text-xs font-bold uppercase text-brand-blue md:hidden mr-4 w-20 shrink-0">
+                        Name:
+                      </span>
                       <span className="text-lg font-bold text-brand-blue md:text-gray-900 group-hover:text-brand-blue transition-colors">
                         {alumni.name}
                       </span>
                     </div>
 
                     <div className="px-6 py-4 border-t md:border-t-0 md:border-l border-gray-200 flex items-center md:block">
-                      <span className="text-xs font-bold uppercase text-brand-blue/60 md:hidden mr-4 w-20 shrink-0">Profession:</span>
+                      <span className="text-xs font-bold uppercase text-brand-blue/60 md:hidden mr-4 w-20 shrink-0">
+                        Profession:
+                      </span>
                       <div className="flex items-center gap-2">
                         <Award className="h-4 w-4 text-brand-orange shrink-0 hidden lg:inline" />
-                        <span className="text-gray-700 font-medium">{alumni.profession}</span>
+                        <span className="text-gray-700 font-medium">
+                          {alumni.profession}
+                        </span>
                       </div>
                     </div>
 
                     <div className="px-6 py-4 border-t md:border-t-0 md:border-l border-gray-200 flex items-center md:block">
-                      <span className="text-xs font-bold uppercase text-brand-blue/60 md:hidden mr-4 w-20 shrink-0">Location:</span>
+                      <span className="text-xs font-bold uppercase text-brand-blue/60 md:hidden mr-4 w-20 shrink-0">
+                        Location:
+                      </span>
                       {alumni.location ? (
                         <div className="flex items-center gap-2">
                           <MapPin className="h-4 w-4 text-brand-blue shrink-0 hidden lg:inline" />
-                          <span className="text-gray-600">{alumni.location}</span>
+                          <span className="text-gray-600">
+                            {alumni.location}
+                          </span>
                         </div>
                       ) : (
-                        <span className="text-gray-400 italic text-sm">Not specified</span>
+                        <span className="text-gray-400 italic text-sm">
+                          Not specified
+                        </span>
                       )}
                     </div>
                   </div>
@@ -160,13 +252,13 @@ export default function Alumni() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {galleryImages.map((imgName, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="aspect-video rounded-xl overflow-hidden shadow-md group cursor-pointer"
                 onClick={() => setSelectedImage(imgName)}
               >
-                <img 
-                  src={getAssetImage(imgName)} 
+                <img
+                  src={getAssetImage(imgName)}
                   alt={`Alumni moment ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform group-hover:scale-110"
                 />
@@ -178,25 +270,24 @@ export default function Alumni() {
 
       {/* Image Overlay */}
       {selectedImage && (
-        <div 
+        <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-200"
           onClick={() => setSelectedImage(null)}
         >
-          <button 
+          <button
             className="absolute top-4 right-4 text-white hover:text-brand-orange transition-colors p-2"
             onClick={() => setSelectedImage(null)}
           >
             <X className="h-8 w-8" />
           </button>
-          <img 
-            src={getAssetImage(selectedImage)} 
+          <img
+            src={getAssetImage(selectedImage)}
             alt="Fullscreen Preview"
             className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoom-in duration-300"
             onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
-
     </div>
   );
 }

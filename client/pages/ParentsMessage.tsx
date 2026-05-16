@@ -1,5 +1,12 @@
-import { Heart, Users, MessageCircle, Star, Quote, User } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Heart, MessageCircle, Quote, Star, User, Users } from "lucide-react";
+
 import { useI18n } from "@/lib/i18n";
 
 export default function ParentsMessage() {
@@ -7,58 +14,85 @@ export default function ParentsMessage() {
 
   const parentMessages = [
     {
-      name: "Madhumati", nameKn: "ಮಧುಮತಿ",
+      name: "Madhumati",
+      nameKn: "ಮಧುಮತಿ",
       child: "Parent of Vaishnavi, Class 3 & Chinmayi, Class 6",
       childKn: "ವೈಷ್ಣವಿ, 3ನೇ ತರಗತಿ & ಚಿನ್ಮಯಿ, 6ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_1"), rating: 5, photo: "/assets/parents/Madhumati.png"
+      message: t("parent_message_1"),
+      rating: 5,
+      photo: "/assets/parents/Madhumati.png",
     },
     {
-      name: "Pavithra", nameKn: "ಪವಿತ್ರಾ",
+      name: "Pavithra",
+      nameKn: "ಪವಿತ್ರಾ",
       child: "Parent of Megha, Class 7",
       childKn: "ಮೇಘಾ, 7ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_2"), rating: 5, photo: "/assets/parents/Pavithra.png"
+      message: t("parent_message_2"),
+      rating: 5,
+      photo: "/assets/parents/Pavithra.png",
     },
     {
-      name: "Vijayalakshmi", nameKn: "ವಿಜಯಲಕ್ಷ್ಮಿ",
+      name: "Vijayalakshmi",
+      nameKn: "ವಿಜಯಲಕ್ಷ್ಮಿ",
       child: "Parent of Sharandeep, Class 2",
       childKn: "ಶರಣದೀಪ್, 2ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_3"), rating: 5, photo: null
+      message: t("parent_message_3"),
+      rating: 5,
+      photo: "/assets/parents/vijaya_lakshmi.jpeg",
     },
     {
-      name: "Nagamani", nameKn: "ನಾಗಮಣಿ",
+      name: "Nagamani",
+      nameKn: "ನಾಗಮಣಿ",
       child: "Parent of Aishwarya, Class 10",
       childKn: "ಐಶ್ವರ್ಯ, 10ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_4"), rating: 5, photo: "/assets/parents/Nagamani.png"
+      message: t("parent_message_4"),
+      rating: 5,
+      photo: "/assets/parents/Nagamani.png",
     },
     {
-      name: "Thimmaraju", nameKn: "ತಿಮ್ಮರಾಜು",
+      name: "Thimmaraju",
+      nameKn: "ತಿಮ್ಮರಾಜು",
       child: "Parent of Tulasi, Class 9 & Shashank, Class 8",
       childKn: "ತುಳಸಿ, 9ನೇ ತರಗತಿ & ಶಶಾಂಕ್, 8ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_5"), rating: 5, photo: "/assets/parents/Thimmaraju.png"
+      message: t("parent_message_5"),
+      rating: 5,
+      photo: "/assets/parents/Thimmaraju.png",
     },
     {
-      name: "Vatsala", nameKn: "ವತ್ಸಲಾ",
+      name: "Vatsala",
+      nameKn: "ವತ್ಸಲಾ",
       child: "Parent of Padmavati, Class 5",
       childKn: "ಪದ್ಮಾವತಿ, 5ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_message_6"), rating: 5, photo: "/assets/parents/Vatsala.png"
+      message: t("parent_message_6"),
+      rating: 5,
+      photo: "/assets/parents/Vatsala.png",
     },
     {
-      name: "Mangala", nameKn: "ಮಂಗಳಾ",
+      name: "Mangala",
+      nameKn: "ಮಂಗಳಾ",
       child: "Parent of Rashmi, Class 7",
       childKn: "ರಶ್ಮಿ, 7ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_testimonial_1"), rating: 5, photo: "/assets/parents/Mangala.png"
+      message: t("parent_testimonial_1"),
+      rating: 5,
+      photo: "/assets/parents/Mangala.png",
     },
     {
-      name: "Geetha", nameKn: "ಗೀತಾ",
+      name: "Geetha",
+      nameKn: "ಗೀತಾ",
       child: "Parent of Kumuda, Class 4 & Lathish, Class 6",
       childKn: "ಕುಮುದ, 4ನೇ ತರಗತಿ & ಲಾತೀಶ್, 6ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_testimonial_2"), rating: 5, photo: "/assets/parents/Geetha.png"
+      message: t("parent_testimonial_2"),
+      rating: 5,
+      photo: "/assets/parents/Geetha.png",
     },
     {
-      name: "Nalina", nameKn: "ನಳಿನಾ",
+      name: "Nalina",
+      nameKn: "ನಳಿನಾ",
       child: "Parent of Harsha, Class 1 & Indrajit, Class 5",
       childKn: "ಹರ್ಷ, 1ನೇ ತರಗತಿ & ಇಂದ್ರಜಿತ್, 5ನೇ ತರಗತಿ ಪೋಷಕರು",
-      message: t("parent_testimonial_3"), rating: 5, photo: "/assets/parents/Nalina.png"
+      message: t("parent_testimonial_3"),
+      rating: 5,
+      photo: "/assets/parents/Nalina.png",
     },
   ];
 
@@ -66,13 +100,13 @@ export default function ParentsMessage() {
     {
       icon: Users,
       number: "400+",
-      label: t("parent_stat_1")
+      label: t("parent_stat_1"),
     },
     {
       icon: Heart,
       number: "98%",
-      label: t("parent_stat_3")
-    }
+      label: t("parent_stat_3"),
+    },
   ];
 
   return (
@@ -123,9 +157,7 @@ export default function ParentsMessage() {
                   <div className="text-3xl font-bold text-gray-900 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 text-sm">
-                    {stat.label}
-                  </div>
+                  <div className="text-gray-600 text-sm">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -141,9 +173,7 @@ export default function ParentsMessage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 {t("parent_messages")}
               </h2>
-              <p className="text-gray-600">
-                {t("parent_messages_desc")}
-              </p>
+              <p className="text-gray-600">{t("parent_messages_desc")}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -154,28 +184,42 @@ export default function ParentsMessage() {
                       <div className="flex items-center gap-3">
                         <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-brand-blue/10 flex items-center justify-center">
                           {message.photo ? (
-                            <img src={message.photo} alt={message.name} className="w-12 h-12 object-cover" />
+                            <img
+                              src={message.photo}
+                              alt={message.name}
+                              className="w-12 h-12 object-cover"
+                            />
                           ) : (
                             <User className="h-6 w-6 text-brand-blue" />
                           )}
                         </div>
                         <div>
-                          <CardTitle className="text-lg font-bold text-brand-blue">{lang === "kn" ? message.nameKn : message.name}</CardTitle>
+                          <CardTitle className="text-lg font-bold text-brand-blue">
+                            {lang === "kn" ? message.nameKn : message.name}
+                          </CardTitle>
                           <CardDescription className="text-xs pt-1">
                             <span className="bg-brand-blue/5 text-brand-blue px-2 py-0.5 rounded-md inline-block font-medium">
-                              {lang === "kn" ? message.childKn : message.child.replace(/Class\s(\d+)/g, "Class\u00A0$1")}
+                              {lang === "kn"
+                                ? message.childKn
+                                : message.child.replace(
+                                    /Class\s(\d+)/g,
+                                    "Class\u00A0$1",
+                                  )}
                             </span>
                           </CardDescription>
                         </div>
                       </div>
                       <div className="flex items-center gap-1">
                         {[...Array(message.rating)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                          <Star
+                            key={i}
+                            className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                          />
                         ))}
                       </div>
                     </div>
                   </CardHeader>
-                  
+
                   <CardContent>
                     <div className="relative mb-4">
                       <Quote className="absolute -top-2 -left-2 h-6 w-6 text-brand-blue/30" />
@@ -183,7 +227,6 @@ export default function ParentsMessage() {
                         "{message.message}"
                       </p>
                     </div>
-                    
                   </CardContent>
                 </Card>
               ))}
@@ -191,7 +234,6 @@ export default function ParentsMessage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
