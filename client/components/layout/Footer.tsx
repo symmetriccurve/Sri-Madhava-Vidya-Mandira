@@ -24,7 +24,7 @@ export default function Footer() {
     // Create an iframe to load counter scripts safely
     const iframe = document.createElement("iframe");
     iframe.style.border = "none";
-    iframe.style.width = "100%";
+    iframe.style.width = "auto";
     iframe.style.height = "20px";
     iframe.style.overflow = "hidden";
     iframe.sandbox.add("allow-scripts");
@@ -183,21 +183,19 @@ export default function Footer() {
       </div>
 
       {/* uCounter.com Code */}
-      <div className="text-center py-3 border-t">
-        <div className="inline-flex items-center">
-          <span className="text-xs text-gray-500">Visitor Count&nbsp;</span>
-          <div
-            id="ucounter-container"
-            style={{
-              minHeight: "20px",
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              position: "relative",
-              zIndex: 10,
-            }}
-          />
-        </div>
+      <div className="py-3 border-t text-center">
+        <p className="text-xs text-gray-500 mb-2">Visitor Count</p>
+        <div
+          id="ucounter-container"
+          style={{
+            minHeight: "20px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            zIndex: 10,
+          }}
+        />
       </div>
       <div className="border-t py-3 flex flex-col items-center gap-1.5">
         <div className="text-center text-xs text-gray-400">
