@@ -972,6 +972,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     sri_hemanth_kumar: "Sri Hemanth Kumar",
     sri_hemanth_kumar_bio:
       "Sri Hemanth Kumar plays a key role in the daily administrative operations of our school's governing board, dedicating his time to the school's development with selfless service. While managing his professional career, he continuously provides valuable educational insights and opinions to our school. As the Secretary of our school, he is committed to serving the institution with dedication and excellence.",
+    administrative_board: "Administrative Board",
   },
   kn: {
     school_name: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
@@ -1914,6 +1915,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     sri_hemanth_kumar: "ಶ್ರೀ ಹೇಮಂತ್ ಕುಮಾರ್",
     sri_hemanth_kumar_bio:
       "ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದ ಏಳಿಗೆಗಾಗಿ ಶ್ರಮಿಸುತ್ತಿರುವ ನಮ್ಮ ಶಾಲೆಯ ಆಡಳಿತ ಮಂಡಳಿಯ ದಿನಂಪ್ರತಿಯ ವ್ಯವಹಾರಗಳಲ್ಲಿ ಮುಖ್ಯ ಪಾತ್ರವಹಿಸಿ ಅವರ ಸಮಯವನ್ನು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ತೊಡಗಿಸಿಕೊಂಡು, ತಮ್ಮ ನಿಸ್ವಾರ್ಥ ಸೇವೆಯನ್ನು ಶ್ರೀ ಹೇಮಂತ್ ಕುಮಾರ್ ಅವರು ನಿರಂತರವಾಗಿ ಸಲ್ಲಿಸುತ್ತಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಕಾರ್ಯನಿರತ ವ್ಯವಹಾರದಲ್ಲೂ ನಮ್ಮ ಶಾಲೆಗೆ ಶೈಕ್ಷಣಿಕವಾಗಿ ತಮ್ಮ ಅಭಿಪ್ರಾಯಗಳನ್ನು ಆಲೋಚನೆಗಳನ್ನು ನೀಡುತ್ತಿದ್ದಾರೆ.",
+    administrative_board: "ಆಡಳಿತ ಮಂಡಳಿ",
   },
 };
 

@@ -448,6 +448,22 @@ export default function About() {
           </CardContent>
         </Card>
       </section>
+
+      {/* Board Members */}
+      <section className="mb-12">
+        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">
+          {t("administrative_board")}
+        </h2>
+        <Card>
+          <CardContent className="p-6">
+            <img
+              src="/assets/leadership/board_members.jpeg"
+              alt="Administrative Board"
+              className="w-full rounded-lg object-cover"
+            />
+          </CardContent>
+        </Card>
+      </section>
     </main>
   );
 }
