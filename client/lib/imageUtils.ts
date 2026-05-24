@@ -6,7 +6,7 @@ const schoolImages = [
   "school13.jpeg",
   // 'school15.jpeg',
   "school1.png",
-  "school2.png",
+  // "school2.png",
   // 'school3.png',
   // 'school4.png',
   "school5.png",
