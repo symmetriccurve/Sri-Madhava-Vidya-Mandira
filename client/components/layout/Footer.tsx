@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
@@ -25,7 +25,8 @@ export default function Footer() {
     const iframe = document.createElement("iframe");
     iframe.style.border = "none";
     iframe.style.width = "100%";
-    iframe.style.height = "60px";
+    iframe.style.height = "20px";
+    iframe.style.overflow = "hidden";
     iframe.sandbox.add("allow-scripts");
     iframe.sandbox.add("allow-same-origin");
 
@@ -37,7 +38,7 @@ export default function Footer() {
     const counterHTML = `
       <html>
         <head></head>
-        <body style="margin:0; padding:10px; text-align:center;">
+        <body style="margin:0; padding:0; text-align:center; overflow:hidden;">
           <script language="javascript" src="https://yo.ucounter.com/26/pjzs/05/s/2/"><\/script>
           <script language="javascript" src="https://ucounter.com/stat.js"><\/script>
         </body>
@@ -57,10 +58,10 @@ export default function Footer() {
 
   return (
     <footer className="mt-16 border-t bg-gradient-to-b from-white to-blue-50">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-10">
+      <div className="container mx-auto px-4 sm:px-6 py-10">
         {/* School Info */}
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-3">
+        <div className="mb-10">
+          <div className="flex items-center gap-3 mb-4">
             <img
               src={getLogo()}
               alt="Logo"
@@ -70,122 +71,133 @@ export default function Footer() {
               {t("school_name")}
             </div>
           </div>
-          <p className="text-sm text-brand-orange font-semibold tracking-wide uppercase italic">
+          <p className="text-sm text-brand-orange font-semibold tracking-wide uppercase italic mb-2">
             {t("footer_motto")}
           </p>
-          <p className="text-xs text-gray-500 leading-relaxed max-w-xs">
+          <p className="text-xs text-gray-500 leading-relaxed">
             © {year} {t("school_name")}. {t("copyright")}
           </p>
         </div>
 
-        {/* Quick Links Column 1 */}
-        <div>
-          <h3 className="font-semibold text-sm text-gray-700 mb-3 sm:hidden">Quick Links</h3>
-          <ul className="space-y-2.5 text-sm flex flex-wrap gap-4 sm:flex-col sm:gap-0">
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/about"
-              >
-                {t("about")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/academics"
-              >
-                {t("academics")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/admissions"
-              >
-                {t("admissions")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/facilities"
-              >
-                {t("facilities")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/gallery"
-              >
-                {t("gallery")}
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {/* Links Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8">
+          {/* Quick Links Column 1 */}
+          <div>
+            <h3 className="font-semibold text-sm text-gray-700 mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/about"
+                >
+                  {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/academics"
+                >
+                  {t("academics")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/admissions"
+                >
+                  {t("admissions")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/facilities"
+                >
+                  {t("facilities")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/gallery"
+                >
+                  {t("gallery")}
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-        {/* Quick Links Column 2 */}
-        <div>
-          <h3 className="font-semibold text-sm text-gray-700 mb-3 sm:hidden">More</h3>
-          <ul className="space-y-2.5 text-sm flex flex-wrap gap-4 sm:flex-col sm:gap-0">
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/news"
-              >
-                {t("news")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/achievements"
-              >
-                {t("achievements")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/results"
-              >
-                {t("results")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/alumni"
-              >
-                {t("alumni")}
-              </Link>
-            </li>
-            <li className="sm:block">
-              <Link
-                className="text-gray-600 hover:text-brand-orange transition-colors"
-                to="/faqs"
-              >
-                {t("faqs")}
-              </Link>
-            </li>
-          </ul>
+          {/* Quick Links Column 2 */}
+          <div>
+            <h3 className="font-semibold text-sm text-gray-700 mb-4">More</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/news"
+                >
+                  {t("news")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/achievements"
+                >
+                  {t("achievements")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/results"
+                >
+                  {t("results")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/alumni"
+                >
+                  {t("alumni")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 hover:text-brand-orange transition-colors"
+                  to="/faqs"
+                >
+                  {t("faqs")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Hidden on mobile, visible on sm+ */}
+          <div className="hidden sm:block" />
         </div>
       </div>
 
       {/* uCounter.com Code */}
-      <div className="text-center py-6 border-t">
-        <div
-          id="ucounter-container"
-          style={{
-            minHeight: "80px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-            zIndex: 10
-          }}
-        />
+      <div className="text-center py-3 border-t">
+        <div className="inline-flex items-center">
+          <span className="text-xs text-gray-500">Visitor Count&nbsp;</span>
+          <div
+            id="ucounter-container"
+            style={{
+              minHeight: "20px",
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+              zIndex: 10,
+            }}
+          />
+        </div>
       </div>
       <div className="border-t py-3 flex flex-col items-center gap-1.5">
         <div className="text-center text-xs text-gray-400">
