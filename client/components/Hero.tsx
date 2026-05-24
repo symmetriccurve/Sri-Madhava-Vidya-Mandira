@@ -16,7 +16,7 @@ export default function Hero() {
               “{t("tagline")}”
             </span>
           </h1>
-          <p className="mt-4 text-gray-600">{t("about_snippet")}</p>
+          <p className="mt-4 text-gray-600">{t("main_content_snippet")}</p>
         </div>
         <div className="relative">
           <div className="relative aspect-[4/3] w-full rounded-xl bg-gradient-to-tr from-brand-blue to-brand-orange p-1 shadow-xl">

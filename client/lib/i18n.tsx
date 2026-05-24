@@ -400,6 +400,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     about_page_hero_title: "Sri Madhava Vidya Mandira",
     about_snippet:
       "A value-based, holistic education is provided in a nurturing environment. Along with academics, equal importance is given to culture, sports, and arts. Our beautiful institution, located in Sira town, has been shaping young minds for more than four decades, nurturing them into responsible citizens and future leaders.",
+    main_content_snippet:
+      "Vidya Bharati is a large educational organization that has been working nationwide for the past 63 years in the field of education. Through approximately 30,000 educational centers across the country, it provides national education and cultural values. Our Sri Madhava Vidya Mandira in Sira is also an institution functioning under Vidya Bharati's cooperation and guidance. Along with providing Indian education to children in rural and urban areas through their mother tongue, our school integrates academic subjects like Science, Mathematics, Language Education, and Social Sciences with our nation's culture, music, Sanskrit, Yoga, ethics education, physical education, practical education, and community service activities. The fundamental objective of Vidya Bharati is to instill these values. Furthermore, through national consciousness, community service, environmental education, student organizations, teacher training programs, workshops, and sports competitions, our school aims to be a sacred temple of learning that shapes the future of our students and nurtures them as architects of a new India, which is the aspiration of all of us.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
       "Congratulations to our 10th standard students on their fantastic results!",
@@ -1352,6 +1354,8 @@ const dictionary: Record<Lang, Record<string, string>> = {
     about_page_hero_title: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ",
     about_snippet:
       "ಮೌಲ್ಯಾಧಾರಿತ, ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ಪೋಷಕ ವಾತಾವರಣ. ಅಧ್ಯಯನದ ಜೊತೆಗೆ ಸಂಸ್ಕೃತಿ, ಕ್ರೀಡೆ ಮತ್ತು ಕಲೆಗಳಿಗೆ ಸಮಾನ ಮಹತ್ವ ನೀಡಲಾಗುತ್ತಿದೆ. ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿರುವ ನಮ್ಮ ಸುಂದರವಾದ ಸಂಸ್ಥೆ. ನಾಲ್ಕು ದಶಕಕ್ಕೂ ಹೆಚ್ಚು ಕಾಲದಿಂದ ಯುವ ಮನಸ್ಸುಗಳನ್ನು ರೂಪಿಸುತ್ತಿದ್ದು, ಅವರನ್ನು ಜವಾಬ್ದಾರಿಯುತ ನಾಗರೀಕರು ಮತ್ತು ಭವಿಷ್ಯದ ನಾಯಕರನ್ನಾಗಿ ಬೆಳೆಸುತ್ತಿದೆ.",
+    main_content_snippet:
+      "ವಿದ್ಯಾ ಭಾರತಿ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಕಳೆದ 63 ವರ್ಷಗಳಿಂದ ಅಖಿಲ ಭಾರತ ಮಟ್ಟದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಬಹುದೊಡ್ಡ ಶಿಕ್ಷಣ ಸಂಘಟನೆಯಾಗಿದೆ. ಸುಮಾರು 30 ಸಹಸ್ರ ವಿದ್ಯಾ ಕೇಂದ್ರಗಳ ಮೂಲಕ ದೇಶಾದ್ಯಂತ ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಂಸ್ಕಾರವನ್ನು ನೀಡುತ್ತಿದೆ. ನಮ್ಮ ಶಿರಾ ನಗರದ ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರವೂ ಸಹ ವಿದ್ಯಾ ಭಾರತಿಯ ಸಹಯೋಗ ಹಾಗೂ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ಸಂಸ್ಥೆಯಾಗಿದೆ. ಗ್ರಾಮಾಂತರ ಪ್ರದೇಶಗಳ ಮಕ್ಕಳಿಗೂ ಮಾತೃಭಾಷೆಯ ಮೂಲಕ ಭಾರತೀಯ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವುದರೊಂದಿಗೆ, ಶಾಲಾ ಪಠ್ಯ ವಿಷಯಗಳಾದ ವಿಜ್ಞಾನ, ಗಣಿತ, ಭಾಷಾ ಶಿಕ್ಷಣ ಮತ್ತು ಸಮಾಜ ವಿಜ್ಞಾನಗಳ ಜೊತೆಗೆ ನಮ್ಮ ರಾಷ್ಟ್ರದ ಸಂಸ್ಕೃತಿ, ಸಂಗೀತ, ಸಂಸ್ಕೃತ, ಯೋಗ, ನೀತಿ ಶಿಕ್ಷಣ, ಶಾರೀರಿಕ ಶಿಕ್ಷಣ, ಭೌತಿಕ ಶಿಕ್ಷಣ, ವ್ಯವಹಾರಿಕ ಶಿಕ್ಷಣ ಹಾಗೂ ಸಮಾಜ ಸೇವಾ ಕಾರ್ಯಗಳನ್ನು ಅಳವಡಿಸುವುದು ವಿದ್ಯಾ ಭಾರತಿಯ ಮೂಲಭೂತ ಉದ್ದೇಶವಾಗಿದೆ.ಇದಲ್ಲದೆ, ರಾಷ್ಟ್ರೀಯ ಭಾವೈಕ್ಯತೆ, ಸೇವಾ ಕಾರ್ಯ, ಪರಿಸರ ಶಿಕ್ಷಣ, ಬಾಲಸಂಗಮ, ಶಿಕ್ಷಕರಿಗೆ ತರಬೇತಿ ಶಿಬಿರಗಳು, ಕಾರ್ಯಾಗಾರಗಳು ಹಾಗೂ ಕ್ರೀಡಾಕೂಟಗಳನ್ನು ನಡೆಸುವುದರ ಮೂಲಕ ಶಾಲಾ ಮಕ್ಕಳ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸಿ, ಅವರನ್ನು ನವ ಭಾರತದ ಶಿಲ್ಪಿಗಳಾಗಿ ಬೆಳೆಸುವ ಕಾರ್ಯದಲ್ಲಿ ನಮ್ಮ ಶಾಲೆಯು ದಾನಾರ್ಜನೆಯ ಪವಿತ್ರ ದೇಗುಲವಾಗಬೇಕೆಂಬುದು ನಮ್ಮೆಲ್ಲರ ಅಭಿಲಾಷೆಯಾಗಿದೆ.",
     ticker_1: "ಹೊಸ ಶೈಕ್ಷಣಿಕ ವರ್ಷದ ಪ್ರವೇಶಗಳು ಪ್ರಾರಂಭ.",
     ticker_2:
       "ನಮ್ಮ 10ನೇ ತರಗತಿಯ ವಿದ್ಯಾರ್ಥಿಗಳು ಪರೀಕ್ಷೆಯಲ್ಲಿ ಅತ್ಯುತ್ತಮ ಸಾಧನೆ ಮಾಡಿದ್ದಾರೆ. ಈ ನಿಮ್ಮ ಸಾಧನೆಗೆ ಹಾರ್ದಿಕ ಅಭಿನಂದನೆಗಳು ಹಾಗೂ ನಿಮ್ಮ ಮುಂದಿನ ಭವಿಷ್ಯಕ್ಕೆ ಶುಭ ಹಾರೈಕೆಗಳು!",
