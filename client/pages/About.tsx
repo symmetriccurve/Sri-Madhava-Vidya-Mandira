@@ -11,15 +11,18 @@ import {
   UserCheck,
   Users,
   Users2,
+  X,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getDonorImage, getLeadershipImage, getLogo } from "@/lib/imageUtils";
 
 import { Badge } from "@/components/ui/badge";
 import { useI18n } from "@/lib/i18n";
+import { useState } from "react";
 
 export default function About() {
   const { t } = useI18n();
+  const [showModal, setShowModal] = useState(false);
 
   const stats = [
     { icon: Users, label: t("about_stat_students"), value: "400+" },
@@ -451,19 +454,45 @@ export default function About() {
 
       {/* Board Members */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8">
+        <h2 className="text-3xl font-bold text-center text-brand-blue mb-8 px-4 sm:px-0">
           {t("administrative_board")}
         </h2>
-        <Card>
-          <CardContent className="p-6">
+        <Card className="m-0 sm:m-0 rounded-none sm:rounded-lg">
+          <CardContent className="p-0">
             <img
               src="/assets/leadership/board_members.jpeg"
               alt="Administrative Board"
-              className="w-full rounded-lg object-cover"
+              className="w-full object-cover cursor-pointer hover:opacity-90 transition-opacity"
+              onClick={() => setShowModal(true)}
             />
           </CardContent>
         </Card>
       </section>
+
+      {/* Board Members Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-4xl max-h-[90vh] bg-white rounded-lg shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-4 right-4 z-10 p-2 bg-red-500 hover:bg-red-600 text-white rounded-full transition-colors"
+              aria-label="Close modal"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Image Container */}
+            <div className="w-full h-[90vh] overflow-auto">
+              <img
+                src="/assets/leadership/board_members.jpeg"
+                alt="Administrative Board"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
