@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
@@ -11,23 +11,50 @@ export default function Footer() {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    const script1 = document.createElement("script");
-    script1.type = "text/javascript";
-    script1.src =
-      "https://www.freevisitorcounters.com/auth.php?id=53a6de6e47403880731f96f314469f4f2571a177";
-    document.body.appendChild(script1);
+    console.log("🔍 Footer: Attempting to load counter...");
+    const container = document.getElementById("ucounter-container");
 
-    const script2 = document.createElement("script");
-    script2.type = "text/javascript";
-    script2.src =
-      "https://www.freevisitorcounters.com/en/home/counter/1547757/t/6";
-    document.body.appendChild(script2);
+    if (!container) {
+      console.error("❌ Counter container not found!");
+      return;
+    }
+
+    console.log("✅ Counter container found");
+
+    // Create an iframe to load counter scripts safely
+    const iframe = document.createElement("iframe");
+    iframe.style.border = "none";
+    iframe.style.width = "100%";
+    iframe.style.height = "60px";
+    iframe.sandbox.add("allow-scripts");
+    iframe.sandbox.add("allow-same-origin");
+
+    container.appendChild(iframe);
+    console.log("📝 iframe appended");
+
+    // Write the counter HTML to the iframe
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const counterHTML = `
+      <html>
+        <head></head>
+        <body style="margin:0; padding:10px; text-align:center;">
+          <script language="javascript" src="https://yo.ucounter.com/26/pjzs/05/s/2/"><\/script>
+          <script language="javascript" src="https://ucounter.com/stat.js"><\/script>
+        </body>
+      </html>
+    `;
+
+    iframeDoc.open();
+    iframeDoc.write(counterHTML);
+    iframeDoc.close();
+    console.log("✅ Counter HTML written to iframe");
 
     return () => {
-      document.body.removeChild(script1);
-      document.body.removeChild(script2);
+      console.log("🧹 Cleaning up counter");
+      container.removeChild(iframe);
     };
   }, []);
+
   return (
     <footer className="mt-16 border-t bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 py-10">
@@ -53,8 +80,9 @@ export default function Footer() {
 
         {/* Quick Links Column 1 */}
         <div>
-          <ul className="space-y-2.5 text-sm">
-            <li>
+          <h3 className="font-semibold text-sm text-gray-700 mb-3 sm:hidden">Quick Links</h3>
+          <ul className="space-y-2.5 text-sm flex flex-wrap gap-4 sm:flex-col sm:gap-0">
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/about"
@@ -62,7 +90,7 @@ export default function Footer() {
                 {t("about")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/academics"
@@ -70,7 +98,7 @@ export default function Footer() {
                 {t("academics")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/admissions"
@@ -78,7 +106,7 @@ export default function Footer() {
                 {t("admissions")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/facilities"
@@ -86,7 +114,7 @@ export default function Footer() {
                 {t("facilities")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/gallery"
@@ -99,8 +127,9 @@ export default function Footer() {
 
         {/* Quick Links Column 2 */}
         <div>
-          <ul className="space-y-2.5 text-sm">
-            <li>
+          <h3 className="font-semibold text-sm text-gray-700 mb-3 sm:hidden">More</h3>
+          <ul className="space-y-2.5 text-sm flex flex-wrap gap-4 sm:flex-col sm:gap-0">
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/news"
@@ -108,7 +137,7 @@ export default function Footer() {
                 {t("news")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/achievements"
@@ -116,7 +145,7 @@ export default function Footer() {
                 {t("achievements")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/results"
@@ -124,7 +153,7 @@ export default function Footer() {
                 {t("results")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/alumni"
@@ -132,7 +161,7 @@ export default function Footer() {
                 {t("alumni")}
               </Link>
             </li>
-            <li>
+            <li className="sm:block">
               <Link
                 className="text-gray-600 hover:text-brand-orange transition-colors"
                 to="/faqs"
@@ -143,13 +172,22 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
+      {/* uCounter.com Code */}
+      <div className="text-center py-6 border-t">
+        <div
+          id="ucounter-container"
+          style={{
+            minHeight: "80px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            zIndex: 10
+          }}
+        />
+      </div>
       <div className="border-t py-3 flex flex-col items-center gap-1.5">
-        <a
-          href="http://www.freevisitorcounters.com"
-          className="text-xs text-gray-400 hover:text-gray-500 transition-colors"
-        >
-          Visitor Counter
-        </a>
         <div className="text-center text-xs text-gray-400">
           A digital initiative by{" "}
           <button
