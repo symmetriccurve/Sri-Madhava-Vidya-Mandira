@@ -22,6 +22,7 @@ export default function MobileSidebar() {
     { to: "/faqs", label: t("faqs") },
     { to: "/parents-message", label: t("parents_message") },
     { to: "/donor", label: t("donor") },
+    { to: "/mandatory-disclosure", label: "Mandatory Disclosure" },
     { to: "/contact", label: t("contact") },
   ];
 

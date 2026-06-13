@@ -160,7 +160,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     facilities_page_highlights_title: "Infrastructure Highlights",
     facilities_page_core_1_title: "Library",
     facilities_page_core_1_desc:
-      "Well-stocked library with over 2500 books, reference materials, and digital resources.",
+      "Well-stocked library with over 1500 books, reference materials, and digital resources.",
     facilities_page_core_1_feature_1: "Reading Room",
     facilities_page_core_1_feature_2: "Digital Resources",
     facilities_page_core_1_feature_3: "Reference Section",
@@ -233,7 +233,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     achievements_page_stat_cultural: "Cultural Awards",
     achievements_page_stat_science: "Science Competitions",
     achievements_page_major_title: "Major Achievements",
-    achievements_page_card_1_title: "CBSE Board Results Excellence",
+    achievements_page_card_1_title: "State Board Results Excellence",
     achievements_page_card_1_category: "Academic",
     achievements_page_card_1_year: "2024",
     achievements_page_card_1_description:
@@ -544,9 +544,9 @@ const dictionary: Record<Lang, Record<string, string>> = {
     news_page_article_13_date: "December 2023",
     news_page_article_13_category: "Cultural",
     academics_page_upcoming_title: "Upcoming Initiatives",
-    academics_page_upcoming_cbse_title: "CBSE Curriculum",
+    academics_page_upcoming_cbse_title: "State Curriculum",
     academics_page_upcoming_cbse_desc:
-      "We are currently in the process of introducing the CBSE curriculum to provide globally recognized education and enhanced learning opportunities for our students.",
+      "We are currently in the process of introducing the State curriculum to provide globally recognized education and enhanced learning opportunities for our students.",
     activity_sports: "Sports & Games",
     activity_sports_desc:
       "Cricket, athletics, kho-kho, kabaddi and more with trained coaches.",
@@ -703,7 +703,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "We offer sports, music, dance, art, science club, literary club, and various cultural activities to develop students' talents and interests.",
     faq_library: "What library facilities are available?",
     faq_library_answer:
-      "Our library has a collection of over 2500 books including textbooks, reference books, fiction, and non-fiction. We also have reading corners.",
+      "Our library has a collection of over 1500 books including textbooks, reference books, fiction, and non-fiction. We also have reading corners.",
     faq_labs: "What laboratory facilities do you have?",
     faq_labs_answer:
       "We have well-equipped science laboratories for Physics, Chemistry, and Biology with modern equipment and safety measures for hands-on learning.",
@@ -1098,7 +1098,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_visit_campus: "ನಮ್ಮ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಿ",
     admissions_page_address_label: "ವಿಳಾಸ",
     admissions_page_contact_address:
-      "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ, ಭವಾನಿ ನಗರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ. ಕರ್ನಾಟಕ.",
     admissions_page_phone_label: "ಫೋನ್",
     admissions_page_phone_value: "+91 9449643684, +91 9449424530",
     admissions_page_email_label: "ಇಮೇಲ್ ಐಡಿ",
@@ -1187,7 +1187,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     achievements_page_stat_cultural: "ಸಾಂಸ್ಕೃತಿಕ ಪ್ರಶಸ್ತಿಗಳು",
     achievements_page_stat_science: "ವಿಜ್ಞಾನ ಸ್ಪರ್ಧೆಗಳು",
     achievements_page_major_title: "ಪ್ರಮುಖ ಸಾಧನೆಗಳು",
-    achievements_page_card_1_title: "CBSE ಬೋರ್ಡ್ ಫಲಿತಾಂಶದಲ್ಲಿ ಶ್ರೇಷ್ಠತೆ",
+    achievements_page_card_1_title: "State ಬೋರ್ಡ್ ಫಲಿತಾಂಶದಲ್ಲಿ ಶ್ರೇಷ್ಠತೆ",
     achievements_page_card_1_category: "ಶೈಕ್ಷಣಿಕ",
     achievements_page_card_1_year: "2024",
     achievements_page_card_1_description:
@@ -1492,7 +1492,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     news_page_article_13_date: "ಡಿಸೆಂಬರ್ 2023",
     news_page_article_13_category: "ಸಾಂಸ್ಕೃತಿಕ",
     academics_page_upcoming_title: "ಉದಯೋನ್ಮುಖ ಕಾರ್ಯಕ್ರಮಗಳು",
-    academics_page_upcoming_cbse_title: "CBSE ಪಠ್ಯಕ್ರಮ",
+    academics_page_upcoming_cbse_title: "State ಪಠ್ಯಕ್ರಮ",
     academics_page_upcoming_cbse_desc:
       "ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಜಾಗತಿಕ ಮಟ್ಟದ ಶಿಕ್ಷಣ ಮತ್ತು ಹೆಚ್ಚಿನ ಕಲಿಕಾ ಅವಕಾಶಗಳನ್ನು ಒದಗಿಸಲು ನಾವು CBSE ಪಠ್ಯಕ್ರಮವನ್ನು ಪರಿಚಯಿಸುವ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದ್ದೇವೆ.",
     activity_sports: "ಕ್ರೀಡೆ ಮತ್ತು ಆಟಗಳು",
@@ -1615,7 +1615,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     faq_email_support: "ಇಮೇಲ್ ಬೆಂಬಲ",
     faq_visit_us: "ನಮ್ಮನ್ನು ಭೇಟಿ ಮಾಡಿ",
     faq_visit_address:
-      "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ, ಭವಾನಿ ನಗರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ. ಕರ್ನಾಟಕ.",
     faq_phone_value: "+91 9449643684, +91 9449424530",
     faq_email_value: "smvmsira@gmail.com",
     faq_admissions: "ಪ್ರವೇಶ",

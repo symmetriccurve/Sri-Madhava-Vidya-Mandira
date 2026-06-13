@@ -48,7 +48,7 @@ export default function Facilities() {
       icon: Computer,
       title: t("facilities_page_core_3_title"),
       description: t("facilities_page_core_3_desc"),
-      image: getAssetImage("3.jpg"),
+      image: getAssetImage("computer_lab.jpeg"),
       features: [
         t("facilities_page_core_3_feature_1"),
         t("facilities_page_core_3_feature_2"),

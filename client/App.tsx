@@ -28,6 +28,7 @@ import Alumni from "./pages/Alumni";
 import FAQs from "./pages/FAQs";
 import ParentsMessage from "./pages/ParentsMessage";
 import Donor from "./pages/Donor";
+import MandatoryDisclosure from "./pages/MandatoryDisclosure";
 
 const queryClient = new QueryClient();
 
@@ -65,6 +66,7 @@ const App = () => (
               <Route path="/faqs" element={<FAQs />} />
               <Route path="/parents-message" element={<ParentsMessage />} />
               <Route path="/donor" element={<Donor />} />
+              <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
               <Route path="/contact" element={<Contact />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
