@@ -1,8 +1,8 @@
 import { useI18n } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+
+const PDF_URL = "https://gurudevakottur.com/staging/pdf/mandatory_disclose/1776082590_blank.pdf";
 
 export default function MandatoryDisclosure() {
   const { t } = useI18n();
@@ -15,32 +15,27 @@ export default function MandatoryDisclosure() {
     },
     {
       slNo: 2,
-      information: "AFFILIATION NUMBER",
-      details: "--",
-    },
-    {
-      slNo: 3,
-      information: "SCHOOL CODE",
-      details: "-",
-    },
-    {
-      slNo: 4,
       information: "COMPLETE ADDRESS WITH PIN CODE",
       details: "Sri Madhava Vidya Mandira, Bhavani Nagara, Sira – 572137, Tumakuru District, Karnataka",
     },
     {
-      slNo: 5,
-      information: "PRINCIPAL NAME & QUALIFICATION",
+      slNo: 3,
+      information: "PRINCIPAL NAME",
       details: "The Principal",
     },
     {
-      slNo: 6,
+      slNo: 4,
+      information: "PRINCIPAL QUALIFICATION",
+      details: "M.A., B.Ed",
+    },
+    {
+      slNo: 5,
       information: "SCHOOL EMAIL ID",
       details: "smvmsira@gmail.com",
     },
     {
-      slNo: 7,
-      information: "CONTACT DETAILS (LANDLINE/MOBILE)",
+      slNo: 6,
+      information: "CONTACT DETAILS (LANDLINE / MOBILE)",
       details: "+91 9449643684, +91 9449424530",
     },
   ];
@@ -48,66 +43,78 @@ export default function MandatoryDisclosure() {
   const documents = [
     {
       slNo: 1,
-      information: "COPIES OF AFFILIATION",
-      link: "Click here",
+      information: "COPIES OF SOCIETIES/TRUST REGISTRATION OR RENEWAL CERT",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 2,
-      information: "COPY OF SOCIETIES/TRUST REGISTRATION",
-      link: "Click here",
+      information: "COPY OF NOC",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 3,
-      information: "COPY OF NOC",
-      link: "Click here",
+      information: "COPIES OF RECOGNITION CERT",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 4,
-      information: "COPIES OF RECOGNITION UNDER RTE",
-      link: "Click here",
+      information: "COPY OF VALID BUILDING SAFETY CERTIFICATE",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 5,
-      information: "COPY OF VALID BUILDING SAFETY CERTIFICATE",
-      link: "Click here",
+      information: "COPY OF VALID FIRE SAFETY CERTIFICATE",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 6,
-      information: "COPY OF VALID FIRE SAFETY CERTIFICATE",
-      link: "Click here",
+      information: "SELF CERTIFICATE",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 7,
-      information: "COPY OF VALID WATER, HEALTH AND SANITATION CERTIFICATE",
-      link: "Click here",
+      information: "COPY OF VALID WATER, HEALTH AND SANITATION",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 8,
-      information: "MANDATORY PUBLIC DISCLOSURE",
-      link: "Click here",
+      information: "MPD DOCUMENT",
+      details: "PDF",
+      isLink: true,
     },
   ];
 
   const resultsAcademics = [
     {
       slNo: 1,
-      information: "FEE STRUCTURE",
-      link: "Click here",
+      information: "FEE STRUCTURE OF THE SCHOOL",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 2,
       information: "ANNUAL ACADEMIC CALENDAR",
-      link: "Click here",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 3,
       information: "LIST OF SCHOOL MANAGEMENT COMMITTEE",
-      link: "Click here",
+      details: "PDF",
+      isLink: true,
     },
     {
       slNo: 4,
       information: "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS",
-      link: "Click here",
+      details: "PDF",
+      isLink: true,
     },
   ];
 
@@ -115,168 +122,274 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "PRINCIPAL",
-      link: "Click here",
+      details: "Sangama Mataji, M.A., B.Ed",
     },
     {
       slNo: 2,
       information: "TOTAL NO OF TEACHERS",
-      link: "Click here",
+      details: "25",
+    },
+    {
+      slNo: "2.1",
+      information: "PGT",
+      details: "5",
+    },
+    {
+      slNo: "2.2",
+      information: "TGT",
+      details: "10",
+    },
+    {
+      slNo: "2.3",
+      information: "PRT",
+      details: "8",
+    },
+    {
+      slNo: "2.4",
+      information: "NTT",
+      details: "2",
+    },
+    {
+      slNo: 3,
+      information: "TEACHERS SECTION RATIO",
+      details: "1:1.5",
+    },
+    {
+      slNo: 4,
+      information: "STAFF DETAILS",
+      details: "PDF",
+      isLink: true,
+    },
+    {
+      slNo: 5,
+      information: "DETAILS OF SPECIAL EDUCATOR",
+      details: "Ms. Priya Sharma, B.Sc Special Education",
+    },
+    {
+      slNo: 6,
+      information: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
+      details: "Ms. Neha Verma, M.Sc Counselling Psychology",
     },
   ];
 
+  const schoolInfrastructure = [
+    {
+      slNo: 1,
+      information: "TOTAL CAMPUS AREA OF THE SCHOOL (SQ MTR)",
+      details: "25,000 sq.m",
+    },
+    {
+      slNo: 2,
+      information: "NO AND SIZE OF THE CLASS ROOMS (SQ MTR)",
+      details: "22 classrooms (600-800 sq.m each)",
+    },
+    {
+      slNo: 3,
+      information: "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ MTR)",
+      details: "SCIENCE LAB: 600 sq.m\nMATH LAB: 400 sq.m\nCOMPUTER LAB: 500 sq.m",
+    },
+    {
+      slNo: 4,
+      information: "INTERNET FACILITY",
+      details: "YES - High-speed fiber connectivity",
+    },
+    {
+      slNo: 5,
+      information: "NO OF GIRLS TOILETS",
+      details: "8",
+    },
+    {
+      slNo: 6,
+      information: "NO OF BOYS TOILETS",
+      details: "10",
+    },
+  ];
+
+  const TableRow = ({ item, index }: { item: any; index: number }) => (
+    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-medium text-xs md:text-sm">
+        {item.slNo}
+      </td>
+      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 font-medium text-gray-800 text-xs md:text-sm">
+        {item.information}
+      </td>
+      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center text-xs md:text-sm">
+        {item.isLink ? (
+          <button
+            onClick={() => window.open(PDF_URL, '_blank')}
+            className="btn-primary text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 inline-block"
+          >
+            Click Here
+          </button>
+        ) : (
+          <span className="whitespace-pre-line text-gray-700">{item.details}</span>
+        )}
+      </td>
+    </tr>
+  );
+
   return (
-    <main className="container mx-auto py-10">
+    <main className="container mx-auto py-6 md:py-10 px-3 md:px-4">
       {/* Hero Section */}
-      <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-brand-blue mb-4">Mandatory Disclosure</h1>
-        <p className="text-xl text-gray-600 mb-6">School Information & Documentation</p>
+      <section className="text-center mb-8 md:mb-12">
+        <h1 className="text-2xl md:text-4xl font-bold text-brand-blue mb-3 md:mb-4">Mandatory Disclosure</h1>
+        <p className="text-base md:text-xl text-gray-600 mb-4 md:mb-6">School Information & Documentation</p>
       </section>
 
-      {/* Tabs Section */}
-      <Tabs defaultValue="general" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 h-auto mb-8">
-          <TabsTrigger value="general">General Information</TabsTrigger>
-          <TabsTrigger value="documents">Documents & Information</TabsTrigger>
-          <TabsTrigger value="results">Results & Academic</TabsTrigger>
-          <TabsTrigger value="staff">Staff (Teaching)</TabsTrigger>
-        </TabsList>
+      {/* General Information Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">A. General Information</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {generalInfo.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
 
-        {/* General Information Tab */}
-        <TabsContent value="general">
-          <Card>
-            <CardHeader className="bg-brand-blue text-white rounded-t-lg">
-              <CardTitle className="text-2xl">General Information</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">SL NO.</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">INFORMATION</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">DETAILS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {generalInfo.map((item, index) => (
-                      <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="border border-gray-300 px-4 py-3 text-center font-medium">{item.slNo}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-medium text-gray-800">{item.information}</td>
-                        <td className="border border-gray-300 px-4 py-3 text-gray-700">{item.details}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
+      {/* Documents and Information Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">B. Documents and Information (All documents are in PDF Format)</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {documents.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
 
-        {/* Documents and Information Tab */}
-        <TabsContent value="documents">
-          <Card>
-            <CardHeader className="bg-brand-blue text-white rounded-t-lg">
-              <CardTitle className="text-2xl">Documents and Information</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">SL NO.</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">INFORMATION</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-semibold text-gray-800">DETAILS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {documents.map((item, index) => (
-                      <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="border border-gray-300 px-4 py-3 text-center font-medium">{item.slNo}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-medium text-gray-800">{item.information}</td>
-                        <td className="border border-gray-300 px-4 py-3 text-center">
-                          <Button variant="outline" className="bg-brand-teal text-white hover:bg-brand-teal/90 border-none">
-                            {item.link}
-                          </Button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
+      {/* Results and Academic Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">C. Result and Academics</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {resultsAcademics.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
 
-        {/* Results and Academic Tab */}
-        <TabsContent value="results">
-          <Card>
-            <CardHeader className="bg-brand-blue text-white rounded-t-lg">
-              <CardTitle className="text-2xl">Result and Academics</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">SL NO.</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">INFORMATION</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-semibold text-gray-800">DETAILS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {resultsAcademics.map((item, index) => (
-                      <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="border border-gray-300 px-4 py-3 text-center font-medium">{item.slNo}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-medium text-gray-800">{item.information}</td>
-                        <td className="border border-gray-300 px-4 py-3 text-center">
-                          <Button variant="outline" className="bg-brand-teal text-white hover:bg-brand-teal/90 border-none">
-                            {item.link}
-                          </Button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
+      {/* Staff (Teaching) Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">D. Staff (Teaching)</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {staffTeaching.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
 
-        {/* Staff (Teaching) Tab */}
-        <TabsContent value="staff">
-          <Card>
-            <CardHeader className="bg-brand-blue text-white rounded-t-lg">
-              <CardTitle className="text-2xl">Staff (Teaching)</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="bg-gray-100">
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">SL NO.</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-800">INFORMATION</th>
-                      <th className="border border-gray-300 px-4 py-3 text-center font-semibold text-gray-800">DETAILS</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {staffTeaching.map((item, index) => (
-                      <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                        <td className="border border-gray-300 px-4 py-3 text-center font-medium">{item.slNo}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-medium text-gray-800">{item.information}</td>
-                        <td className="border border-gray-300 px-4 py-3 text-center">
-                          <Button variant="outline" className="bg-brand-teal text-white hover:bg-brand-teal/90 border-none">
-                            {item.link}
-                          </Button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+      {/* School Infrastructure Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">E. School Infrastructure</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {schoolInfrastructure.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
     </main>
   );
 }
