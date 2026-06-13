@@ -76,8 +76,8 @@ export default function Gallery() {
       title: t("gallery_page_category_academics_title"),
       icon: BookOpen,
       images: [
-        getAssetImage("21.png"),
         getAssetImage("2025_results_banner.png"),
+        getAssetImage("21.png"),
       ],
       description: t("gallery_page_category_academics_desc"),
     },

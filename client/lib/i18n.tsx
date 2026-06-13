@@ -23,7 +23,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
   en: {
     school_name: "Sri Madhava Vidya Mandira",
     school_name_full:
-      "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
+      "Sri Madhava Vidya Mandira, Bhavani Nagara, Sira – 572137, Tumkur District, Karnataka",
     tagline: "Education – Culture",
     admissions: "Admissions",
     academics: "Academics",
@@ -47,7 +47,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     principal_attribution: "— Somashekhar, School President.",
     address_label: "Address",
     address_value:
-      "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
+      "Sri Madhava Vidya Mandira, Bhavani Nagara,Sira – 572137, Tumkur District, Karnataka",
     phone_label: "Phone",
     phone_value: "+91 9449643684, +91 9449424530",
     email_label: "Email",
@@ -58,7 +58,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "Get in touch with us for admissions and general inquiries. We're here to help and answer any questions you may have.",
     contact_page_info_address_title: "Address",
     contact_page_info_address_detail:
-      "Sri Madhava Vidya Mandira, Sira – 572137, Tumkur District, Karnataka",
+      "Sri Madhava Vidya Mandira, Bhavani Nagara, Sira – 572137, Tumkur District, Karnataka",
     contact_page_info_address_desc:
       "Visit our beautiful campus in the serene town of Sira",
     contact_page_info_phone_title: "Phone",
@@ -401,7 +401,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     about_snippet:
       "Vidya Bharati is a large educational organization that has been working nationwide for the past 63 years in the field of education. Through approximately 30,000 educational centers across the country, it provides national education and cultural values. Our Sri Madhava Vidya Mandira in Sira is also an institution functioning under Vidya Bharati's cooperation and guidance. Along with providing Indian education to children in rural and urban areas through their mother tongue, our school integrates academic subjects like Science, Mathematics, Language Education, and Social Sciences with our nation's culture, music, Sanskrit, Yoga, ethics education, physical education, practical education, and community service activities. The fundamental objective of Vidya Bharati is to instill these values. Furthermore, through national consciousness, community service, environmental education, student organizations, teacher training programs, workshops, and sports competitions, our school aims to be a sacred temple of learning that shapes the future of our students and nurtures them as architects of a new India, which is the aspiration of all of us.",
     main_content_snippet:
-      "Vidya Bharati is a large educational organization that has been working nationwide for the past 63 years in the field of education. Through approximately 30,000 educational centers across the country, it provides national education and cultural values. Our Sri Madhava Vidya Mandira in Sira is also an institution functioning under Vidya Bharati's cooperation and guidance. Along with providing Indian education to children in rural and urban areas through their mother tongue, our school integrates academic subjects like Science, Mathematics, Language Education, and Social Sciences with our nation's culture, music, Sanskrit, Yoga, ethics education, physical education, practical education, and community service activities. The fundamental objective of Vidya Bharati is to instill these values. Furthermore, through national consciousness, community service, environmental education, student organizations, teacher training programs, workshops, and sports competitions, our school aims to be a sacred temple of learning that shapes the future of our students and nurtures them as architects of a new India, which is the aspiration of all of us.",
+      "Vidya Bharati is a large educational organization that has been working across the country for more than 63 years in the field of education. Through approximately 30,000 educational centers nationwide, it provides national education and culture. Our Sri Madhava Vidya Mandira in Sira is an institution functioning under Vidya Bharati's guidance and cooperation.",
     ticker_1: "Admissions open for the new academic year.",
     ticker_2:
       "Congratulations to our 10th standard students on their fantastic results!",

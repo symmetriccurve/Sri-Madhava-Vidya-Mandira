@@ -84,7 +84,7 @@ export default function Facilities() {
       icon: Users,
       title: t("facilities_page_core_6_title"),
       description: t("facilities_page_core_6_desc"),
-      image: getAssetImage("5(1).jpg"),
+      image: getAssetImage("smart_classrooms.jpeg"),
       features: [
         t("facilities_page_core_6_feature_1"),
         t("facilities_page_core_6_feature_2"),
@@ -228,7 +228,7 @@ export default function Facilities() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-brand-blue mb-2">
-                  2500+
+                  1500+
                 </div>
                 <div className="text-sm text-gray-600">
                   {t("facilities_page_highlight_2")}
