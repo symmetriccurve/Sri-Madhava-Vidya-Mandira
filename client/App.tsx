@@ -23,7 +23,6 @@ import Facilities from "./pages/Facilities";
 import Gallery from "./pages/Gallery";
 import News from "./pages/News";
 import Achievements from "./pages/Achievements";
-import Results from "./pages/Results";
 import Alumni from "./pages/Alumni";
 import FAQs from "./pages/FAQs";
 import ParentsMessage from "./pages/ParentsMessage";
@@ -61,7 +60,6 @@ const App = () => (
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/news" element={<News />} />
               <Route path="/achievements" element={<Achievements />} />
-              <Route path="/results" element={<Results />} />
               <Route path="/alumni" element={<Alumni />} />
               <Route path="/faqs" element={<FAQs />} />
               <Route path="/parents-message" element={<ParentsMessage />} />

@@ -17,7 +17,6 @@ export default function MobileSidebar() {
     { to: "/gallery", label: t("gallery") },
     { to: "/news", label: t("news") },
     { to: "/achievements", label: t("achievements") },
-    { to: "/results", label: t("results") },
     { to: "/alumni", label: t("alumni") },
     { to: "/faqs", label: t("faqs") },
     { to: "/parents-message", label: t("parents_message") },

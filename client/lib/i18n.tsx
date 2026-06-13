@@ -566,15 +566,6 @@ const dictionary: Record<Lang, Record<string, string>> = {
     activity_clubs_desc:
       "Literature, eco, and science clubs to nurture curiosity.",
     results: "Results",
-    results_title: "Examination Results",
-    results_subtitle:
-      "Access all examination results and academic achievements",
-    results_10th_description:
-      "Access official examination results from the Government of Karnataka",
-    results_10th_class: "10th Class Karnataka Board",
-    results_view_results: "View Results",
-    results_10th_note:
-      "All examination results are published on the official Karnataka Results portal. Enter your registration number to view your results.",
     academic_year: "Academic Year",
     latest_results: "Latest Results Available",
     sslc_results: "SSLC Results (Class 10)",
@@ -612,19 +603,6 @@ const dictionary: Record<Lang, Record<string, string>> = {
     result_access_3: "Download links are valid for 1 year",
     result_access_4: "Results available for Classes 1-10",
     result_access_5: "For any queries, contact the examination office",
-    results_sslc_march_2025: "SSLC March 2025",
-    results_sslc_march_2024: "SSLC March 2024",
-    results_class_10_overall_2024_25: "Class 10 Results 2024-25",
-    results_class_10_overall_2023_24: "Class 10 Results 2023-24",
-    results_all_classes_title: "All Results (Class 1-10)",
-    results_all_classes_description:
-      "Single combined result tile for Classes 1 to 10 for each academic year",
-    results_all_classes_exam_2024_25: "All Results (Class 1-10)",
-    results_all_classes_exam_2023_24: "All Results (Class 1-10) 2023-24",
-    results_all_classes_download_2024_25:
-      "Combined Results - Class 1 to 10 (2024-25)",
-    results_all_classes_download_2023_24:
-      "Combined Results - Class 1 to 10 (2023-24)",
     upcoming_features: "Upcoming Features",
     upcoming_feature_1: "All results will be available in PDF format",
     upcoming_feature_2: "Download links will be valid for 1 year",
@@ -813,7 +791,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "To be a leading educational institution that creates an environment where every child discovers their potential, develops critical thinking skills, and grows into a well-rounded individual with strong values, academic excellence, and cultural awareness.",
     our_journey: "Our Journey",
     // Donor Module
-    donor: "Donate",
+    donor: "Voluntary Donations",
     donor_title: "Support Our School",
     donor_subtitle:
       "Your contribution helps us provide quality education and facilities to our students",
@@ -977,7 +955,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
   kn: {
     school_name: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
     school_name_full:
-      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ, ಭವಾನಿ ನಗರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
     tagline: "ಶಿಕ್ಷಣ – ಸಂಸ್ಕೃತಿ",
     admissions: "ಪ್ರವೇಶ",
     academics: "ವಿದ್ಯಾಭ್ಯಾಸ",
@@ -1001,7 +979,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     principal_attribution: "— ಸೋಮಶೇಖರ್, ಅಧ್ಯಕ್ಷರು, ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
     address_label: "ವಿಳಾಸ",
     address_value:
-      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ, ಭವಾನಿ ನಗರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
     phone_label: "ದೂರವಾಣಿ",
     phone_value: "+91 9449643684, +91 9449424530",
     email_label: "ಇಮೇಲ್",
@@ -1012,7 +990,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಪ್ರವೇಶ ಹಾಗೂ ಸಾಮಾನ್ಯ ವಿಚಾರಣೆಗಳಿಗಾಗಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ. ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ನೆರವಾಗಲು ನಾವು ಸದಾ ಸಿದ್ಧರಾಗಿದ್ದೇವೆ.",
     contact_page_info_address_title: "ವಿಳಾಸ",
     contact_page_info_address_detail:
-      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರ, ಭವಾನಿ ನಗರ, ಸಿರಾ – 572137, ತುಮಕೂರು ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ",
     contact_page_info_address_desc:
       "ಶಾಂತ ವಾತಾವರಣದ ಸಿರಾ ಪಟ್ಟಣದಲ್ಲಿ ಇರುವ ನಮ್ಮ ಸುಂದರ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಿ",
     contact_page_info_phone_title: "ದೂರವಾಣಿ",
@@ -1511,15 +1489,6 @@ const dictionary: Record<Lang, Record<string, string>> = {
     activity_clubs_desc:
       "ಸಾಹಿತ್ಯ, ಪರಿಸರ ಮತ್ತು ವಿಜ್ಞಾನ ಕ್ಲಬ್‌ಗಳು ಕುತೂಹಲ ಬೆಳೆಸಲು.",
     results: "ಫಲಿತಾಂಶಗಳು",
-    results_title: "ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳು",
-    results_subtitle:
-      "ಎಲ್ಲಾ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳು ಮತ್ತು ಶೈಕ್ಷಣಿಕ ಸಾಧನೆಗಳನ್ನು ಪ್ರವೇಶಿಸಿ",
-    results_10th_description:
-      "ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಅಧಿಕೃತ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರವೇಶಿಸಿ",
-    results_10th_class: "10ನೇ ತರಗತಿ ಕರ್ನಾಟಕ ಬೋರ್ಡ್",
-    results_view_results: "ಫಲಿತಾಂಶಗಳನ್ನು ವೀಕ್ಷಿಸಿ",
-    results_10th_note:
-      "ಎಲ್ಲಾ ಪರೀಕ್ಷಾ ಫಲಿತಾಂಶಗಳನ್ನು ಅಧಿಕೃತ ಕರ್ನಾಟಕ ಫಲಿತಾಂಶಗಳ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ಪ್ರಕಟ ಮಾಡಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಫಲಿತಾಂಶಗಳನ್ನು ವೀಕ್ಷಿಸಲು ನಿಮ್ಮ ನೋಂದಣಿ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.",
     academic_year: "ಶೈಕ್ಷಣಿಕ ವರ್ಷ",
     latest_results: "ಇತ್ತೀಚಿನ ಫಲಿತಾಂಶಗಳು ಲಭ್ಯ",
     sslc_results: "ಎಸ್‌ಎಸ್‌ಎಲ್‌ಸಿ ಫಲಿತಾಂಶಗಳು (10ನೇ ತರಗತಿ)",
@@ -1557,19 +1526,6 @@ const dictionary: Record<Lang, Record<string, string>> = {
     result_access_3: "ಡೌನ್‌ಲೋಡ್ ಕೊಂಡಿಗಳು 1 ವರ್ಷ ಮಾನ್ಯವಾಗಿರುತ್ತವೆ",
     result_access_4: "1-10ನೇ ತರಗತಿಗಳಿಗೆ ಫಲಿತಾಂಶಗಳು ಲಭ್ಯವಿವೆ",
     result_access_5: "ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳಿಗೆ, ಪರೀಕ್ಷಾ ಕಛೇರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ",
-    results_sslc_march_2025: "ಎಸ್‌ಎಸ್‌ಎಲ್‌ಸಿ ಮಾರ್ಚ್ 2025",
-    results_sslc_march_2024: "ಎಸ್‌ಎಸ್‌ಎಲ್‌ಸಿ ಮಾರ್ಚ್ 2024",
-    results_class_10_overall_2024_25: "10ನೇ ತರಗತಿ ಫಲಿತಾಂಶ 2024-25",
-    results_class_10_overall_2023_24: "10ನೇ ತರಗತಿ ಫಲಿತಾಂಶ 2023-24",
-    results_all_classes_title: "1-10ನೇ ತರಗತಿಗಳ ಸಮಗ್ರ ಫಲಿತಾಂಶಗಳು",
-    results_all_classes_description:
-      "ಪ್ರತಿ ಶೈಕ್ಷಣಿಕ ವರ್ಷದಿಗಾಗಿ 1ರಿಂದ 10ನೇ ತರಗತಿವರೆಗಿನ ಒಂದೇ ಸಮಗ್ರ ಫಲಿತಾಂಶ ಟೈಲ್",
-    results_all_classes_exam_2024_25: "ಸಮಗ್ರ ಫಲಿತಾಂಶಗಳು (1-10ನೇ ತರಗತಿ) 2024-25",
-    results_all_classes_exam_2023_24: "ಸಮಗ್ರ ಫಲಿತಾಂಶಗಳು (1-10ನೇ ತರಗತಿ) 2023-24",
-    results_all_classes_download_2024_25:
-      "ಸಂಯುಕ್ತ ಫಲಿತಾಂಶ - 1ರಿಂದ 10ನೇ ತರಗತಿ (2024-25)",
-    results_all_classes_download_2023_24:
-      "ಸಂಯುಕ್ತ ಫಲಿತಾಂಶ - 1ರಿಂದ 10ನೇ ತರಗತಿ (2023-24)",
     upcoming_features: "ಮುಂಬರುವ ವೈಶಿಷ್ಟ್ಯಗಳು",
     upcoming_feature_1: "ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳು PDF ಸ್ವರೂಪದಲ್ಲಿ ಲಭ್ಯವಾಗುತ್ತವೆ",
     upcoming_feature_2: "ಡೌನ್‌ಲೋಡ್ ಲಿಂಕ್‌ಗಳು 1 ವರ್ಷ ಮಾನ್ಯವಾಗಿರುತ್ತವೆ",
@@ -1757,7 +1713,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಭಾರತೀಯ ಸಂಸ್ಕೃತಿ ಪರಂಪರೆ ಮತ್ತು ಮೌಲ್ಯಗಳನ್ನು ಪ್ರತಿಬಿಂಬಿಸುವ ಸಮಗ್ರ ಶಿಕ್ಷಣವನ್ನು ಒದಗಿಸಿ ನಾನಾ ನೈತಿಕತೆ ಶ್ರದ್ಧೆ ಮತ್ತು ಸಾಮಾಜಿಕ ಬದ್ಧತೆಯಿಂದ ಶ್ರೇಷ್ಠ ನಾಗರಿಕರನ್ನು ರೂಪಿಸುವುದು ಪೌರಾಣಿಕ ಜ್ಞಾನ ಹಾಗೂ ಆಧುನಿಕ ವಿಜ್ಞಾನವನ್ನು ಸಮನ್ವಯಗೊಳಿಸಿ ಮಾನವೀಯತೆಯೊಂದಿಗೆ ಜೀವನವನ್ನು ಹಮ್ಮಿಕೊಳ್ಳುವ ಮೌಲ್ಯ ಸಂಸ್ಕೃತ ಸಮಾಜವನ್ನು ಕಟ್ಟುವುದು ನಮ್ಮ ಶಾಲೆಯ ದೃಷ್ಟಿಕೋನ",
     our_journey: "ನಮ್ಮ ಪ್ರಯಾಣ",
     // Donor Module
-    donor: "ದಾನ",
+    donor: "ಸ್ವೇಚ್ಛಾ ದಾನ",
     donor_title: "ನಮ್ಮ ಶಾಲೆಗೆ ಬೆಂಬಲ ನೀಡಿ",
     donor_subtitle:
       "ನಿಮ್ಮ ಕೊಡುಗೆಯು ನಮ್ಮ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ ಮತ್ತು ಸೌಲಭ್ಯಗಳನ್ನು ಒದಗಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ",

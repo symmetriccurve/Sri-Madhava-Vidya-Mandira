@@ -61,9 +61,6 @@ export default function Header() {
                   <Link to="/achievements" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
                     {t("achievements")}
                   </Link>
-                  <Link to="/results" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
-                    {t("results")}
-                  </Link>
                   <Link to="/alumni" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
                     {t("alumni")}
                   </Link>

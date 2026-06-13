@@ -47,10 +47,6 @@ export default function FAQs() {
           answer: t("faq_exams_answer")
         },
         {
-          question: t("faq_homework"),
-          answer: t("faq_homework_answer")
-        },
-        {
           question: t("faq_extra_curricular"),
           answer: t("faq_extra_curricular_answer")
         }
@@ -71,10 +67,6 @@ export default function FAQs() {
         {
           question: t("faq_sports"),
           answer: t("faq_sports_answer")
-        },
-        {
-          question: t("faq_transport"),
-          answer: t("faq_transport_answer")
         }
       ]
     },

@@ -1,6 +1,5 @@
 import {
   BookOpen,
-  Car,
   Computer,
   Dumbbell,
   Heart,
@@ -8,7 +7,6 @@ import {
   Music,
   Shield,
   Users,
-  Utensils,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -101,19 +99,9 @@ export default function Facilities() {
       description: t("facilities_page_additional_1_desc"),
     },
     {
-      icon: Car,
-      title: t("facilities_page_additional_2_title"),
-      description: t("facilities_page_additional_2_desc"),
-    },
-    {
       icon: Heart,
       title: t("facilities_page_additional_3_title"),
       description: t("facilities_page_additional_3_desc"),
-    },
-    {
-      icon: Utensils,
-      title: t("facilities_page_additional_4_title"),
-      description: t("facilities_page_additional_4_desc"),
     },
     {
       icon: Users,
