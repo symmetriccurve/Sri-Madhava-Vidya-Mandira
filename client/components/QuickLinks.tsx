@@ -12,7 +12,7 @@ const links = (t: (k: string) => string) => [
     label: t("academics"),
     color: "from-brand-blue to-blue-500",
   },
-  { to: "/donor", label: t("donor"), color: "from-red-500 to-pink-500" },
+  // { to: "/donor", label: t("donor"), color: "from-red-500 to-pink-500" },
   {
     to: "/contact",
     label: t("contact"),

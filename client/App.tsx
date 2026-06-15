@@ -26,7 +26,7 @@ import Achievements from "./pages/Achievements";
 import Alumni from "./pages/Alumni";
 import FAQs from "./pages/FAQs";
 import ParentsMessage from "./pages/ParentsMessage";
-import Donor from "./pages/Donor";
+// import Donor from "./pages/Donor";
 import MandatoryDisclosure from "./pages/MandatoryDisclosure";
 
 const queryClient = new QueryClient();
@@ -63,7 +63,7 @@ const App = () => (
               <Route path="/alumni" element={<Alumni />} />
               <Route path="/faqs" element={<FAQs />} />
               <Route path="/parents-message" element={<ParentsMessage />} />
-              <Route path="/donor" element={<Donor />} />
+              {/* <Route path="/donor" element={<Donor />} /> */}
               <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
               <Route path="/contact" element={<Contact />} />
 

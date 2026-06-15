@@ -70,9 +70,9 @@ export default function Header() {
                   <Link to="/parents-message" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
                     {t("parents_message")}
                   </Link>
-                  <Link to="/donor" className="block px-3 py-2 text-sm text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-md transition-colors">
+                  {/* <Link to="/donor" className="block px-3 py-2 text-sm text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-md transition-colors">
                     {t("donor")}
-                  </Link>
+                  </Link> */}
                   <Link to="/mandatory-disclosure" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
                     Mandatory Disclosure
                   </Link>

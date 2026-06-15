@@ -104,13 +104,12 @@ export default function Academics() {
   ];
 
   const coCurricular = [
-    {
-      icon: BookOpenText,
-      title: t("academics_page_cocurricular_bhagavad_gita_title"),
-      description: t("academics_page_cocurricular_bhagavad_gita_desc"),
-      highlight: true,
-    },
-
+    // {
+    //   icon: BookOpenText,
+    //   title: t("academics_page_cocurricular_bhagavad_gita_title"),
+    //   description: t("academics_page_cocurricular_bhagavad_gita_desc"),
+    //   highlight: true,
+    // },
     {
       icon: Microscope,
       title: t("academics_page_cocurricular_science_club_title"),
