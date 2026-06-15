@@ -672,7 +672,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "We follow the Karnataka State Board curriculum with additional focus on value education, sports, and cultural activities for holistic development.",
     faq_exams: "How are examinations conducted?",
     faq_exams_answer:
-      "Unit Tests and Semester Examination for Classes 1 to 7 are conducted for Kannada Medium. Unit Tests, Monthly Tests, Annual Examination for Classes 8 to 10 English Medium. Preparatory Examinations are conducted for Class 10 students.",
+      "Unit Tests, Monthly Tests, and Annual Examination are conducted for all classes. Preparatory Examinations are conducted for Class 10 students.",
     faq_homework: "What is the homework policy?",
     faq_homework_answer:
       "We assign age-appropriate homework that reinforces classroom learning. Homework is designed to be completed within reasonable time limits.",
@@ -919,7 +919,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     about_history_growth:
       "The school grew from the Shishu Mandira up to 4th grade until 1988. In 1989, the Higher Primary School was established.",
     about_history_current:
-      "Currently, our school operates with an aided primary section from 1st to 7th grade (Kannada medium), and high school from 8th to 10th grade (English medium). In 2022-23, LKG and UKG (English medium) were introduced. In 2023-24, 1st grade was started in English medium.",
+      "Currently, our school operates with an aided primary section from 1st to 7th grade and high school from 8th to 10th grade. In 2022-23, LKG and UKG were introduced. In 2023-24, 1st grade was started.",
     our_leadership: "Our Leadership",
     key_milestones: "Key Milestones",
     milestone_shishu_mandira: "Shishu Mandira Inaugurated",
@@ -1595,7 +1595,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ನಾವು ಕರ್ನಾಟಕ ರಾಜ್ಯ ಮಂಡಳಿ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೇವೆ ಮತ್ತು ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕ್ರೀಡೆ, ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳ ಮೇಲೆ ಹೆಚ್ಚುವರಿ ಗಮನವನ್ನು ನೀಡುತ್ತೇವೆ.",
     faq_exams: "ಪರೀಕ್ಷೆಗಳನ್ನು ಹೇಗೆ ನಡೆಸಲಾಗುತ್ತದೆ?",
     faq_exams_answer:
-      "1 ರಿಂದ 7ನೇ ತರಗತಿಗಳ ಕನ್ನಡ ಮಾಧ್ಯಮಕ್ಕೆ ಯೂನಿಟ್ ಟೆಸ್ಟ್ ಮತ್ತು ಸೆಮಿಸ್ಟರ್ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. 1 ರಿಂದ 10ನೇ ತರಗತಿಗಳ ಇಂಗ್ಲಿಷ್ ಮಾಧ್ಯಮಕ್ಕೆ ಯೂನಿಟ್ ಟೆಸ್ಟ್, ಮಾಸಿಕ ಟೆಸ್ಟ್ ಮತ್ತು ವಾರ್ಷಿಕ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. 10ನೇ ತರಗತಿಗೆ ತಯಾರಿ (Preparatory) ಪರೀಕ್ಷೆಗಳನ್ನೂ ನಡೆಸಲಾಗುತ್ತದೆ.",
+      "ಸಮಸ್ತ ತರಗತಿಗಳ ಯೂನಿಟ್ ಟೆಸ್ಟ್, ಮಾಸಿಕ ಟೆಸ್ಟ್ ಮತ್ತು ವಾರ್ಷಿಕ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಲಾಗುತ್ತದೆ. 10ನೇ ತರಗತಿಗೆ ತಯಾರಿ (Preparatory) ಪರೀಕ್ಷೆಗಳನ್ನೂ ನಡೆಸಲಾಗುತ್ತದೆ.",
     faq_homework: "ಮನೆಕೆಲಸದ ನೀತಿ ಯಾವುದು?",
     faq_homework_answer:
       "ನಾವು ತರಗತಿ ಕಲಿಕೆಯನ್ನು  ಬಲಪಡಿಸಲು ಸೂಕ್ತವಾದ ಮನೆಕೆಲಸವನ್ನು ಸಮಯದ ಮಿತಿಯೊಳಗೆ ಪೂರ್ಣಗೊಳಿಸಲು ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ",
@@ -1841,7 +1841,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     about_history_growth:
       "1988ರ ವರೆಗೆ ಶಿಶುಮಂದಿರದಿಂದ 4ನೇ ತರಗತಿಯವರೆಗೂ ಪಾಠಶಾಲೆಯು ಬೆಳೆದು, 1989ರಲ್ಲಿ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
     about_history_current:
-      "ಪ್ರಸ್ತುತ, ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ (ಕನ್ನಡ ಮಾಧ್ಯಮ) ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ ಮತ್ತು 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ನಡೆಯುತ್ತಿದೆ. 2022-23ರಲ್ಲಿ ಎಲ್.ಕೆ.ಜಿ ಮತ್ತು ಯು.ಕೆ.ಜಿ (ಆಂಗ್ಲ ಮಾಧ್ಯಮ) ಪ್ರಾರಂಭವಾಯಿತು. 2023-24ರಲ್ಲಿ 1ನೇ ತರಗತಿಯನ್ನು ಆಂಗ್ಲ ಮಾಧ್ಯಮದಲ್ಲಿ ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
+      "ಪ್ರಸ್ತುತ, ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ 1ರಿಂದ 7ನೇ ತರಗತಿವರೆಗೆ ಅನುದಾನಿತ ಪ್ರಾಥಮಿಕ ವಿಭಾಗ ಮತ್ತು 8ರಿಂದ 10ನೇ ತರಗತಿವರೆಗೆ ಪ್ರೌಢಶಾಲೆ ನಡೆಯುತ್ತಿದೆ. 2022-23ರಲ್ಲಿ ಎಲ್.ಕೆ.ಜಿ ಮತ್ತು ಯು.ಕೆ.ಜಿ ಪ್ರಾರಂಭವಾಯಿತು. 2023-24ರಲ್ಲಿ 1ನೇ ತರಗತಿಯನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.",
     our_leadership: "ನಮ್ಮ ನಾಯಕತ್ವ",
     key_milestones: "ಮುಖ್ಯ ಮೈಲಿಗಲ್ಲುಗಳು",
     milestone_shishu_mandira: "ಶಿಶುಮಂದಿರ ಉದ್ಘಾಟನೆ",
