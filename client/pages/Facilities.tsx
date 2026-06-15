@@ -208,7 +208,7 @@ export default function Facilities() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-brand-blue mb-2">
-                  25+
+                  20+
                 </div>
                 <div className="text-sm text-gray-600">
                   {t("facilities_page_highlight_1")}
