@@ -175,18 +175,18 @@ export default function MandatoryDisclosure() {
   const schoolInfrastructure = [
     {
       slNo: 1,
-      information: "TOTAL CAMPUS AREA OF THE SCHOOL (SQ MTR)",
-      details: "25,000 sq.m",
+      information: "TOTAL CAMPUS AREA OF THE SCHOOL (SQ FT)",
+      details: "269,098 sq.ft",
     },
     {
       slNo: 2,
-      information: "NO AND SIZE OF THE CLASS ROOMS (SQ MTR)",
-      details: "22 classrooms (600-800 sq.m each)",
+      information: "NO AND SIZE OF THE CLASS ROOMS (SQ FT)",
+      details: "22 classrooms (6,458-8,611 sq.ft each)",
     },
     {
       slNo: 3,
-      information: "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ MTR)",
-      details: "SCIENCE LAB: 600 sq.m\nMATH LAB: 400 sq.m\nCOMPUTER LAB: 500 sq.m",
+      information: "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ FT)",
+      details: "SCIENCE LAB: 6,458 sq.ft\nMATH LAB: 4,305 sq.ft\nCOMPUTER LAB: 5,382 sq.ft",
     },
     {
       slNo: 4,
@@ -202,6 +202,42 @@ export default function MandatoryDisclosure() {
       slNo: 6,
       information: "NO OF BOYS TOILETS",
       details: "10",
+    },
+  ];
+
+  const selfAffidavit = [
+    {
+      slNo: 1,
+      information: "SELF AFFIDAVIT",
+      details: "PDF",
+      isLink: true,
+    },
+  ];
+
+  const classStrength = [
+    {
+      slNo: 1,
+      information: "CLASSWISE STRENGTH",
+      details: "PDF",
+      isLink: true,
+    },
+  ];
+
+  const academicCalendar = [
+    {
+      slNo: 1,
+      information: "ACADEMIC CALENDAR",
+      details: "PDF",
+      isLink: true,
+    },
+  ];
+
+  const curriculumDetails = [
+    {
+      slNo: 1,
+      information: "DETAILS OF CURRICULUM",
+      details: "PDF",
+      isLink: true,
     },
   ];
 
@@ -383,6 +419,130 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {schoolInfrastructure.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Self Affidavit Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">F. Self Affidavit</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {selfAffidavit.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Classwise Strength Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">G. Classwise Strength</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {classStrength.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Academic Calendar Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">H. Academic Calendar</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {academicCalendar.map((item, index) => (
+                  <TableRow key={index} item={item} index={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Details of Curriculum Section */}
+      <Card className="mb-6 md:mb-8">
+        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
+          <CardTitle className="text-lg md:text-2xl">I. Details of Curriculum</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs md:text-base min-w-full">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    SL NO.
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
+                    DOCUMENTS / INFORMATION
+                  </th>
+                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
+                    DETAILS
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {curriculumDetails.map((item, index) => (
                   <TableRow key={index} item={item} index={index} />
                 ))}
               </tbody>
