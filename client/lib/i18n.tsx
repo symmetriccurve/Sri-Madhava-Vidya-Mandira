@@ -145,7 +145,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     admissions_page_visit_campus: "Visit Our Campus",
     admissions_page_address_label: "Address",
     admissions_page_contact_address:
-      "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "Sri Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     admissions_page_phone_label: "Phone",
     admissions_page_phone_value: " +91 9449643684, +91 9449424530",
     admissions_page_email_label: "Email ID",
@@ -648,7 +648,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
     faq_email_support: "Email Support",
     faq_visit_us: "Visit Us",
     faq_visit_address:
-      "Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "Sri Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     faq_phone_value: "+91 9449643684, +91 9449424530",
     faq_email_value: "smvmsira@gmail.com",
     faq_admissions: "Admissions",
@@ -702,7 +702,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "We have regular parent-teacher meetings, and parents can schedule appointments with teachers.",
     faq_contact: "How can I contact the school?",
     faq_contact_answer:
-      "You can contact us at +91 9449643684, +91 9449424530, email us at smvmsira@gmail.com, or visit our campus at Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
+      "You can contact us at +91 9449643684, +91 9449424530, email us at smvmsira@gmail.com, or visit our campus at Sri Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka.",
     parents_message: "Parents' Voice",
     parents_message_title: "Parents' Voice",
     parents_message_subtitle:
@@ -1625,7 +1625,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ನಾವು ನಿಯಮಿತ ಪೋಷಕ-ಶಿಕ್ಷಕ ಸಭೆಗಳನ್ನು ನಡೆಸುತ್ತೇವೆ, ಮತ್ತು ಪೋಷಕರು ಶಿಕ್ಷಕರೊಂದಿಗೆ ಸಮಯ ನಿಗದಿ ಮಾಡಿಕೊಂಡು ಭೇಟಿಯಾಗಬಹುದು.",
     faq_contact: "ನಾನು ಶಾಲೆಯನ್ನು ಹೇಗೆ ಸಂಪರ್ಕಿಸಬಹುದು?",
     faq_contact_answer:
-      "ನೀವು +91 9449643684, +91 9449424530 ರಂದು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಬಹುದು, smvmsira@gmail.com ಗೆ ಇಮೇಲ್ ಮಾಡಬಹುದು, ಅಥವಾ Sree Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka ನಲ್ಲಿ ನಮ್ಮ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಬಹುದು.",
+      "ನೀವು +91 9449643684, +91 9449424530 ರಂದು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಬಹುದು, smvmsira@gmail.com ಗೆ ಇಮೇಲ್ ಮಾಡಬಹುದು, ಅಥವಾ Sri Madhava Vidya Mandira, Bhavani nagara, Sira – 572137, Tumakuru District, Karnataka ನಲ್ಲಿ ನಮ್ಮ ಕ್ಯಾಂಪಸ್‌ಗೆ ಭೇಟಿ ನೀಡಬಹುದು.",
     parents_message: "ಪೋಷಕರ ಧ್ವನಿ",
     parents_message_title: "ಪೋಷಕರ ಧ್ವನಿ",
     parents_message_subtitle: "ನಮ್ಮ ಪೋಷಕ ಸಮುದಾಯದ ಅನುಭವಗಳ ಬಗ್ಗೆ ಕೇಳಿ",
