@@ -666,7 +666,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "Required documents include birth certificate, previous year's report card, transfer certificate, passport size photographs, and address proof.",
     faq_admission_fees: "What are the fee structure and payment options?",
     faq_admission_fees_answer:
-      "Our fee structure is competitive and includes tuition, development, and other charges. We offer flexible payment options including half yearly and annual payments.",
+      "Our fee structure is competitive and includes tuition. We offer flexible payment options including half yearly and annual payments.",
     faq_curriculum: "What curriculum do you follow?",
     faq_curriculum_answer:
       "We follow the Karnataka State Board curriculum with additional focus on value education, sports, and cultural activities for holistic development.",
@@ -1589,7 +1589,7 @@ const dictionary: Record<Lang, Record<string, string>> = {
       "ಅಗತ್ಯ ದಾಖಲೆಗಳು ಜನನ ಪ್ರಮಾಣಪತ್ರ, ಹಿಂದಿನ ವರ್ಷದ ವರದಿ ಕಾರ್ಡ್, ವರ್ಗಾವಣೆ ಪ್ರಮಾಣಪತ್ರ, ಪಾಸ್‌ಪೋರ್ಟ್ ಗಾತ್ರದ ಫೋಟೋಗಳು, ಮತ್ತು ವಿಳಾಸ ಪುರಾವೆಯನ್ನು ಒಳಗೊಂಡಿದೆ.",
     faq_admission_fees: "ಶುಲ್ಕ ರಚನೆ ಮತ್ತು ಪಾವತಿ ಆಯ್ಕೆಗಳು ಯಾವುವು?",
     faq_admission_fees_answer:
-      "ನಮ್ಮ ಶುಲ್ಕ ರಚನೆ ಸ್ಪರ್ಧಾತ್ಮಕವಾಗಿದ್ದು ಟ್ಯೂಷನ್, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ಇತರ ಶುಲ್ಕಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ನಾವು ಅರ್ಧವಾರ್ಷಿಕ ಮತ್ತು ವಾರ್ಷಿಕ ಪಾವತಿ ಆಯ್ಕೆಗಳನ್ನು ನೀಡುತ್ತೇವೆ.",
+      "ನಮ್ಮ ಶುಲ್ಕ ರಚನೆ ಸ್ಪರ್ಧಾತ್ಮಕವಾಗಿದ್ದು ಟ್ಯೂಷನ್ ಅನ್ನು ಒಳಗೊಂಡಿದೆ. ನಾವು ಅರ್ಧವಾರ್ಷಿಕ ಮತ್ತು ವಾರ್ಷಿಕ ಪಾವತಿ ಆಯ್ಕೆಗಳನ್ನು ನೀಡುತ್ತೇವೆ.",
     faq_curriculum: "ನೀವು ಯಾವ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೀರಿ?",
     faq_curriculum_answer:
       "ನಾವು ಕರ್ನಾಟಕ ರಾಜ್ಯ ಮಂಡಳಿ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೇವೆ ಮತ್ತು ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಮೌಲ್ಯ ಶಿಕ್ಷಣ, ಕ್ರೀಡೆ, ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಚಟುವಟಿಕೆಗಳ ಮೇಲೆ ಹೆಚ್ಚುವರಿ ಗಮನವನ್ನು ನೀಡುತ್ತೇವೆ.",
