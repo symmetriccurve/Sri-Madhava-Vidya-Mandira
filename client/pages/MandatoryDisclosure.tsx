@@ -2,7 +2,19 @@ import { useI18n } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-const PDF_URL = "https://gurudevakottur.com/staging/pdf/mandatory_disclose/1776082590_blank.pdf";
+const PDF_MAPPING: { [key: string]: string } = {
+  "COPIES OF SOCIETIES/TRUST REGISTRATION OR RENEWAL CERT": "/cbse_documents/SMVM SOCIETY REGISTRATION & PTA.pdf",
+  "COPIES OF RECOGNITION CERT": "/cbse_documents/SMVM SCHOOL RECOGNITION.pdf",
+  "COPY OF VALID BUILDING SAFETY CERTIFICATE": "/cbse_documents/SMVM BUILDING SAFETY CERTIFICATE.pdf",
+  "COPY OF VALID FIRE SAFETY CERTIFICATE": "/cbse_documents/SIRA FIRE.pdf",
+  "COPY OF VALID WATER, HEALTH AND SANITATION": "/cbse_documents/SMVM HEALTH & WATER CERTIFICATE.pdf",
+  "FEE STRUCTURE OF THE SCHOOL": "/cbse_documents/C - 1 SMVM FEE STRUCTURE.pdf",
+  "ANNUAL ACADEMIC CALENDAR": "/cbse_documents/C - 2 SMVM ACADEMIC CALENDAR.pdf",
+  "LIST OF SCHOOL MANAGEMENT COMMITTEE": "/cbse_documents/C - 3 SMVM SMC.pdf",
+  "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS": "/cbse_documents/C - 4 SMVM PTA.pdf",
+  "STAFF DETAILS": "/cbse_documents/D - 4 SMVM STAFF DETAILS.pdf",
+  "DETAILS OF CURRICULUM": "/cbse_documents/I. 1 SMVM CURRICULUM.pdf",
+};
 
 export default function MandatoryDisclosure() {
   const { t } = useI18n();
@@ -44,44 +56,37 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "COPIES OF SOCIETIES/TRUST REGISTRATION OR RENEWAL CERT",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 2,
       information: "COPIES OF RECOGNITION CERT",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 3,
       information: "COPY OF VALID BUILDING SAFETY CERTIFICATE",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 4,
       information: "COPY OF VALID FIRE SAFETY CERTIFICATE",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 5,
-      information: "SELF CERTIFICATE",
-      details: "PDF",
-      isLink: true,
+      information: "COPY OF VALID WATER, HEALTH AND SANITATION",
+      hasPDF: true,
     },
     {
       slNo: 6,
-      information: "COPY OF VALID WATER, HEALTH AND SANITATION",
-      details: "PDF",
-      isLink: true,
+      information: "SELF CERTIFICATE",
+      hasPDF: false,
     },
     {
       slNo: 7,
       information: "MPD DOCUMENT",
-      details: "PDF",
-      isLink: true,
+      hasPDF: false,
     },
   ];
 
@@ -89,26 +94,22 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "FEE STRUCTURE OF THE SCHOOL",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 2,
       information: "ANNUAL ACADEMIC CALENDAR",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 3,
       information: "LIST OF SCHOOL MANAGEMENT COMMITTEE",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 4,
       information: "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
   ];
 
@@ -146,8 +147,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 4,
       information: "STAFF DETAILS",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
     {
       slNo: 5,
@@ -198,8 +198,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "SELF AFFIDAVIT",
-      details: "PDF",
-      isLink: true,
+      hasPDF: false,
     },
   ];
 
@@ -207,17 +206,15 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "CLASSWISE STRENGTH",
-      details: "PDF",
-      isLink: true,
+      hasPDF: false,
     },
   ];
 
   const academicCalendar = [
     {
       slNo: 1,
-      information: "ACADEMIC CALENDAR",
-      details: "PDF",
-      isLink: true,
+      information: "ANNUAL ACADEMIC CALENDAR",
+      hasPDF: true,
     },
   ];
 
@@ -225,33 +222,55 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "DETAILS OF CURRICULUM",
-      details: "PDF",
-      isLink: true,
+      hasPDF: true,
     },
   ];
 
-  const TableRow = ({ item, index }: { item: any; index: number }) => (
-    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-medium text-xs md:text-sm">
-        {item.slNo}
-      </td>
-      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 font-medium text-gray-800 text-xs md:text-sm">
-        {item.information}
-      </td>
-      <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center text-xs md:text-sm">
-        {item.isLink ? (
+  const TableRow = ({ item, index, isDocument = false }: { item: any; index: number; isDocument?: boolean }) => {
+    const renderDetails = () => {
+      if (isDocument) {
+        if (item.hasPDF) {
+          const pdfUrl = PDF_MAPPING[item.information];
+          return (
+            <button
+              onClick={() => window.open(pdfUrl, '_blank')}
+              className="btn-primary text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 inline-block"
+            >
+              Click Here
+            </button>
+          );
+        } else {
+          return <span className="text-gray-500 italic">Pending</span>;
+        }
+      } else if (item.isLink) {
+        const pdfUrl = PDF_MAPPING[item.information];
+        return (
           <button
-            onClick={() => window.open(PDF_URL, '_blank')}
+            onClick={() => window.open(pdfUrl, '_blank')}
             className="btn-primary text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 inline-block"
           >
             Click Here
           </button>
-        ) : (
-          <span className="whitespace-pre-line text-gray-700">{item.details}</span>
-        )}
-      </td>
-    </tr>
-  );
+        );
+      } else {
+        return <span className="whitespace-pre-line text-gray-700">{item.details}</span>;
+      }
+    };
+
+    return (
+      <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+        <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-medium text-xs md:text-sm">
+          {item.slNo}
+        </td>
+        <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 font-medium text-gray-800 text-xs md:text-sm">
+          {item.information}
+        </td>
+        <td className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center text-xs md:text-sm">
+          {renderDetails()}
+        </td>
+      </tr>
+    );
+  };
 
   return (
     <main className="container mx-auto py-6 md:py-10 px-3 md:px-4">
@@ -315,7 +334,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {documents.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
@@ -346,7 +365,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {resultsAcademics.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
@@ -439,7 +458,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {selfAffidavit.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
@@ -470,7 +489,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {classStrength.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
@@ -501,7 +520,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {academicCalendar.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
@@ -532,7 +551,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {curriculumDetails.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={true} />
                 ))}
               </tbody>
             </table>
