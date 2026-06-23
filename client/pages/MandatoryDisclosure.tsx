@@ -9,7 +9,7 @@ const PDF_MAPPING: { [key: string]: string } = {
   "COPY OF VALID FIRE SAFETY CERTIFICATE": "/cbse_documents/SIRA FIRE.pdf",
   "COPY OF VALID WATER, HEALTH AND SANITATION": "/cbse_documents/SMVM HEALTH & WATER CERTIFICATE.pdf",
   "FEE STRUCTURE OF THE SCHOOL": "/cbse_documents/C - 1 SMVM FEE STRUCTURE.pdf",
-  "ANNUAL ACADEMIC CALENDAR": "/cbse_documents/C - 2 SMVM ACADEMIC CALENDAR.pdf",
+  "ANNUAL ACADEMIC CALENDAR": "/cbse_documents/C -2 AND H - 1 SMVM ACADEMIC CALENDAR.pdf",
   "LIST OF SCHOOL MANAGEMENT COMMITTEE": "/cbse_documents/C - 3 SMVM SMC.pdf",
   "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS": "/cbse_documents/C - 4 SMVM PTA.pdf",
   "STAFF DETAILS": "/cbse_documents/D - 4 SMVM STAFF DETAILS.pdf",
@@ -117,7 +117,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "PRINCIPAL",
-      details: "Sangama Mataji, M.A., B.Ed",
+      details: "Ms. Vatsala Mulimane, M.A., B.Ed",
     },
     {
       slNo: 2,
@@ -127,17 +127,17 @@ export default function MandatoryDisclosure() {
     {
       slNo: "2.1",
       information: "TGT",
-      details: "9",
+      details: "09",
     },
     {
       slNo: "2.2",
       information: "PRT",
-      details: "6",
+      details: "06",
     },
     {
       slNo: "2.3",
       information: "NTT",
-      details: "3",
+      details: "03",
     },
     {
       slNo: 3,
@@ -148,6 +148,7 @@ export default function MandatoryDisclosure() {
       slNo: 4,
       information: "STAFF DETAILS",
       hasPDF: true,
+      isUploadable: true,
     },
     {
       slNo: 5,
@@ -396,7 +397,7 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {staffTeaching.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} />
+                  <TableRow key={index} item={item} index={index} isDocument={item.hasPDF} />
                 ))}
               </tbody>
             </table>
