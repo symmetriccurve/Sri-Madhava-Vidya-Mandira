@@ -35,6 +35,7 @@ export default function Header() {
           <Nav to="/academics" label={t("academics")} />
           <Nav to="/admissions" label={t("admissions")} />
           <Nav to="/facilities" label={t("facilities")} />
+          <Nav to="/mandatory-disclosure" label="Mandatory Disclosure" />
           <Nav to="/contact" label={t("contact")} />
 
           
@@ -73,9 +74,6 @@ export default function Header() {
                   {/* <Link to="/donor" className="block px-3 py-2 text-sm text-gray-900 hover:bg-red-50 hover:text-red-600 rounded-md transition-colors">
                     {t("donor")}
                   </Link> */}
-                  <Link to="/mandatory-disclosure" className="block px-3 py-2 text-sm text-gray-900 hover:bg-brand-blue/5 hover:text-brand-blue rounded-md transition-colors">
-                    Mandatory Disclosure
-                  </Link>
                 </div>
               </div>
             )}

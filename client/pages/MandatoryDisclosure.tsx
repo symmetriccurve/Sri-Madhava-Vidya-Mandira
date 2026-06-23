@@ -21,7 +21,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 3,
       information: "PRINCIPAL NAME",
-      details: "The Principal",
+      details: "Ms. Vatsala Mulimane",
     },
     {
       slNo: 4,
@@ -49,42 +49,36 @@ export default function MandatoryDisclosure() {
     },
     {
       slNo: 2,
-      information: "COPY OF NOC",
-      details: "PDF",
-      isLink: true,
-    },
-    {
-      slNo: 3,
       information: "COPIES OF RECOGNITION CERT",
       details: "PDF",
       isLink: true,
     },
     {
-      slNo: 4,
+      slNo: 3,
       information: "COPY OF VALID BUILDING SAFETY CERTIFICATE",
       details: "PDF",
       isLink: true,
     },
     {
-      slNo: 5,
+      slNo: 4,
       information: "COPY OF VALID FIRE SAFETY CERTIFICATE",
       details: "PDF",
       isLink: true,
     },
     {
-      slNo: 6,
+      slNo: 5,
       information: "SELF CERTIFICATE",
       details: "PDF",
       isLink: true,
     },
     {
-      slNo: 7,
+      slNo: 6,
       information: "COPY OF VALID WATER, HEALTH AND SANITATION",
       details: "PDF",
       isLink: true,
     },
     {
-      slNo: 8,
+      slNo: 7,
       information: "MPD DOCUMENT",
       details: "PDF",
       isLink: true,
@@ -127,27 +121,22 @@ export default function MandatoryDisclosure() {
     {
       slNo: 2,
       information: "TOTAL NO OF TEACHERS",
-      details: "25",
+      details: "23",
     },
     {
       slNo: "2.1",
-      information: "PGT",
-      details: "5",
+      information: "TGT",
+      details: "9",
     },
     {
       slNo: "2.2",
-      information: "TGT",
-      details: "10",
+      information: "PRT",
+      details: "6",
     },
     {
       slNo: "2.3",
-      information: "PRT",
-      details: "8",
-    },
-    {
-      slNo: "2.4",
       information: "NTT",
-      details: "2",
+      details: "3",
     },
     {
       slNo: 3,
@@ -163,30 +152,30 @@ export default function MandatoryDisclosure() {
     {
       slNo: 5,
       information: "DETAILS OF SPECIAL EDUCATOR",
-      details: "Ms. Priya Sharma, B.Sc Special Education",
+      details: "",
     },
     {
       slNo: 6,
       information: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
-      details: "Ms. Neha Verma, M.Sc Counselling Psychology",
+      details: "",
     },
   ];
 
   const schoolInfrastructure = [
     {
       slNo: 1,
-      information: "TOTAL CAMPUS AREA OF THE SCHOOL (SQ FT)",
-      details: "269,098 sq.ft",
+      information: "TOTAL CAMPUS AREA OF THE SCHOOL (SQ MTR)",
+      details: "13051.99 Sq. MTR.",
     },
     {
       slNo: 2,
       information: "NO AND SIZE OF THE CLASS ROOMS (SQ FT)",
-      details: "22 classrooms (6,458-8,611 sq.ft each)",
+      details: "15 classrooms (500 sq.ft each)",
     },
     {
       slNo: 3,
       information: "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ FT)",
-      details: "SCIENCE LAB: 6,458 sq.ft\nMATH LAB: 4,305 sq.ft\nCOMPUTER LAB: 5,382 sq.ft",
+      details: "SCIENCE LAB: 712.25 sq.ft\nMATH LAB: 500 sq.ft\nCOMPUTER LAB: 600 sq.ft",
     },
     {
       slNo: 4,
@@ -201,7 +190,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 6,
       information: "NO OF BOYS TOILETS",
-      details: "10",
+      details: "12",
     },
   ];
 
