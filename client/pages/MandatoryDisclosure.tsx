@@ -212,14 +212,6 @@ export default function MandatoryDisclosure() {
     },
   ];
 
-  const academicCalendar = [
-    {
-      slNo: 1,
-      information: "ANNUAL ACADEMIC CALENDAR",
-      hasPDF: true,
-    },
-  ];
-
   const curriculumDetails = [
     {
       slNo: 1,
@@ -499,41 +491,10 @@ export default function MandatoryDisclosure() {
         </CardContent>
       </Card>
 
-      {/* Academic Calendar Section */}
-      <Card className="mb-6 md:mb-8">
-        <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">H. Academic Calendar</CardTitle>
-        </CardHeader>
-        <CardContent className="p-0">
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-xs md:text-base min-w-full">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
-                    SL NO.
-                  </th>
-                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-left font-semibold text-gray-800 text-xs md:text-sm">
-                    DOCUMENTS / INFORMATION
-                  </th>
-                  <th className="border border-gray-300 px-2 md:px-4 py-2 md:py-3 text-center font-semibold text-gray-800 text-xs md:text-sm">
-                    DETAILS
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {academicCalendar.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
-      </Card>
-
       {/* Details of Curriculum Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">I. Details of Curriculum</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">H. Details of Curriculum</CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
