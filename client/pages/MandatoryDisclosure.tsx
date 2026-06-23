@@ -14,6 +14,7 @@ const PDF_MAPPING: { [key: string]: string } = {
   "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS": "/cbse_documents/C - 4 SMVM PTA.pdf",
   "STAFF DETAILS": "/cbse_documents/D - 4 SMVM STAFF DETAILS.pdf",
   "DETAILS OF CURRICULUM": "/cbse_documents/I. 1 SMVM CURRICULUM.pdf",
+  "CLASSWISE STRENGTH": "/cbse_documents/G - 1 SMVM CLASSWISE STRENGTH.pdf",
 };
 
 export default function MandatoryDisclosure() {
@@ -207,7 +208,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "CLASSWISE STRENGTH",
-      hasPDF: false,
+      hasPDF: true,
     },
   ];
 
