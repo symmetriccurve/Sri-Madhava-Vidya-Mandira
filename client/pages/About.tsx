@@ -297,7 +297,7 @@ export default function About() {
 
       <section className="mb-16">
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-brand-blue mb-6 sm:mb-8">
-          {t("principal_message")}
+          {t("head_mistress_message")}
         </h2>
         <Card className="overflow-hidden border-2 border-brand-orange/20 shadow-lg">
           <CardContent className="p-6 md:p-8">
