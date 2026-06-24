@@ -25,7 +25,7 @@ export default function About() {
   const [showModal, setShowModal] = useState(false);
 
   const stats = [
-    { icon: Users, label: t("about_stat_students"), value: "400+" },
+    { icon: Users, label: t("about_stat_students"), value: "200+" },
     { icon: BookOpen, label: t("about_stat_teachers"), value: "20+" },
     { icon: Award, label: t("about_stat_academic_service"), value: "40+" },
     { icon: Heart, label: t("about_stat_families"), value: "500+" },
@@ -266,7 +266,7 @@ export default function About() {
       </section>
 
       {/* Head Mistress's Message */}
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <h2 className="text-2xl sm:text-3xl font-bold text-center text-brand-blue mb-6 sm:mb-8">
           {t("head_mistress_message")}
         </h2>
@@ -291,6 +291,19 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </CardContent>
+        </Card>
+      </section> */}
+
+      <section className="mb-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-brand-blue mb-6 sm:mb-8">
+          {t("principal_message")}
+        </h2>
+        <Card className="overflow-hidden border-2 border-brand-orange/20 shadow-lg">
+          <CardContent className="p-6 md:p-8">
+            <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+              {t("head_mistress_message_body")}
+            </p>
           </CardContent>
         </Card>
       </section>
