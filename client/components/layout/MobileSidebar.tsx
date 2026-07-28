@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { X, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useMobileMenu } from "@/contexts/MobileMenuContext";
@@ -8,6 +8,8 @@ import { getLogo } from "@/lib/imageUtils";
 export default function MobileSidebar() {
   const { isMobileMenuOpen, closeMobileMenu } = useMobileMenu();
   const { t } = useI18n();
+  const { pathname } = useLocation();
+  const isStatePage = pathname === "/state";
 
   const mobileNavigationItems = [
     { to: "/about", label: t("about") },
@@ -21,7 +23,9 @@ export default function MobileSidebar() {
     { to: "/faqs", label: t("faqs") },
     { to: "/parents-message", label: t("parents_message") },
     // { to: "/donor", label: t("donor") },
-    { to: "/mandatory-disclosure", label: "Mandatory Disclosure" },
+    ...(isStatePage
+      ? []
+      : [{ to: "/mandatory-disclosure", label: "Mandatory Disclosure" }]),
     { to: "/contact", label: t("contact") },
   ];
 

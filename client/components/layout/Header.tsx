@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useI18n } from "@/lib/i18n";
@@ -11,6 +11,8 @@ export default function Header() {
   const { t } = useI18n();
   const { toggleMobileMenu, closeMobileMenu } = useMobileMenu();
   const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isStatePage = pathname === "/state";
 
 
 
@@ -35,7 +37,9 @@ export default function Header() {
           <Nav to="/academics" label={t("academics")} />
           <Nav to="/admissions" label={t("admissions")} />
           <Nav to="/facilities" label={t("facilities")} />
-          <Nav to="/mandatory-disclosure" label="Mandatory Disclosure" />
+          {!isStatePage && (
+            <Nav to="/mandatory-disclosure" label="Mandatory Disclosure" />
+          )}
           <Nav to="/contact" label={t("contact")} />
 
           
