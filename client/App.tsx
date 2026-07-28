@@ -28,6 +28,7 @@ import FAQs from "./pages/FAQs";
 import ParentsMessage from "./pages/ParentsMessage";
 // import Donor from "./pages/Donor";
 import MandatoryDisclosure from "./pages/MandatoryDisclosure";
+import State from "./pages/State";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +67,8 @@ const App = () => (
               {/* <Route path="/donor" element={<Donor />} /> */}
               <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
               <Route path="/contact" element={<Contact />} />
+              {/* Hidden route: not linked in any nav menu, intentionally unlisted */}
+              <Route path="/state" element={<State />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

@@ -951,6 +951,10 @@ const dictionary: Record<Lang, Record<string, string>> = {
     sri_hemanth_kumar_bio:
       "Sri Hemanth Kumar plays a key role in the daily administrative operations of our school's governing board, dedicating his time to the school's development with selfless service. While managing his professional career, he continuously provides valuable educational insights and opinions to our school. As the Secretary of our school, he is committed to serving the institution with dedication and excellence.",
     administrative_board: "Administrative Board",
+    state_board_section_title: "We Follow the Karnataka State Board",
+    state_board_section_body:
+      "Sri Madhava Vidya Mandira follows the Karnataka State Board curriculum, administered by the Karnataka School Examination and Assessment Board (KSEAB) for Classes 1 to 10. Our textbooks (KTBS) are in Kannada and English medium, covering language, mathematics, environmental studies, and social science, with structured, age-appropriate progression aligned to the National Education Policy.",
+    state_board_official_link: "Visit the official KSEAB website →",
   },
   kn: {
     school_name: "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾಮಂದಿರ",
@@ -1872,6 +1876,10 @@ const dictionary: Record<Lang, Record<string, string>> = {
     sri_hemanth_kumar_bio:
       "ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರದ ಏಳಿಗೆಗಾಗಿ ಶ್ರಮಿಸುತ್ತಿರುವ ನಮ್ಮ ಶಾಲೆಯ ಆಡಳಿತ ಮಂಡಳಿಯ ದಿನಂಪ್ರತಿಯ ವ್ಯವಹಾರಗಳಲ್ಲಿ ಮುಖ್ಯ ಪಾತ್ರವಹಿಸಿ ಅವರ ಸಮಯವನ್ನು ಶಾಲೆಯ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ತೊಡಗಿಸಿಕೊಂಡು, ತಮ್ಮ ನಿಸ್ವಾರ್ಥ ಸೇವೆಯನ್ನು ಶ್ರೀ ಹೇಮಂತ್ ಕುಮಾರ್ ಅವರು ನಿರಂತರವಾಗಿ ಸಲ್ಲಿಸುತ್ತಿದ್ದಾರೆ. ಅವರು ತಮ್ಮ ಕಾರ್ಯನಿರತ ವ್ಯವಹಾರದಲ್ಲೂ ನಮ್ಮ ಶಾಲೆಗೆ ಶೈಕ್ಷಣಿಕವಾಗಿ ತಮ್ಮ ಅಭಿಪ್ರಾಯಗಳನ್ನು ಆಲೋಚನೆಗಳನ್ನು ನೀಡುತ್ತಿದ್ದಾರೆ.",
     administrative_board: "ಆಡಳಿತ ಮಂಡಳಿ",
+    state_board_section_title: "ನಾವು ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತೇವೆ",
+    state_board_section_body:
+      "ಶ್ರೀ ಮಾಧವ ವಿದ್ಯಾ ಮಂದಿರವು ಕರ್ನಾಟಕ ಶಾಲಾ ಪರೀಕ್ಷೆ ಮತ್ತು ಮೌಲ್ಯಮಾಪನ ಮಂಡಳಿ (KSEAB) ಯಿಂದ ನಿರ್ವಹಿಸಲ್ಪಡುವ 1 ರಿಂದ 10ನೇ ತರಗತಿಯ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪಠ್ಯಕ್ರಮವನ್ನು ಅನುಸರಿಸುತ್ತದೆ. ನಮ್ಮ ಪಠ್ಯಪುಸ್ತಕಗಳು (KTBS) ಕನ್ನಡ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಮಾಧ್ಯಮದಲ್ಲಿದ್ದು, ಭಾಷೆ, ಗಣಿತ, ಪರಿಸರ ಅಧ್ಯಯನ ಮತ್ತು ಸಮಾಜ ವಿಜ್ಞಾನವನ್ನು ಒಳಗೊಂಡಿದ್ದು, ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ನೀತಿಗೆ ಅನುಗುಣವಾಗಿ ವ್ಯವಸ್ಥಿತ, ವಯಸ್ಸಿಗೆ ಸೂಕ್ತವಾದ ಪ್ರಗತಿಯನ್ನು ಹೊಂದಿವೆ.",
+    state_board_official_link: "ಅಧಿಕೃತ KSEAB ವೆಬ್‌ಸೈಟ್‌ಗೆ ಭೇಟಿ ನೀಡಿ →",
   },
 };
 
