@@ -34,7 +34,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 3,
       information: "PRINCIPAL NAME",
-      details: "Ms. Vatsala Mulimane",
+      details: "Ms. Nisha Subramanian",
     },
     {
       slNo: 4,
@@ -118,7 +118,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 1,
       information: "PRINCIPAL",
-      details: "Ms. Vatsala Mulimane, M.A., B.Ed",
+      details: "Ms. Nisha Subramanian",
     },
     {
       slNo: 2,
@@ -172,7 +172,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 2,
       information: "NO AND SIZE OF THE CLASS ROOMS (SQ FT)",
-      details: "15 classrooms (500 sq.ft each)",
+      details: "13 classrooms (500 sq.ft each)",
     },
     {
       slNo: 3,
