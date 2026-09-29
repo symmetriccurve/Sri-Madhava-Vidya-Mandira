@@ -15,6 +15,8 @@ const PDF_MAPPING: { [key: string]: string } = {
   "STAFF DETAILS": "/cbse_documents/D - 4 SMVM STAFF DETAILS.pdf",
   "DETAILS OF CURRICULUM": "/cbse_documents/I. 1 SMVM CURRICULUM.pdf",
   "CLASSWISE STRENGTH": "/cbse_documents/G - 1 SMVM CLASSWISE STRENGTH.pdf",
+  "SELF CERTIFICATE": "/cbse_documents/SMVM - SELF CERTIFICATE SIGNED.pdf",
+  "MPD DOCUMENT": "/cbse_documents/Mandatory Disclosure Details _ SARAS 7.0.pdf",
 };
 
 export default function MandatoryDisclosure() {
@@ -82,12 +84,12 @@ export default function MandatoryDisclosure() {
     {
       slNo: 6,
       information: "SELF CERTIFICATE",
-      hasPDF: false,
+      hasPDF: true,
     },
     {
       slNo: 7,
       information: "MPD DOCUMENT",
-      hasPDF: false,
+      hasPDF: true,
     },
   ];
 
