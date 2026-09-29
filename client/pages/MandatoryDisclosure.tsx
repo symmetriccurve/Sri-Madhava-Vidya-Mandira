@@ -1,22 +1,29 @@
-import { useI18n } from "@/lib/i18n";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 import { Button } from "@/components/ui/button";
+import { useI18n } from "@/lib/i18n";
 
 const PDF_MAPPING: { [key: string]: string } = {
-  "COPIES OF SOCIETIES/TRUST REGISTRATION OR RENEWAL CERT": "/cbse_documents/SMVM SOCIETY REGISTRATION & PTA.pdf",
+  "COPIES OF SOCIETIES/TRUST REGISTRATION OR RENEWAL CERT":
+    "/cbse_documents/SMVM SOCIETY REGISTRATION & PTA.pdf",
   "COPIES OF RECOGNITION CERT": "/cbse_documents/SMVM SCHOOL RECOGNITION.pdf",
-  "COPY OF VALID BUILDING SAFETY CERTIFICATE": "/cbse_documents/SMVM BUILDING SAFETY CERTIFICATE.pdf",
+  "COPY OF VALID BUILDING SAFETY CERTIFICATE":
+    "/cbse_documents/SMVM BUILDING SAFETY CERTIFICATE.pdf",
   "COPY OF VALID FIRE SAFETY CERTIFICATE": "/cbse_documents/SIRA FIRE.pdf",
-  "COPY OF VALID WATER, HEALTH AND SANITATION": "/cbse_documents/SMVM HEALTH & WATER CERTIFICATE.pdf",
+  "COPY OF VALID WATER, HEALTH AND SANITATION":
+    "/cbse_documents/SMVM HEALTH & WATER CERTIFICATE.pdf",
   "FEE STRUCTURE OF THE SCHOOL": "/cbse_documents/C - 1 SMVM FEE STRUCTURE.pdf",
-  "ANNUAL ACADEMIC CALENDAR": "/cbse_documents/C -2 AND H - 1 SMVM ACADEMIC CALENDAR.pdf",
+  "ANNUAL ACADEMIC CALENDAR":
+    "/cbse_documents/C -2 AND H - 1 SMVM ACADEMIC CALENDAR.pdf",
   "LIST OF SCHOOL MANAGEMENT COMMITTEE": "/cbse_documents/C - 3 SMVM SMC.pdf",
-  "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS": "/cbse_documents/C - 4 SMVM PTA.pdf",
+  "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS":
+    "/cbse_documents/C - 4 SMVM PTA.pdf",
   "STAFF DETAILS": "/cbse_documents/D - 4 SMVM STAFF DETAILS.pdf",
   "DETAILS OF CURRICULUM": "/cbse_documents/I. 1 SMVM CURRICULUM.pdf",
   "CLASSWISE STRENGTH": "/cbse_documents/G - 1 SMVM CLASSWISE STRENGTH.pdf",
   "SELF CERTIFICATE": "/cbse_documents/SMVM - SELF CERTIFICATE SIGNED.pdf",
-  "MPD DOCUMENT": "/cbse_documents/Mandatory Disclosure Details _ SARAS 7.0.pdf",
+  "MPD DOCUMENT":
+    "/cbse_documents/Mandatory Disclosure Details _ SARAS 7.0.pdf",
 };
 
 export default function MandatoryDisclosure() {
@@ -31,7 +38,8 @@ export default function MandatoryDisclosure() {
     {
       slNo: 2,
       information: "COMPLETE ADDRESS WITH PIN CODE",
-      details: "Sri Madhava Vidya Mandira, Bhavani Nagara, Sira – 572137, Tumakuru District, Karnataka",
+      details:
+        "Sri Madhava Vidya Mandira, Bhavani Nagara, Sira – 572137, Tumakuru District, Karnataka",
     },
     {
       slNo: 3,
@@ -107,12 +115,12 @@ export default function MandatoryDisclosure() {
     {
       slNo: 3,
       information: "LIST OF SCHOOL MANAGEMENT COMMITTEE",
-      hasPDF: true,
+      // hasPDF: true,
     },
     {
       slNo: 4,
       information: "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS",
-      hasPDF: true,
+      // hasPDF: true,
     },
   ];
 
@@ -125,7 +133,7 @@ export default function MandatoryDisclosure() {
     {
       slNo: 2,
       information: "TOTAL NO OF TEACHERS",
-      details: "23",
+      details: "20",
     },
     {
       slNo: "2.1",
@@ -156,12 +164,12 @@ export default function MandatoryDisclosure() {
     {
       slNo: 5,
       information: "DETAILS OF SPECIAL EDUCATOR",
-      details: "",
+      details: "N/A",
     },
     {
       slNo: 6,
       information: "DETAILS OF COUNSELLOR AND WELLNESS TEACHER",
-      details: "",
+      details: "ANUPRIYA",
     },
   ];
 
@@ -178,8 +186,10 @@ export default function MandatoryDisclosure() {
     },
     {
       slNo: 3,
-      information: "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ FT)",
-      details: "SCIENCE LAB: 712.25 sq.ft\nMATH LAB: 500 sq.ft\nCOMPUTER LAB: 600 sq.ft",
+      information:
+        "NO AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (SQ FT)",
+      details:
+        "SCIENCE LAB: 712.25 sq.ft\nMATH LAB: 500 sq.ft\nCOMPUTER LAB: 600 sq.ft",
     },
     {
       slNo: 4,
@@ -189,12 +199,12 @@ export default function MandatoryDisclosure() {
     {
       slNo: 5,
       information: "NO OF GIRLS TOILETS",
-      details: "8",
+      details: "15",
     },
     {
       slNo: 6,
       information: "NO OF BOYS TOILETS",
-      details: "12",
+      details: "20",
     },
   ];
 
@@ -222,14 +232,22 @@ export default function MandatoryDisclosure() {
     },
   ];
 
-  const TableRow = ({ item, index, isDocument = false }: { item: any; index: number; isDocument?: boolean }) => {
+  const TableRow = ({
+    item,
+    index,
+    isDocument = false,
+  }: {
+    item: any;
+    index: number;
+    isDocument?: boolean;
+  }) => {
     const renderDetails = () => {
       if (isDocument) {
         if (item.hasPDF) {
           const pdfUrl = PDF_MAPPING[item.information];
           return (
             <button
-              onClick={() => window.open(pdfUrl, '_blank')}
+              onClick={() => window.open(pdfUrl, "_blank")}
               className="btn-primary text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 inline-block"
             >
               Click Here
@@ -242,14 +260,18 @@ export default function MandatoryDisclosure() {
         const pdfUrl = PDF_MAPPING[item.information];
         return (
           <button
-            onClick={() => window.open(pdfUrl, '_blank')}
+            onClick={() => window.open(pdfUrl, "_blank")}
             className="btn-primary text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 inline-block"
           >
             Click Here
           </button>
         );
       } else {
-        return <span className="whitespace-pre-line text-gray-700">{item.details}</span>;
+        return (
+          <span className="whitespace-pre-line text-gray-700">
+            {item.details}
+          </span>
+        );
       }
     };
 
@@ -272,14 +294,20 @@ export default function MandatoryDisclosure() {
     <main className="container mx-auto py-6 md:py-10 px-3 md:px-4">
       {/* Hero Section */}
       <section className="text-center mb-8 md:mb-12">
-        <h1 className="text-2xl md:text-4xl font-bold text-brand-blue mb-3 md:mb-4">Mandatory Disclosure</h1>
-        <p className="text-base md:text-xl text-gray-600 mb-4 md:mb-6">School Information & Documentation</p>
+        <h1 className="text-2xl md:text-4xl font-bold text-brand-blue mb-3 md:mb-4">
+          Mandatory Disclosure
+        </h1>
+        <p className="text-base md:text-xl text-gray-600 mb-4 md:mb-6">
+          School Information & Documentation
+        </p>
       </section>
 
       {/* General Information Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">A. General Information</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            A. General Information
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -310,7 +338,9 @@ export default function MandatoryDisclosure() {
       {/* Documents and Information Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">B. Documents and Information (All documents are in PDF Format)</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            B. Documents and Information (All documents are in PDF Format)
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -330,7 +360,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {documents.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={true}
+                  />
                 ))}
               </tbody>
             </table>
@@ -341,7 +376,9 @@ export default function MandatoryDisclosure() {
       {/* Results and Academic Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">C. Result and Academics</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            C. Result and Academics
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -361,7 +398,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {resultsAcademics.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={true}
+                  />
                 ))}
               </tbody>
             </table>
@@ -372,7 +414,9 @@ export default function MandatoryDisclosure() {
       {/* Staff (Teaching) Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">D. Staff (Teaching)</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            D. Staff (Teaching)
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -392,7 +436,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {staffTeaching.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={item.hasPDF} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={item.hasPDF}
+                  />
                 ))}
               </tbody>
             </table>
@@ -403,7 +452,9 @@ export default function MandatoryDisclosure() {
       {/* School Infrastructure Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">E. School Infrastructure</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            E. School Infrastructure
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -434,7 +485,9 @@ export default function MandatoryDisclosure() {
       {/* Self Affidavit Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">F. Self Affidavit</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            F. Self Affidavit
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -454,7 +507,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {selfAffidavit.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={true}
+                  />
                 ))}
               </tbody>
             </table>
@@ -465,7 +523,9 @@ export default function MandatoryDisclosure() {
       {/* Classwise Strength Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">G. Classwise Strength</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            G. Classwise Strength
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -485,7 +545,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {classStrength.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={true}
+                  />
                 ))}
               </tbody>
             </table>
@@ -496,7 +561,9 @@ export default function MandatoryDisclosure() {
       {/* Details of Curriculum Section */}
       <Card className="mb-6 md:mb-8">
         <CardHeader className="bg-brand-blue text-white rounded-t-lg p-3 md:p-6">
-          <CardTitle className="text-lg md:text-2xl">H. Details of Curriculum</CardTitle>
+          <CardTitle className="text-lg md:text-2xl">
+            H. Details of Curriculum
+          </CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -516,7 +583,12 @@ export default function MandatoryDisclosure() {
               </thead>
               <tbody>
                 {curriculumDetails.map((item, index) => (
-                  <TableRow key={index} item={item} index={index} isDocument={true} />
+                  <TableRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isDocument={true}
+                  />
                 ))}
               </tbody>
             </table>
