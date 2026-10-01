@@ -115,12 +115,12 @@ export default function MandatoryDisclosure() {
     {
       slNo: 3,
       information: "LIST OF SCHOOL MANAGEMENT COMMITTEE",
-      // hasPDF: true,
+      hasPDF: true,
     },
     {
       slNo: 4,
       information: "LIST OF PARENT TEACHERS ASSOCIATION MEMBERS",
-      // hasPDF: true,
+      hasPDF: true,
     },
   ];
 
